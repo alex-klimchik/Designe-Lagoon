@@ -34,16 +34,13 @@
 <body>
   <div class="wrapper">
     <!-- Sidebar  -->
-    <nav id="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-header">
         <a class="sidebar-link td-n" href="index.html">
           <div class="peers ai-c fxw-nw">
             <div class="peer">
               <div class="logo"><img src="icon/lagoon.png" alt=""></div>
             </div>
-            <!--   <div class="peer peer-greed">
-                                        <p>Lagoon</p>
-                                    </div> -->
           </div>
         </a>
       </div>
@@ -103,14 +100,15 @@
     </nav>
 
     <!-- Page Content  -->
-    <div id="content">
+    <div class="page-container">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
 
           <ul class="nav navbar-nav ml-auto">
-            <button type="button" id="sidebarCollapse" class="btn btn-info">
-              <i class="fas fa-align-left"></i>
+
+            <button type="button" id="sidebarCollapse" class="btn-sidebar">
+              <i class="ti-menu"></i>
               <!-- <span>Toggle Sidebar</span> -->
             </button>
 
@@ -139,47 +137,60 @@
         </div>
       </nav>
       <main>
-        <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-8">
+              <div class="bgc-white p-20 bd">
+                <h6>Активность за сутки</h6>
+                <div class="mT-30">
+                  <ul class="test-alx d-flex justify-content-center">
+                    <li>
+                      <a><i class="fas fa-hand-point-up"></i></a>
+                      <a>0</a>
+                      <a>Клики</a>
+                    </li>
+                    <li>
+                      <a><i class="fas fa-users"></i></a>
+                      <a>0</a>
+                      <a>Заявки</a>
+                    </li>
+                    <li>
+                      <a><i class="fas fa-check"></i></a>
+                      <a>0 $</a>
+                      <a>Принято</a>
+                    </li>
+                    <li>
+                      <a><i class="fas fa-lock"></i></a>
+                      <a>0 $</a>
+                      <a>Холд</a>
+                    </li>
+                    <li>
+                      <a><i class="far fa-clock"></i></a>
+                      <a>0 $</a>
+                      <a>Ожидает</a>
+                    </li>
+                    <li>
+                      <a><i class="far fa-times-circle"></i></a>
+                      <a>0 $</a>
+                      <a>Отклонено</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bgc-white p-20 bd">
+                <h6>График</h6>
 
-        <div class="line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-          id est laborum.</p>
       </main>
     </div>
   </div>
+
 </body>
 
 </html>

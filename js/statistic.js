@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // Изменение горизонтального положения фиксированной шапки при прокрутке таблицы, которая не вмещается по ширине
     $('#dataTable_wrapper').scroll(function (e) {
-        let newStyleLeft = (35 - $(this).scrollLeft()) + "px";
+        let newStyleLeft = (301 - $(this).scrollLeft()) + "px";
         $('table.fixedHeader-floating').css('left', newStyleLeft)
     });
 
