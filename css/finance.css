@@ -1,0 +1,143 @@
+/* Взятые стили с билда */
+
+body {
+    padding: 25px;
+    font-size: 14px;
+    color: #72777a;
+    letter-spacing: .2px;
+    overflow-x: hidden;
+    font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f9fafb;
+}
+
+.bd {
+    border: 1px solid rgba(0, 0, 0, .0625)!important;
+}
+
+.bgc-white,
+.bgcH-white:hover {
+    background-color: #fff!important;
+}
+
+.bgc-grey-100,
+.bgcH-grey-100:hover {
+    background-color: #f9fafb!important;
+}
+
+.gap-20>* {
+    padding: 10px!important;
+}
+
+.c-grey-900,
+.cH-grey-900:hover {
+    color: #313435!important;
+}
+
+.mB-20 {
+    margin-bottom: 20px!important;
+}
+
+
+/* Перебивание стилей */
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 8px 5px;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 8px 5px;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background: none;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    /* content: none; */
+    top: 7px;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+    /* content: none; */
+    top: 7px;
+}
+
+table.dataTable thead>tr>th.sorting_asc,
+table.dataTable thead>tr>th.sorting_desc,
+table.dataTable thead>tr>th.sorting,
+table.dataTable thead>tr>td.sorting_asc,
+table.dataTable thead>tr>td.sorting_desc,
+table.dataTable thead>tr>td.sorting {
+    padding-right: 5px;
+}
+
+.page-item.active .page-link {
+    background: #7774e7;
+    border-color: #7774e7;
+    border-radius: 2px;
+}
+
+.page-link {
+    margin: 0 2px;
+    border: none;
+}
+
+.fixedHeader-floating {
+    table-layout: auto!important;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+
+/* End Перебивание стилей */
+
+
+/* TABLE */
+
+.mainTable {
+    /* width: 100%!important; */
+    color: #72777a!important;
+    text-align: center;
+    overflow: auto!important;
+}
+
+.dataTables_wrapper {
+    overflow: auto!important;
+}
+
+.dataTables_wrapper>.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dataTables_wrapper>.row>* {
+    padding: 0;
+}
+
+.mainTable thead tr {
+    cursor: pointer;
+}
+
+td .btn {
+    margin-bottom: 5px;
+    padding: 4px 8px;
+}
+
+
+/* End TABLE */
