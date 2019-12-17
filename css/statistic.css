@@ -65,6 +65,7 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
 
 .fixedHeader-floating {
     table-layout: auto!important;
+    top: 66px!important;
 }
 
 /* End Перебивание стилей */
@@ -104,7 +105,6 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
         margin-bottom: 15px;
     }
 }
-
 
 .btns-main {
     width: 200px;
