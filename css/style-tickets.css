@@ -1,0 +1,28 @@
+/*==========  Page TICKETS  =========*/
+
+/*TABS*/
+.btn:focus{
+    box-shadow: none;
+}
+.btn-ticket{
+    padding: .315rem .75rem;
+    border: 1px solid #7b5bcc;
+    border-radius: .25rem .25rem 0 0;
+    line-height: 1.5;
+    color: #72777a;
+}
+.fa-plus{
+    padding-right: 10px;
+}
+.tic-fa{
+    color: #7b5bcc;
+}
+.ticket-tab{
+    justify-content: flex-end;
+}
+.head-line-ticket{
+    position: absolute;
+    left: 15px;
+    top: -20px;
+}
+
