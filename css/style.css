@@ -10,6 +10,7 @@ body {
 body, h1, h2, h3, h4, h5, h6 {
     font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Arial,sans-serif;
     line-height: 1.5;
+    color: #72777a;
 }
 p {
     font-family: 'Poppins', sans-serif;
@@ -116,7 +117,7 @@ a[data-toggle="collapse"] {
     display: block;
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 15px;
     transform: translateY(-50%);
 }
 
