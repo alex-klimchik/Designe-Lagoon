@@ -65,15 +65,8 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
 
 /* End Перебивание стилей */
 
-.mainList {
-    justify-content: center;
-    list-style: none;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    margin: 0;
-    margin-bottom: 10px;
-    background-color: #00a0ff;
+.bdtn {
+    border-top: none!important;
 }
 
 .mainList li:hover {
