@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // инициализация таблицы
     $('#dataTable').DataTable({
-        fixedHeader: true,
         "language": {
             "processing": "Подождите...",
             "search": "Поиск по данным:",
@@ -33,12 +32,6 @@ window.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-    });
-
-    // Изменение горизонтального положения фиксированной шапки при прокрутке таблицы, которая не вмещается по ширине
-    $('#dataTable_wrapper').scroll(function(e) {
-        let newStyleLeft = (35 - $(this).scrollLeft()) + "px";
-        $('table.fixedHeader-floating').css('left', newStyleLeft);
     });
 
 });

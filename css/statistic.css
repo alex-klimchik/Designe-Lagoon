@@ -63,11 +63,6 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     border: none;
 }
 
-.fixedHeader-floating {
-    table-layout: auto!important;
-    top: 66px!important;
-}
-
 /* End Перебивание стилей */
 
 .mainList {
@@ -150,6 +145,7 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
 /* TABLE */
 
 .mainTable {
+    width: 100%!important;
     color: #72777a!important;
     text-align: center;
     overflow: auto!important;
