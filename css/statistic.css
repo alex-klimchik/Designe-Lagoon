@@ -1,4 +1,4 @@
-/* Взятые стили с билда */
+/* Взятые стили с билда ---------------------------------------------*/
 
 body {
     font-size: 14px;
@@ -26,7 +26,7 @@ body {
     padding: 10px!important;
 }
 
-/* Перебивание стилей */
+/* Перебивание стилей -------------------------------------------------*/
 
 table#dataTable.dataTable tbody th, table#dataTable.dataTable tbody td {
     padding: 8px 5px;
@@ -63,13 +63,85 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     border: none;
 }
 
-/* End Перебивание стилей */
+.current-value .btn-light:not(:disabled):not(.disabled).active, .current-value .btn-light:not(:disabled):not(.disabled):active, .current-value .show>.btn-light.dropdown-toggle {
+    color: #fff;
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+/* End Перебивание стилей -------------------------------------------*/
+
+/* TABLE ------------------------------------------------------------*/
+
+.mainTable {
+    width: 100%!important;
+    color: #72777a!important;
+    text-align: center;
+    overflow: auto!important;
+}
+
+.dataTables_wrapper {
+    overflow: auto!important;
+}
+
+.dataTables_wrapper>.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dataTables_wrapper>.row>* {
+    padding: 0;
+}
+
+.mainTable thead tr:nth-child(2) {
+    cursor: pointer;
+}
+
+.mainTable .fa-check-circle-o {
+    color: #05c703;
+}
+
+.mainTable .fa-clock-o {
+    color: #00a0ff;
+}
+
+.mainTable .fa-ban {
+    color: #e00000;
+}
+
+.mainTable tbody tr td:nth-child(14), .mainTable tbody tr td:nth-child(19), .mainTable thead tr th:nth-child(14), .mainTable thead tr th:nth-child(19) {
+    color: #05c703;
+}
+
+.mainTable tbody tr td:nth-child(15), .mainTable tbody tr td:nth-child(20), .mainTable thead tr th:nth-child(15), .mainTable thead tr th:nth-child(20) {
+    color: #00a0ff;
+}
+
+.mainTable tbody tr td:nth-child(16), .mainTable tbody tr td:nth-child(21), .mainTable thead tr th:nth-child(16), .mainTable thead tr th:nth-child(21) {
+    color: #e00000;
+}
+
+.mainTable tfoot tr th {
+    border-top: 3px solid #dee2e6!important;
+}
+
+/* End TABLE ---------------------------------------------------------*/
 
 .bdtn {
     border-top: none!important;
 }
 
-.mainList li:hover {
+#nav-myTab {
+    justify-content: space-between;
+}
+
+@media (max-width: 1740px) {
+    #nav-myTab {
+        justify-content: left;
+    }
+}
+
+#nav-myTab a:hover {
     color: #000;
 }
 
@@ -132,65 +204,3 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     padding-left: 4px;
     padding-right: 4px;
 }
-
-.current-value .btn-light:not(:disabled):not(.disabled).active, .current-value .btn-light:not(:disabled):not(.disabled):active, .current-value .show>.btn-light.dropdown-toggle {
-    color: #fff;
-    background-color: #ff5722;
-    border-color: #ff5722;
-}
-
-/* TABLE */
-
-.mainTable {
-    width: 100%!important;
-    color: #72777a!important;
-    text-align: center;
-    overflow: auto!important;
-}
-
-.dataTables_wrapper {
-    overflow: auto!important;
-}
-
-.dataTables_wrapper>.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.dataTables_wrapper>.row>* {
-    padding: 0;
-}
-
-.mainTable thead tr:nth-child(2) {
-    cursor: pointer;
-}
-
-.mainTable .fa-check-circle-o {
-    color: #05c703;
-}
-
-.mainTable .fa-clock-o {
-    color: #00a0ff;
-}
-
-.mainTable .fa-ban {
-    color: #e00000;
-}
-
-.mainTable tbody tr td:nth-child(14), .mainTable tbody tr td:nth-child(19), .mainTable thead tr th:nth-child(14), .mainTable thead tr th:nth-child(19) {
-    color: #05c703;
-}
-
-.mainTable tbody tr td:nth-child(15), .mainTable tbody tr td:nth-child(20), .mainTable thead tr th:nth-child(15), .mainTable thead tr th:nth-child(20) {
-    color: #00a0ff;
-}
-
-.mainTable tbody tr td:nth-child(16), .mainTable tbody tr td:nth-child(21), .mainTable thead tr th:nth-child(16), .mainTable thead tr th:nth-child(21) {
-    color: #e00000;
-}
-
-.mainTable tfoot tr th {
-    border-top: 3px solid #dee2e6!important;
-}
-
-/* End TABLE */
