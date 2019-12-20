@@ -23,10 +23,16 @@
 
 <script type="text/javascript" src="js/script.js"></script> 
 
-<!-- link rel="stylesheet" href="icon/demo-files/demo.css"> -->
+
   <link rel="stylesheet" href="icon/themify-icons.css">
   <!--[if lt IE 8]><!-->
   <link rel="stylesheet" href="icon/ie7/ie7.css">
+
+<!--график-->
+<link type="text/css" rel="StyleSheet" href="http://bootstraptema.ru/plugins/2016/shieldui/style.css" />
+<script src="http://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+<script src="http://bootstraptema.ru/plugins/2016/shieldui/script.js"></script>
+<script src="https://www.google.com/jsapi"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -137,10 +143,14 @@
   </div>
 </div></li>
                             <li class="nav-item">
-                               <a class="nav-link"><i class="ti-arrow-right" ></i></a>
+                               <a href="#" class="nav-link" data-toggle="tooltip" title="Выйти" style="
+    padding-top: 15px;
+"><i class="ti-arrow-right"></i></a>
                             </li>
                             <li class="nav-item">
-                               <a class="nav-link"><i class="ti-shift-right" style="font-size: 20px;"></i></a>
+                               <a href="#"  class="nav-link" data-toggle="tooltip" title="Вернуться на админа" style="
+    padding-top: 15px;
+"><i class="ti-shift-right" style="font-size: 20px;"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -197,7 +207,54 @@
              		</div>
 
              	</div>
-            
+              <div class="container-fluid p-20">
+              	<div class="bgc-white p-20 bd">
+              		<h6>Ваша статистика</h6>
+              		<!-- График --><div id="chart">
+
+
+<script>
+
+
+ $(document).ready(function () {
+
+
+ $("#chart").shieldChart({
+ theme: "bootstrap",
+ primaryHeader: {
+ text: "График"
+ },
+ seriesSettings: {
+ area: {
+ pointMark: {
+ enabled: true
+ }
+ }
+ },
+ axisX: {
+ categoricalValues: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+ },
+ dataSeries: [{
+ seriesType: "area",
+ collectionAlias: "Активные",
+ data: [48, 50, 55, 64, 73, 79, 82, 83, 80, 70, 61, 53]
+ }, {
+ seriesType: "area",
+ collectionAlias: "Заблоченые",
+ data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.819, 3.894, 8.287, 9.552, 6.855, 2.865, 1.341]
+ }],
+ events: {
+ legendSeriesClick: function (e) {
+ // остановить событие щелчка элемента серии, так что
+ // пользователь нажимает не переключить видимость серии
+ e.preventDefault();
+ }
+ }
+ });
+ });
+ </script><!-- /.График -->
+              	</div>
+              </div>
             </main>
         </div>
     </div>
