@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style-streams.css">
 
@@ -32,7 +35,7 @@
 <body>
 <div class="wrapper">
     <!-- Sidebar  -->
-    <nav id="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-header">
             <a class="sidebar-link td-n" href="index.html">
                 <div class="peers ai-c fxw-nw">
@@ -78,7 +81,7 @@
 
             </li>
             <li>
-                <a class="sidebar-link" href="charts.html">
+                <a class="sidebar-link" href="page-tickets.html">
                     <span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span>
                     <span class="title">Тикеты</span></a>
 
@@ -93,22 +96,23 @@
                 <a class="sidebar-link" href="ui.html">
                     <span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span>
                     <span class="title">Топ</span></a>
-
             </li>
+
         </ul>
 
 
     </nav>
 
     <!-- Page Content  -->
-    <div id="content">
+    <div class="page-container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
 
                 <ul class="nav navbar-nav ml-auto">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
+
+                    <button type="button" id="sidebarCollapse" class="btn-sidebar">
+                        <i class="ti-menu"></i>
                         <!-- <span>Toggle Sidebar</span> -->
                     </button>
 
@@ -119,7 +123,6 @@
 
 
                 </ul>
-
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto">
@@ -141,7 +144,7 @@
                     <div class="col-md-12 p-0">
                         <div class="wrap-head-page">
                             <h4>Мои потоки</h4>
-                            <div class="">
+                            <div>
                                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
                                     <i class="fa fa-cogs set-fa" aria-hidden="true"></i>  Управление ресурсами</button>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true"><div class="modal-dialog" role="document">

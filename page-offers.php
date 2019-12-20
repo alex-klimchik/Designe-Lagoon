@@ -35,7 +35,7 @@
 <body>
 <div class="wrapper">
     <!-- Sidebar  -->
-    <nav id="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-header">
             <a class="sidebar-link td-n" href="index.html">
                 <div class="peers ai-c fxw-nw">
@@ -69,7 +69,7 @@
 
             </li>
             <li>
-                <a class="sidebar-link" href="calendar.html">
+                <a class="sidebar-link" href="page-offers.html">
                     <span class="icon-holder"><i class="c-deep-orange-500 ti-calendar"></i> </span>
                     <span class="title">Офферы</span></a>
 
@@ -81,7 +81,7 @@
 
             </li>
             <li>
-                <a class="sidebar-link" href="charts.html">
+                <a class="sidebar-link" href="page-tickets.html">
                     <span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span>
                     <span class="title">Тикеты</span></a>
 
@@ -100,17 +100,19 @@
             </li>
         </ul>
 
+
     </nav>
 
     <!-- Page Content  -->
-    <div id="content">
+    <div class="page-container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
 
                 <ul class="nav navbar-nav ml-auto">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
+
+                    <button type="button" id="sidebarCollapse" class="btn-sidebar">
+                        <i class="ti-menu"></i>
                         <!-- <span>Toggle Sidebar</span> -->
                     </button>
 
@@ -134,8 +136,6 @@
                 </div>
             </div>
         </nav>
-
-
 
         <main class="container-fluid py-4">
             <div class="row">
@@ -167,7 +167,7 @@
                         <div id="all-offers" class="tab-pane fade active show">
                             <div class="head-tab-info">
                                 <div class="form-group">
-                                    <select class="selectpicker"  id="exampleFormControlCategory1" data-live-search="true" >
+                                    <select class="selectpicker" id="allOffersCategory" data-live-search="true" >
                                         <option>Категория</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -175,7 +175,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlCategory2" data-live-search="true">
+                                    <select class="form-style selectpicker" id="allOffersProduct" data-live-search="true">
                                         <option>Категория товара</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -183,7 +183,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlCountry3" data-live-search="true">
+                                    <select class="form-style selectpicker" id="allOffersCountry" data-live-search="true">
                                         <option>Страна</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -191,7 +191,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlPrice4" data-live-search="true">
+                                    <select class="form-style selectpicker" id="allOffersPrice" data-live-search="true">
                                         <option>Цена</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -278,7 +278,7 @@
 
                             <div class="head-tab-info">
                                 <div class="form-group">
-                                    <select class="selectpicker"  id="exampleFormControlCategory1" data-live-search="true" >
+                                    <select class="selectpicker"  id="myOffersCategory" data-live-search="true" >
                                         <option>Категория</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -286,7 +286,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlCategory2" data-live-search="true">
+                                    <select class="form-style selectpicker" id="myOffersProduct" data-live-search="true">
                                         <option>Категория товара</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -294,7 +294,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlCountry3" data-live-search="true">
+                                    <select class="form-style selectpicker" id="myOffersCountry" data-live-search="true">
                                         <option>Страна</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -302,7 +302,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlPrice4" data-live-search="true">
+                                    <select class="form-style selectpicker" id="myOffersPrice" data-live-search="true">
                                         <option>Цена</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -388,7 +388,7 @@
 
                             <div class="head-tab-info">
                                 <div class="form-group">
-                                    <select class="selectpicker"  id="exampleFormControlCategory1" data-live-search="true" >
+                                    <select class="selectpicker"  id="newOffersCategory" data-live-search="true" >
                                         <option>Категория</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -396,7 +396,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlCategory2" data-live-search="true">
+                                    <select class="form-style selectpicker" id="newOffersProduct" data-live-search="true">
                                         <option>Категория товара</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -404,7 +404,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlCountry3" data-live-search="true">
+                                    <select class="form-style selectpicker" id="newOffersCountry" data-live-search="true">
                                         <option>Страна</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -412,7 +412,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <select class="form-style selectpicker" id="exampleFormControlPrice4" data-live-search="true">
+                                    <select class="form-style selectpicker" id="newOffersPrice" data-live-search="true">
                                         <option>Цена</option>
                                         <option>2</option>
                                         <option>3</option>
