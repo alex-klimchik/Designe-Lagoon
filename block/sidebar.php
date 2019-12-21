@@ -38,7 +38,7 @@
 
                 </li> 
                 <li>
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="page-tickets.php">
                       <span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span>
                       <span class="title">Тикеты</span></a>
 

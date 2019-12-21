@@ -43,10 +43,10 @@
 
     <?php require_once('block/header.php'); ?> 
 
-        <main class="container-fluid py-4">
+        <main>
             <div class="row">
                 <div class="wrap-head-page">
-                    <h4 class="c-grey-900">Офферы</h4>
+                    <h4>Офферы</h4>
                 </div>
                 <div class="col-md-12">
 
