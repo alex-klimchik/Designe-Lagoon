@@ -4,57 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lagoon</title>
-    <style>
-        #loader {
-            transition: all .3s ease-in-out;
-            opacity: 1;
-            visibility: visible;
-            position: fixed;
-            height: 100vh;
-            width: 100%;
-            background: #fff;
-            z-index: 90000
-        }
-        
-        #loader.fadeOut {
-            opacity: 0;
-            visibility: hidden
-        }
-        
-        .spinner {
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            top: calc(50% - 20px);
-            left: calc(50% - 20px);
-            background-color: #333;
-            border-radius: 100%;
-            -webkit-animation: sk-scaleout 1s infinite ease-in-out;
-            animation: sk-scaleout 1s infinite ease-in-out
-        }
-        
-        @-webkit-keyframes sk-scaleout {
-            0% {
-                -webkit-transform: scale(0)
-            }
-            100% {
-                -webkit-transform: scale(1);
-                opacity: 0
-            }
-        }
-        
-        @keyframes sk-scaleout {
-            0% {
-                -webkit-transform: scale(0);
-                transform: scale(0)
-            }
-            100% {
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 0
-            }
-        }
-    </style>
+ 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
@@ -70,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/fh-3.1.6/datatables.min.css" />
 
 
-    <!-- link rel="stylesheet" href="icon/demo-files/demo.css"> -->
     <link rel="stylesheet" href="icon/themify-icons.css">
     <!--[if lt IE 8]><!-->
     <link rel="stylesheet" href="icon/ie7/ie7.css">
@@ -80,123 +29,16 @@
 </head>
 
 <body>
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
-    <script>
-        window.addEventListener('load', function load() {
-            const loader = document.getElementById('loader');
-            setTimeout(function() {
-                loader.classList.add('fadeOut');
-            }, 300);
-        });
-    </script>
+    
+<?php require_once('block/spinner.php'); ?> 
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav class="sidebar">
-            <div class="sidebar-header">
-                <a class="sidebar-link td-n" href="index.html">
-                    <div class="peers ai-c fxw-nw">
-                        <div class="peer">
-                            <div class="logo"><img src="icon/lagoon.png" alt=""></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <ul class="list-unstyled components">
-
-                <li>
-                    <a class="sidebar-link" href="index.html">
-                        <span class="icon-holder"><i class="c-blue-500 ti-user"></i> </span>
-                        <span class="title">Профиль</span></a>
-                </li>
-
-                <li>
-                    <a class="sidebar-link" href="statistic.html">
-                        <span class="icon-holder"><i class="c-brown-500 ti-bar-chart"></i> </span>
-                        <span class="title">Статистика</span></a>
-
-                    <li>
-                        <a class="sidebar-link" href="compose.html">
-                            <span class="icon-holder"><i class="c-blue-500 ti-share"></i> </span>
-                            <span class="title">Потоки</span></a>
-
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="calendar.html">
-                            <span class="icon-holder"><i class="c-deep-orange-500 ti-calendar"></i> </span>
-                            <span class="title">Офферы</span></a>
-
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="finance.html">
-                            <span class="icon-holder"><i class="c-deep-purple-500 ti-comment-alt"></i> </span>
-                            <span class="title">Финансы</span></a>
-
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="charts.html">
-                            <span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span>
-                            <span class="title">Тикеты</span></a>
-
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="forms.html">
-                            <span class="icon-holder"><i class="c-light-blue-500 ti-pencil"></i> </span>
-                            <span class="title">Настройки</span></a>
-
-                    </li>
-                    <li>
-                        <a class="sidebar-link" href="ui.html">
-                            <span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span>
-                            <span class="title">Топ</span></a>
-
-                    </li>
-            </ul>
-
-
-        </nav>
+        <?php require_once('block/sidebar.php'); ?> 
 
         <!-- Page Content  -->
         <div class="page-container">
 
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <div class="container-fluid">
-
-                    <ul class="nav navbar-nav ml-auto">
-
-                        <button type="button" id="sidebarCollapse" class="btn-sidebar">
-                            <i class="ti-menu"></i>
-                            <!-- <span>Toggle Sidebar</span> -->
-                        </button>
-
-                        <li class="nav-item"><a class="nav-link"><i class="fa fa-user-circle"></i> fancpa@lagoon.me</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Баланс: 8 500 $</a></li>
-                        <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Холд: 220 $</a></li>
-                        <li class="nav-item"><a class="nav-link"><i class="ti-alarm-clock"></i> В ожидании: 15230 $</a>
-                        </li>
-
-
-                    </ul>
-
-
-
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link"><i class="ti-arrow-right"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"><i class="ti-shift-right"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <?php require_once('block/header.php'); ?> 
             <main class="main-content bgc-grey-100">
 
                 <div class="gap-20 bd w-100 bgc-white p-20">
@@ -1390,8 +1232,7 @@
             </main>
         </div>
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/fh-3.1.6/datatables.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/finance.js"></script>

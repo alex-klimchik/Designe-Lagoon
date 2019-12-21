@@ -2,6 +2,7 @@
 <html lang="en">
 <?php require_once('block/head.php'); ?> 
 <body>
+<?php require_once('block/spinner.php'); ?> 
   <div class="wrapper">
       
   <?php require_once('block/sidebar.php'); ?> 
@@ -19,32 +20,32 @@
              					<div class="mT-30">
              						<ul class="test-alx d-flex justify-content-center">
                 					<li>
-                						<a><i class="fas fa-hand-point-up"></i></a>
+                						<a><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
                 						<a>0</a>
                 						<a>Клики</a>
                 					</li>
                 					<li>
-                						<a><i class="fas fa-users"></i></a>
+                						<a><i class="c-pink-500 fas fa-users"></i></a>
                 						<a>0</a>
                 						<a>Заявки</a>
                 					</li>
                 					<li>
-                						<a><i class="fas fa-check"></i></a>
-                						<a>0 $</a>
+                						<a><i class="c-light-blue-500 fas fa-check"></i></a>
+                						<a>0 ₽</a>
                 						<a>Принято</a>
                 					</li>
                 					<li>
-                						<a><i class="fas fa-lock"></i></a>
-                						<a>0 $</a>
+                						<a><i class="c-deep-orange-500 fas fa-lock"></i></a>
+                						<a>0 ₽</a>
                 						<a>Холд</a>
                 					</li>
                 					<li>
-                						<a><i class="far fa-clock"></i></a>
-                						<a>0 $</a>
+                						<a><i class="c-deep-purple-500  far fa-clock"></i></a>
+                						<a>0 ₽</a>
                 						<a>Ожидает</a>
                 					</li>
                 					<li>
-                						<a><i class="far fa-times-circle"></i></a>
+                						<a><i class="c-pink-500 far fa-times-circle"></i></a>
                 						<a>0 $</a>
                 						<a>Отклонено</a>
                 					</li>
@@ -55,7 +56,7 @@
              			<div class="col-4">
              				<div class="bgc-white p-20 bd">
              					<h6>График</h6>
-             					
+             					<canvas id="myChart" width="400" height="400"></canvas>
              				</div>
              			</div>
              		</div>
@@ -65,7 +66,11 @@
               	<div class="bgc-white p-20 bd">
               		<h6>Ваша статистика</h6>
               		<!-- График --><div id="chart">
+					  <script>
+var ctx = document.getElementById('myChart').getContext('2d');
 
+});
+</script>
 
 <script>
 

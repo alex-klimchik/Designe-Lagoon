@@ -36,112 +36,15 @@
     <link rel="stylesheet" href="icon/ie7/ie7.css">
 </head>
 <body>
+<?php require_once('block/spinner.php'); ?> 
 <div class="wrapper">
     <!-- Sidebar  -->
-    <nav class="sidebar">
-        <div class="sidebar-header">
-            <a class="sidebar-link td-n" href="index.html">
-                <div class="peers ai-c fxw-nw">
-                    <div class="peer">
-                        <div class="logo"><img src="icon/lagoon.png" alt=""></div>
-                    </div>
-                    <!--   <div class="peer peer-greed">
-                          <p>Lagoon</p>
-                      </div> -->
-                </div>
-            </a>
-        </div>
-
-        <ul class="list-unstyled components">
-
-            <li>
-                <a class="sidebar-link" href="index.html">
-                    <span class="icon-holder"><i class="c-blue-500 ti-user"></i> </span>
-                    <span class="title">Профиль</span></a>
-            </li>
-
-            <li>
-                <a class="sidebar-link" href="email.html">
-                    <span class="icon-holder"><i class="c-brown-500 ti-bar-chart"></i> </span>
-                    <span class="title">Статистика</span></a>
-
-            <li>
-                <a class="sidebar-link" href="page_streams.html">
-                    <span class="icon-holder"><i class="c-blue-500 ti-share"></i> </span>
-                    <span class="title">Потоки</span></a>
-
-            </li>
-            <li>
-                <a class="sidebar-link" href="page-offers.html">
-                    <span class="icon-holder"><i class="c-deep-orange-500 ti-calendar"></i> </span>
-                    <span class="title">Офферы</span></a>
-
-            </li>
-            <li>
-                <a class="sidebar-link" href="chat.html">
-                    <span class="icon-holder"><i class="c-deep-purple-500 ti-comment-alt"></i> </span>
-                    <span class="title">Финансы</span></a>
-
-            </li>
-            <li>
-                <a class="sidebar-link" href="page-tickets.html">
-                    <span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span>
-                    <span class="title">Тикеты</span></a>
-
-            </li>
-            <li>
-                <a class="sidebar-link" href="forms.html">
-                    <span class="icon-holder"><i class="c-light-blue-500 ti-pencil"></i> </span>
-                    <span class="title">Настройки</span></a>
-
-            </li>
-            <li>
-                <a class="sidebar-link" href="ui.html">
-                    <span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span>
-                    <span class="title">Топ</span></a>
-
-            </li>
-        </ul>
-
-
-    </nav>
+    <?php require_once('block/sidebar.php'); ?>
 
     <!-- Page Content  -->
     <div class="page-container">
 
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-
-                <ul class="nav navbar-nav ml-auto">
-
-                    <button type="button" id="sidebarCollapse" class="btn-sidebar">
-                        <i class="ti-menu"></i>
-                        <!-- <span>Toggle Sidebar</span> -->
-                    </button>
-
-                    <li class="nav-item"><a class="nav-link"><i class="far fa-user-circle"></i> fancpa@lagoon.me</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Баланс: 8 500 $</a></li>
-                    <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Холд: 220 $</a></li>
-                    <li class="nav-item"><a class="nav-link"><i class="ti-alarm-clock"></i> В ожидании: 15230 $</a></li>
-
-
-                </ul>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav ml-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="ti-arrow-right"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"><i class="ti-shift-right"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+    <?php require_once('block/header.php'); ?> 
 <main>
         <div class="container-fluid py-4">
             <div class="row">

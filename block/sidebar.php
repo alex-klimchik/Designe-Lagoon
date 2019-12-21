@@ -9,13 +9,13 @@
             <ul class="list-unstyled components">
       
                 <li>
-                <a class="sidebar-link" href="index.html">
+                <a class="sidebar-link" href="index.php">
                   <span class="icon-holder"><i class="c-blue-500 ti-user"></i> </span>
                   <span class="title">Профиль</span></a>
                 </li>
                 
                 <li>
-                   <a class="sidebar-link" href="email.html">
+                   <a class="sidebar-link" href="statistic.php">
                     <span class="icon-holder"><i class="c-brown-500 ti-bar-chart"></i> </span>
                     <span class="title">Статистика</span></a>
 
@@ -32,25 +32,25 @@
 
                 </li>
                  <li>
-                    <a class="sidebar-link" href="chat.html">
+                    <a class="sidebar-link" href="finance.php">
                       <span class="icon-holder"><i class="c-deep-purple-500 ti-comment-alt"></i> </span>
                       <span class="title">Финансы</span></a>
 
                 </li> 
                 <li>
-                    <a class="sidebar-link" href="charts.html">
+                    <a class="sidebar-link" href="#">
                       <span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span>
                       <span class="title">Тикеты</span></a>
 
                 </li>
                  <li>
-                    <a class="sidebar-link" href="forms.html">
+                    <a class="sidebar-link" href="#">
                       <span class="icon-holder"><i class="c-light-blue-500 ti-pencil"></i> </span>
                       <span class="title">Настройки</span></a>
 
                 </li>
                  <li>
-                    <a class="sidebar-link" href="ui.html">
+                    <a class="sidebar-link" href="#">
                       <span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span>
                       <span class="title">Топ</span></a>
 

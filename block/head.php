@@ -30,5 +30,5 @@
 <link type="text/css" rel="StyleSheet" href="http://bootstraptema.ru/plugins/2016/shieldui/style.css" />
 <script src="http://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
 <script src="http://bootstraptema.ru/plugins/2016/shieldui/script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
