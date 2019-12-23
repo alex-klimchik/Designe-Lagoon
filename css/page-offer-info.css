@@ -1,0 +1,88 @@
+.bd {
+    border: 1px solid rgba(0,0,0,.0625)!important;
+}
+.bgc-white, .bgcH-white:hover {
+    background-color: #fff!important;
+}
+
+/*==================== Page OFFER - INFO ====================*/
+.head-offers-info{
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.product-offer{
+    margin: 15px 15px 0 0;
+    width: 125px;
+}
+.product-offer img{
+    width: 100%;
+}
+.head-body-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.fa-edit{
+    font-size: 13px;
+}
+.btn-outline-orange{
+    margin: 15px 0;
+    color: #fe602e;
+    border-color: #fe602e;
+}
+.btn-outline-orange:hover{
+    color: #fff;
+    background-color: #fe602e;
+    border-color: #fe602e;
+}
+.content-offers-info{
+    padding-top: 25px;
+    border-top: 1px solid #e5e5e5;
+}
+.offer-headline{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 21px;
+    font-size: 21px;
+    line-height: inherit;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.offer-description-content,
+.offer-result-content{
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.offer-description-content p,
+.offer-result-content p{
+    text-align: justify;
+}
+.offer-result-content p{
+    text-align: justify;
+}
+.goal-list {
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+    padding: 5px 0;
+    display: block;
+}
+.lending-headline,
+.prokl-headline{
+    display: inline-block;
+}
+.lending-percent,
+.prokl-percent{
+    float: right;
+}
+
+
+
+
+.table-price{
+    width: 100%;
+}

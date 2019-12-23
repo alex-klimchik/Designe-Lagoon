@@ -130,10 +130,12 @@
                                             <tbody>
                                             <tr>
                                                 <td class="images-offers">
+                                                  <a href="page-offer-info.php">
                                                     <img src="images/product.png" alt="prod"/>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="">Name Offers</a>
+                                                    <a href="page-offer-info.php">Name Offers</a>
                                                 </td>
                                                 <td>Подтверждённая заявка</td>
                                                 <td>
