@@ -1,32 +1,47 @@
-/* Взятые стили с билда ---------------------------------------------*/
+/* ---------------------------------------------------
+    TABLE
+----------------------------------------------------- */
 
-body {
-    font-size: 14px;
-    color: #72777a;
-    letter-spacing: .2px;
-    overflow-x: hidden;
-    font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #f9fafb;
+.mainTable {
+    width: 100%!important;
+    color: #72777a!important;
+    text-align: center;
+    overflow: auto!important;
 }
 
-.bd {
-    border: 1px solid rgba(0, 0, 0, .0625)!important;
+.mainTable thead tr:nth-child(2) {
+    cursor: pointer;
 }
 
-.bgc-white, .bgcH-white:hover {
-    background-color: #fff!important;
+.mainTable .fa-check-circle-o {
+    color: #05c703;
 }
 
-.bgc-grey-100, .bgcH-grey-100:hover {
-    background-color: #f9fafb!important;
+.mainTable .fa-clock-o {
+    color: #00a0ff;
 }
 
-.gap-20>* {
-    padding: 10px!important;
+.mainTable .fa-ban {
+    color: #e00000;
 }
 
-/* Перебивание стилей -------------------------------------------------*/
+.mainTable tbody tr td:nth-child(14), .mainTable tbody tr td:nth-child(19), .mainTable thead tr th:nth-child(14), .mainTable thead tr th:nth-child(19) {
+    color: #05c703;
+}
+
+.mainTable tbody tr td:nth-child(15), .mainTable tbody tr td:nth-child(20), .mainTable thead tr th:nth-child(15), .mainTable thead tr th:nth-child(20) {
+    color: #00a0ff;
+}
+
+.mainTable tbody tr td:nth-child(16), .mainTable tbody tr td:nth-child(21), .mainTable thead tr th:nth-child(16), .mainTable thead tr th:nth-child(21) {
+    color: #e00000;
+}
+
+.mainTable tfoot tr th {
+    border-top: 3px solid #dee2e6!important;
+}
+
+/* Перебивание стилей TABLE */
 
 table#dataTable.dataTable tbody th, table#dataTable.dataTable tbody td {
     padding: 8px 5px;
@@ -63,22 +78,7 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     border: none;
 }
 
-.current-value .btn-light:not(:disabled):not(.disabled).active, .current-value .btn-light:not(:disabled):not(.disabled):active, .current-value .show>.btn-light.dropdown-toggle {
-    color: #fff;
-    background-color: #ff5722;
-    border-color: #ff5722;
-}
-
-/* End Перебивание стилей -------------------------------------------*/
-
-/* TABLE ------------------------------------------------------------*/
-
-.mainTable {
-    width: 100%!important;
-    color: #72777a!important;
-    text-align: center;
-    overflow: auto!important;
-}
+/* DATATABLE  */
 
 .dataTables_wrapper {
     overflow: auto!important;
@@ -93,52 +93,28 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     padding: 0;
 }
 
-.mainTable thead tr:nth-child(2) {
-    cursor: pointer;
-}
-
-.mainTable .fa-check-circle-o {
-    color: #05c703;
-}
-
-.mainTable .fa-clock-o {
-    color: #00a0ff;
-}
-
-.mainTable .fa-ban {
-    color: #e00000;
-}
-
-.mainTable tbody tr td:nth-child(14), .mainTable tbody tr td:nth-child(19), .mainTable thead tr th:nth-child(14), .mainTable thead tr th:nth-child(19) {
-    color: #05c703;
-}
-
-.mainTable tbody tr td:nth-child(15), .mainTable tbody tr td:nth-child(20), .mainTable thead tr th:nth-child(15), .mainTable thead tr th:nth-child(20) {
-    color: #00a0ff;
-}
-
-.mainTable tbody tr td:nth-child(16), .mainTable tbody tr td:nth-child(21), .mainTable thead tr th:nth-child(16), .mainTable thead tr th:nth-child(21) {
-    color: #e00000;
-}
-
-.mainTable tfoot tr th {
-    border-top: 3px solid #dee2e6!important;
-}
-
 /* End TABLE ---------------------------------------------------------*/
+
+/* Перебивание стилей при добавлении класса ACTIVE*/
+
+.current-value .btn-light:not(:disabled):not(.disabled).active, .current-value .btn-light:not(:disabled):not(.disabled):active, .current-value .show>.btn-light.dropdown-toggle {
+    color: #fff;
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+/* ---------------------------------------------------
+    All
+----------------------------------------------------- */
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
 
 .bdtn {
     border-top: none!important;
-}
-
-#nav-myTab {
-    justify-content: space-between;
-}
-
-@media (max-width: 1740px) {
-    #nav-myTab {
-        justify-content: left;
-    }
 }
 
 #nav-myTab a:hover {
@@ -150,7 +126,8 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
 }
 
 .form-inputs div {
-    margin: 0 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .form-inputs .form-group {
@@ -161,27 +138,12 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     cursor: pointer;
 }
 
-@media (max-width: 830px) {
-    .form-inputs .form-group {
-        width: 40%;
-    }
-    .form-inputs div {
-        margin-bottom: 15px;
-    }
-}
-
 .btns-main {
     width: 200px;
     display: flex;
     justify-content: space-between;
     position: relative;
     left: calc( 50% - 100px);
-}
-
-.clearfix {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 .dop-inputs_inactive {
@@ -203,4 +165,21 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
 .fullSet-btn button {
     padding-left: 4px;
     padding-right: 4px;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 830px) {
+    .form-inputs .form-group {
+        width: 40%;
+    }
+    .form-inputs div {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    
 }

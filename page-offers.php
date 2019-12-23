@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style-offers.css">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
     <!-- link rel="stylesheet" href="icon/demo-files/demo.css"> -->
@@ -43,7 +44,7 @@
 
     <?php require_once('block/header.php'); ?> 
 
-        <main class="container-fluid py-4">
+        <main>
             <div class="row">
                 <div class="wrap-head-page">
                     <h4 class="c-grey-900">Офферы</h4>
