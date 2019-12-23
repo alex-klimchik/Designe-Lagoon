@@ -41,14 +41,16 @@
 .table-tickets{
     border-collapse: collapse;
     width: 100%;
-    table-layout: fixed;
 }
 .table-tickets tr th{
     text-align: left;
     padding: .75rem;
 }
+.table-tickets tr td:first-child{
+    min-width: 280px;
+}
 .table-tickets tr td{
-    width: 100%;
+    /*width: 100%;*/
     text-align: left;
     padding: .75rem;
     border-top: 1px solid rgba(0,0,0,.0625);
@@ -67,6 +69,7 @@
     justify-content: space-between;
 }
 .table-tickets tr td span{
+    max-width: 480px;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
