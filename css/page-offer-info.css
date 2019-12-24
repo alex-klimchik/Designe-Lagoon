@@ -26,6 +26,10 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
+.page-holder {
+    border-left: 1px solid #e4eaec;
+    border-right: 1px solid #e4eaec;
+}
 .fa-edit{
     font-size: 13px;
 }
@@ -62,14 +66,24 @@
 .offer-result-content p{
     text-align: justify;
 }
-.offer-result-content p{
-    text-align: justify;
+#news-offer-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px #dbd7d7;
+}
+.news-date {
+    padding: 10px;
 }
 .goal-list {
     width: 100%;
     border-bottom: 1px dotted #ccc;
     padding: 5px 0;
     display: block;
+}
+.prokl-headline{
+    width: 80%;
 }
 .lending-headline,
 .prokl-headline{
@@ -79,10 +93,62 @@
 .prokl-percent{
     float: right;
 }
-
-
-
-
+.lending-percent span,
+.prokl-percent span{
+    font-weight: 600;
+}
+.text-warning{
+    color: #fe602e!important;
+}
 .table-price{
     width: 100%;
+}
+.table-price tr th {
+    text-align: center;
+    padding: .75rem;
+}
+.table-price tr td {
+    text-align: center;
+    padding: .75rem;
+    border-top: 1px solid rgba(0,0,0,.0625);
+}
+.traffic-left i{
+    width: 15px;
+    height: 15px;
+}
+.traffic-item{
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+.fa-check-circle{
+  color: #05c703;
+}
+.fa-ban{
+    color: #e00000 ;
+}
+.traffic-right{
+    margin-left: 10px;
+}
+.traffic-right p{
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.offer-platform > thead > tr > th,
+.offer-city > thead > tr > th{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px;
+}
+.offer-platform > tbody > tr > td,
+.offer-city > tbody > tr > td{
+    padding: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#myChart{
+    width: 100%;
+}
+.myblock{
+    width: 500px;
+    height: 800px;
 }
