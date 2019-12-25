@@ -48,7 +48,7 @@
         <!-- Page Content  -->
         <div class="page-container">
 
-            <!-- <?php require_once('block/header.php'); ?> -->
+            <?php require_once('block/header.php'); ?>
             <main class="main-content bgc-grey-100">
                 <div id="mainContent">
                     <nav class="w-100">
