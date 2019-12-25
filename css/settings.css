@@ -1,0 +1,21 @@
+/* -------------------------------------------------------- 
+    PROFILE
+/* -------------------------------------------------------- */
+
+.profile-main {
+    padding-top: 20px;
+    border: 1px solid rgb(222, 226, 230);
+    border-top: none;
+}
+
+.center-block {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .center-block-md {
+        display: flex;
+        justify-content: center;
+    }
+}

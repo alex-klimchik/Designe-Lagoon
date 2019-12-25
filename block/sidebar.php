@@ -45,7 +45,7 @@
 
                 </li>
                  <li>
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="settings.php">
                       <span class="icon-holder"><i class="c-light-blue-500 ti-pencil"></i> </span>
                       <span class="title">Настройки</span></a>
 

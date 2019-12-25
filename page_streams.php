@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style-streams.css">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
     <!-- link rel="stylesheet" href="icon/demo-files/demo.css"> -->

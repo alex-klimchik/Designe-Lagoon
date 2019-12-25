@@ -1,85 +1,55 @@
-/* Взятые стили с билда */
+/* ---------------------------------------------------
+    TABLE
+----------------------------------------------------- */
 
-body {
-    font-size: 14px;
-    color: #72777a;
-    letter-spacing: .2px;
-    overflow-x: hidden;
-    font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #f9fafb;
+.mainTable {
+    /* width: 100%!important; */
+    color: #72777a!important;
+    text-align: center;
+    overflow: auto!important;
 }
 
-.bd {
-    border: 1px solid rgba(0, 0, 0, .0625)!important;
+.mainTable thead tr {
+    cursor: pointer;
 }
 
-.bgc-white,
-.bgcH-white:hover {
-    background-color: #fff!important;
+.mainTable td .btn {
+    margin-bottom: 5px;
+    padding: 4px 8px;
 }
 
-.bgc-grey-100,
-.bgcH-grey-100:hover {
-    background-color: #f9fafb!important;
+.mainTable .set-button {
+    min-width: 300px;
+    margin: 0 auto;
 }
 
-.gap-20>* {
-    padding: 10px!important;
-}
+/* Перебивание стилей TABLE*/
 
-.c-grey-900,
-.cH-grey-900:hover {
-    color: #313435!important;
-}
-
-.mB-20 {
-    margin-bottom: 20px!important;
-}
-
-
-/* Перебивание стилей */
-
-table.dataTable tbody th,
-table.dataTable tbody td {
+table.mainTable tbody th, table.mainTable tbody td {
     padding: 8px 5px;
+    padding-right: 25px!important;
 }
 
-table.dataTable thead th,
-table.dataTable thead td {
+table.mainTable thead th, table.mainTable thead td {
     padding: 8px 5px;
+    padding-right: 25px!important;
 }
 
-table.dataTable thead .sorting,
-table.dataTable thead .sorting_asc,
-table.dataTable thead .sorting_desc {
+table.mainTable thead .sorting, table.mainTable thead .sorting_asc, table.mainTable thead .sorting_desc {
     background: none;
 }
 
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:after {
+table.mainTable thead .sorting:after, table.mainTable thead .sorting_asc:after, table.mainTable thead .sorting_desc:after, table.mainTable thead .sorting_asc_disabled:after, table.mainTable thead .sorting_desc_disabled:after {
     /* content: none; */
     top: 7px;
 }
 
-table.dataTable thead .sorting:before,
-table.dataTable thead .sorting_asc:before,
-table.dataTable thead .sorting_desc:before,
-table.dataTable thead .sorting_asc_disabled:before,
-table.dataTable thead .sorting_desc_disabled:before {
+table.mainTable thead .sorting:before, table.mainTable thead .sorting_asc:before, table.mainTable thead .sorting_desc:before, table.mainTable thead .sorting_asc_disabled:before, table.mainTable thead .sorting_desc_disabled:before {
     /* content: none; */
     top: 7px;
 }
 
-table.dataTable thead>tr>th.sorting_asc,
-table.dataTable thead>tr>th.sorting_desc,
-table.dataTable thead>tr>th.sorting,
-table.dataTable thead>tr>td.sorting_asc,
-table.dataTable thead>tr>td.sorting_desc,
-table.dataTable thead>tr>td.sorting {
+table.mainTable thead>tr>th.sorting_asc, table.mainTable thead>tr>th.sorting_desc, table.mainTable thead>tr>th.sorting, table.mainTable thead>tr>td.sorting_asc, table.mainTable thead>tr>td.sorting_desc, table.mainTable thead>tr>td.sorting {
     padding-right: 5px;
 }
 
@@ -98,22 +68,8 @@ table.dataTable thead>tr>td.sorting {
     table-layout: auto!important;
 }
 
-.table td,
-.table th {
+.table td, .table th {
     vertical-align: middle;
-}
-
-
-/* End Перебивание стилей */
-
-
-/* TABLE */
-
-.mainTable {
-    /* width: 100%!important; */
-    color: #72777a!important;
-    text-align: center;
-    overflow: auto!important;
 }
 
 .dataTables_wrapper {
@@ -129,14 +85,52 @@ table.dataTable thead>tr>td.sorting {
     padding: 0;
 }
 
-.mainTable thead tr {
-    cursor: pointer;
+/* End Перебивание стилей TABLE*/
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    h4 {
+        text-align: center;
+    }
+    .is-collapsed .page-container, .page-container {
+        padding-left: 0;
+    }
+    main {
+        font-size: 14px;
+    }
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        justify-content: center;
+    }
+    table.mainTable thead .sorting:after, table.mainTable thead .sorting_asc:after, table.mainTable thead .sorting_desc:after, table.mainTable thead .sorting_asc_disabled:after, table.mainTable thead .sorting_desc_disabled:after {
+        content: none;
+    }
+    table.mainTable thead .sorting:before, table.mainTable thead .sorting_asc:before, table.mainTable thead .sorting_desc:before, table.mainTable thead .sorting_asc_disabled:before, table.mainTable thead .sorting_desc_disabled:before {
+        content: none;
+    }
+    table.mainTable tbody th, table.mainTable tbody td {
+        padding-right: 5px!important;
+    }
+    table.mainTable thead th, table.mainTable thead td {
+        padding-right: 5px!important;
+    }
 }
 
-td .btn {
-    margin-bottom: 5px;
-    padding: 4px 8px;
+@media (max-width: 425px) {
+    main {
+        padding: 0;
+    }
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dataTables_filter label, .dataTables_length label {
+        display: flex;
+        flex-direction: column;
+    }
+    .dataTables_filter label input {
+        margin-left: 0!important;
+    }
 }
-
-
-/* End TABLE */

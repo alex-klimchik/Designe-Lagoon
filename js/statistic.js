@@ -2,7 +2,7 @@
 let btnAddInputs = document.querySelector('.btn-addInputs');
 let dopInputs = document.querySelector('.dop-inputs');
 let countInp = true;
-let fullSetBtns = document.querySelector('.fullSet-btn');
+let fullSetBtns = document.querySelector('.partners-btn');
 let fullSetBtnSuccess = fullSetBtns.querySelector('.btn-success');
 let fullSetBtnDanger = fullSetBtns.querySelector('.btn-danger');
 let countFullSet = true;
@@ -43,12 +43,6 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-
-    // Изменение горизонтального положения фиксированной шапки при прокрутке таблицы, которая не вмещается по ширине
-    // $('#dataTable_wrapper').scroll(function (e) {
-    //     let newStyleLeft = (0 - $(this).scrollLeft()) + "px";
-    //     $('table.fixedHeader-floating').css('left', newStyleLeft)
-    // });
 
     // Событие при клике на кнопку-стрелку
     btnAddInputs.addEventListener('click', function () {
