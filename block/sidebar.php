@@ -1,9 +1,10 @@
   <!-- Sidebar  -->
   <nav class="sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header d-inline-flex ">
                       <a class="sidebar-link" href="index.php">
                       <span class="icon-holder"><img src="icon/lagoon.png" alt=""> </span>
                       <span class="logo">Lagoon</span></a>
+                      <a href="#" class="closebtn"><i class="ti-arrow-circle-left"></i></a>
             </div>
 
             <ul class="list-unstyled components">

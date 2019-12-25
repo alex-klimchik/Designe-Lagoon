@@ -8,7 +8,7 @@
                       
                     </button>
                      
-                        <li class="nav-item"><a class="nav-link"><img src="images/men.png" style="width: 40px;
+                        <li class="nav-item"><a class="users nav-link"><img src="images/men.png" style="width: 40px;
     margin-top: -30px;
     margin-right: 5px;
     font-size: 40px;">
@@ -20,7 +20,7 @@
               
                           
                         </ul>
-                     <ul class="nav navbar-nav ml-auto">
+                     <ul class="staticks nav navbar-nav ml-auto">
                     	 <li class="nav-item" style="
     padding-left: 40px;
 "><a class="nav-link"><i class="ti-money"></i> Баланс: 8 500 ₽</a></li>
