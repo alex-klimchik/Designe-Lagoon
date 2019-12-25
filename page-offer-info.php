@@ -94,8 +94,13 @@
 
                                 </div>
 
-
+                                   <div class="myblock">
                                      <canvas id="myPieChart"></canvas>
+                                   </div>
+
+                                   <div class="myblock">
+                                       <canvas id="myChart"></canvas>
+                                   </div>
 
 
 
@@ -373,12 +378,6 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
-                           <div class="myblock">
-                             <canvas id="myChart"></canvas>
-                           </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -428,10 +427,10 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['<25', '25-35', '35-45', '45-55', '55-65', '>65'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [12, 19, 7, 5, 10, 7],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -448,26 +447,27 @@ var myChart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 1,
+
+
         }]
     },
     options: {
         scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
+            xAxes: [ {
+                  ticks: {
+                    display: true
+                  }
+                } ],
+            yAxes: [ {
+                  ticks: {
+                    display: false
+                  }
+                } ]
         }
     }
 });
 </script>
-
-
-
-
-
-
 
 </body>
 </html>

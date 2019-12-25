@@ -145,10 +145,14 @@
     padding: 8px;
     border-bottom: 1px solid #e5e5e5;
 }
-#myChart{
+#myChart,
+#myPieChart{
     width: 100%;
+    text-align: center;
 }
 .myblock{
-    width: 500px;
-    height: 800px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 25px;
 }
