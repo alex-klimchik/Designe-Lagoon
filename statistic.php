@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Lagoon</title>
- 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -15,35 +14,44 @@
 
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
+
+    <!-- Latest compiled Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font-Awesom -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- DataTable CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/fh-3.1.6/datatables.min.css" />
 
-    <!-- link rel="stylesheet" href="icon/demo-files/demo.css"> -->
+    <!-- Themify Icons -->
     <link rel="stylesheet" href="icon/themify-icons.css">
     <!--[if lt IE 8]><!-->
     <link rel="stylesheet" href="icon/ie7/ie7.css">
 
+    <!-- Global CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Main CSS for this Page -->
     <link rel="stylesheet" href="css/statistic.css">
 
 </head>
 
 <body>
-<?php require_once('block/spinner.php'); ?> 
+    <?php require_once('block/spinner.php'); ?>
     <div class="wrapper">
         <!-- Sidebar  -->
-        <?php require_once('block/sidebar.php'); ?> 
+        <?php require_once('block/sidebar.php'); ?>
 
         <!-- Page Content  -->
         <div class="page-container">
 
-        <?php require_once('block/header.php'); ?> 
+            <!-- <?php require_once('block/header.php'); ?> -->
             <main class="main-content bgc-grey-100">
                 <div id="mainContent">
-                    <nav class="w-100 bgc-white">
+                    <nav class="w-100">
                         <div class="nav nav-tabs" id="nav-myTab">
                             <a class="nav-item nav-link active" data-toggle="tab" href="#nav-data">Дата</a>
                             <a class="nav-item nav-link" data-toggle="tab" href="#nav-time">Время</a>
@@ -66,67 +74,80 @@
                         <!-- /#nav-myTab -->
                     </nav>
                     <div class="gap-20 bd w-100 bgc-white p-20 bdtn">
-                        <div class="row form-inputs">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Оффер">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Поток">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Лендинг">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Прелендинг">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Источник">
-                            </div>
-                        </div>
-                        <!-- /.row.form-inputs -->
-                        <div class="row form-inputs">
-                            <div class="form-group ">
-                                <label for="SubID1">SubID1</label>
-                                <input id="SubID1" type="password" class="form-control">
-                            </div>
-                            <div class="form-group ">
-                                <label for="SubID2">SubID2</label>
-                                <input id="SubID2" type="password" class="form-control">
-                            </div>
-                            <div class="form-group ">
-                                <label for="SubID3">SubID3</label>
-                                <input id="SubID3" type="password" class="form-control">
-                            </div>
-                            <div class="form-group ">
-                                <label for="SubID4">SubID4</label>
-                                <input id="SubID4" type="password" class="form-control">
-                            </div>
-                            <div class="form-group ">
-                                <label for="SubID5">SubID5</label>
-                                <input id="SubID5" type="password" class="form-control">
-                            </div>
-                        </div>
-                        <!-- /.row.form-inputs -->
-                        <div class="row form-inputs dop-inputs dop-inputs_inactive">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="ОС">
-                            </div>
-                            <!-- /.form-group -->
-                            <div class="form-group fullSet">
-                                <input type="text" class="form-control" placeholder="Партнеры">
-                                <div class="fullSet-btn">
-                                    <button type="button" class="btn btn-success">
-                                        + all
-                                    </button>
-                                    <button type="button" class="btn btn-danger" style="display: none">
-                                        - all
-                                    </button>
+                        <div class="row">
+                            <div class="row form-inputs col-lg-12 col-sm-6">
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="offer">Оффер</label>
+                                    <input id="offer" type="text" class="form-control">
                                 </div>
-                                <!-- /.fullSet-btn -->
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="stream">Поток</label>
+                                    <input id="stream" type="text" class="form-control">
+                                </div>
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="landing">Лендинг</label>
+                                    <input id="landing" type="text" class="form-control">
+                                </div>
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="prelanding">Прелендинг</label>
+                                    <input id="prelanding" type="text" class="form-control">
+                                </div>
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="source">Источник</label>
+                                    <input id="source" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <!-- /.row.form-inputs -->
+                            <div class="row form-inputs col-lg-12 col-sm-6">
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="SubID1">SubID1</label>
+                                    <input id="SubID1" type="text" class="form-control">
+                                </div>
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="SubID2">SubID2</label>
+                                    <input id="SubID2" type="text" class="form-control">
+                                </div>
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="SubID3">SubID3</label>
+                                    <input id="SubID3" type="text" class="form-control">
+                                </div>
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="SubID4">SubID4</label>
+                                    <input id="SubID4" type="text" class="form-control">
+                                </div>
+                                <div class="form-group form-grid-md col-12">
+                                    <label for="SubID5">SubID5</label>
+                                    <input id="SubID5" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <!-- /.row.form-inputs -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="row form-inputs dop-inputs dop-inputs_inactive col-12">
+                            <div class="form-group dop-grid-md col-sm-6">
+                                <label for="oc">ОС</label>
+                                <input id="oc" type="text" class="form-control">
                             </div>
                             <!-- /.form-group -->
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Вебы">
+                            <div class="form-group dop-grid-md col-sm-6 partners">
+                                <label for="partners-input">Партнеры</label>
+                                <div>
+                                    <input id="partners-input" type="text" class="form-control">
+                                    <div class="partners-btn">
+                                        <button type="button" class="btn btn-success">
+                                            + all
+                                        </button>
+                                        <button type="button" class="btn btn-danger" style="display: none">
+                                            - all
+                                        </button>
+                                    </div>
+                                    <!-- /.partners-btn -->
+                                </div>
+                            </div>
+                            <!-- /.partners.form-group -->
+                            <div class="form-group dop-grid-md col-sm-6">
+                                <label for="webs">Вебы</label>
+                                <input id="webs" type="text" class="form-control">
                             </div>
                             <!-- /.form-group -->
                         </div>
@@ -145,9 +166,9 @@
                         <div class="clearfix"></div>
                     </div>
                     <!-- /.gap-20.bd.w-100.bgc-white.p-20.bdtn -->
-                    <div class="gap-20 w-100 p-20">
+                    <div class="gap-20 w-100 helpmenu">
                         <div class="row">
-                            <div class="col-3 form-group" style="margin-bottom: 0;">
+                            <div class="col-lg-3 col-md-4 col-sm-8 col-8 form-group" style="margin-bottom: 0;">
                                 <input type="text" class="form-control" placeholder="Дата">
                             </div>
                             <!-- /.form-group -->
@@ -159,7 +180,7 @@
                         </div>
                         <!-- /.row -->
                     </div>
-                    <!-- /.gap-20.w-100.p-20-->
+                    <!-- /.helpmenu-->
                     <div class="gap-20 bd w-100 bgc-white p-20">
                         <table id="dataTable" class="table table-bordered mainTable table-hover">
                             <thead>
@@ -278,12 +299,14 @@
     <!-- /.wrapper -->
 
 
-
+    <!-- DataTable JS -->
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/fh-3.1.6/datatables.min.js"></script>
+    <!-- Js-Cookie -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <!-- Global Script -->
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- Main script for this Page -->
     <script type="text/javascript" src="js/statistic.js"></script>
-
 </body>
 
 </html>

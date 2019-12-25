@@ -97,6 +97,10 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
 
 /* Перебивание стилей при добавлении класса ACTIVE*/
 
+.current-value {
+    width: 85px;
+}
+
 .current-value .btn-light:not(:disabled):not(.disabled).active, .current-value .btn-light:not(:disabled):not(.disabled):active, .current-value .show>.btn-light.dropdown-toggle {
     color: #fff;
     background-color: #ff5722;
@@ -121,19 +125,6 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     color: #000;
 }
 
-.form-inputs {
-    justify-content: center;
-}
-
-.form-inputs div {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.form-inputs .form-group {
-    width: 15%;
-}
-
 .form-inputs .form-group label {
     cursor: pointer;
 }
@@ -146,15 +137,19 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     left: calc( 50% - 100px);
 }
 
+.dop-inputs {
+    border-top: 1px solid #efefef;
+}
+
 .dop-inputs_inactive {
     display: none!important;
 }
 
-.fullSet {
+.partners>div {
     position: relative;
 }
 
-.fullSet-btn {
+.partners-btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -162,24 +157,80 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     padding: 0;
 }
 
-.fullSet-btn button {
+.partners-btn button {
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #efefef;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: #efefef #efefef #fff;
 }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 830px) {
-    .form-inputs .form-group {
-        width: 40%;
-    }
-    .form-inputs div {
-        margin-bottom: 15px;
+@media (min-width: 576px) {
+    .helpmenu {
+        padding: 20px!important;
     }
 }
 
+@media (min-width: 992px) {
+    .form-grid-md {
+        width: 20%;
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 20%;
+    }
+    .dop-grid-md {
+        position: relative;
+        max-width: 33.3333333%;
+        padding-right: 15px;
+        padding-left: 15px;
+        flex: 0 0 33.3333333%;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 33.3333333%;
+    }
+    .dop-inputs {
+        /* margin: 0; */
+    }
+}
+
+@media (max-width: 992px) {
+    .form-inputs {
+        box-sizing: content-box!important;
+    }
+}
 @media (max-width: 768px) {
-    
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+        justify-content: center;
+    }
+}
+@media (max-width: 576px) {
+    main {
+        font-size: 14px;
+        padding: 55px 5px 5px;
+    }
+    .helpmenu .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dataTables_filter label, .dataTables_length label {
+        display: flex;
+        flex-direction: column;
+    }
+    .dataTables_filter label input {
+        margin-left: 0!important;
+    }
 }
