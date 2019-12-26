@@ -69,7 +69,7 @@
 
                     <div class="row">
 
-                        <div class="col-md-8 col-lg-5">
+                        <div class="col-md-7 col-lg-6 col-xl-4">
 
                             <div class="offer-description">
                                 <div class="offer-headline">
@@ -94,11 +94,13 @@
 
                                 </div>
 
-                                   <div class="myblock">
+                                   <div class="offer-schedule">
+                                   <p>Пол</p>
                                      <canvas id="myPieChart"></canvas>
                                    </div>
 
-                                   <div class="myblock">
+                                   <div class="offer-schedule">
+                                   <p>Возраст</p>
                                        <canvas id="myChart"></canvas>
                                    </div>
 
@@ -108,7 +110,7 @@
 
                         </div>
 
-                        <div class="col-md-4 col-lg-3 page-holder min-h">
+                        <div class="col-md-5 col-lg-6 col-xl-4 page-holder min-h">
 
                             <div class="offer-lending-page mb-4">
                                 <div class="offer-headline">
@@ -176,7 +178,7 @@
 
                         </div>
 
-                        <div class="col-md-12 col-lg-4 min-h">
+                        <div class="col-md-12 col-lg-12 col-xl-4 min-h">
 
                             <div class="offer-result-country">
 
@@ -317,7 +319,7 @@
                         </div>
 
 
-                        <div class="col-lg-4 col-md-4 col-sm-4 mt-5">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-5">
                             <table class="offer-platform w-100">
                                 <thead>
                                 <tr>
@@ -342,7 +344,7 @@
                             </table>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 col-sm-4 mt-5">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-5">
                             <table class="offer-city w-100">
                                 <thead>
                                 <tr>
@@ -417,7 +419,10 @@ var myPieChart = new Chart(ctx, {
         ]
     },
     options: {
-          cutoutPercentage: 50
+         legend: {
+             position: 'right'
+         },
+        cutoutPercentage: 50
     }
 });
 </script>
@@ -430,7 +435,7 @@ var myChart = new Chart(ctx, {
         labels: ['<25', '25-35', '35-45', '45-55', '55-65', '>65'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 7, 5, 10, 7],
+            data: [12, 19, 16, 14, 10, 7],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -448,22 +453,29 @@ var myChart = new Chart(ctx, {
                 'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 1,
-
-
         }]
     },
     options: {
         scales: {
             xAxes: [ {
-                  ticks: {
-                    display: true
-                  }
+                     ticks: {
+                       display: true
+                     },
+                     gridLines: {
+                        display: false
+                     }
                 } ],
             yAxes: [ {
                   ticks: {
                     display: false
-                  }
+                  },
+                     gridLines: {
+                        display: false
+                     }
                 } ]
+        },
+        legend: {
+          display: false
         }
     }
 });

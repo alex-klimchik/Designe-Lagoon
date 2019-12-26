@@ -80,19 +80,13 @@
     width: 100%;
     border-bottom: 1px dotted #ccc;
     padding: 5px 0;
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
-.prokl-headline{
-    width: 80%;
-}
-.lending-headline,
-.prokl-headline{
-    display: inline-block;
-}
-.lending-percent,
 .prokl-percent{
-    float: right;
+    padding-left: 15px;
 }
+
 .lending-percent span,
 .prokl-percent span{
     font-weight: 600;
@@ -150,9 +144,14 @@
     width: 100%;
     text-align: center;
 }
-.myblock{
+.offer-schedule{
     width: 80%;
     height: auto;
     margin: 0 auto;
     margin-top: 25px;
+}
+.offer-schedule p{
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 14px;
 }
