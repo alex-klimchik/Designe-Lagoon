@@ -14,11 +14,41 @@
              <main>
              	<div class="container-fluid">
              		<div class="row">
-             			<div class="col-8">
+             			<div class="col-sm-6">
              				<div class="bgc-white p-20 bd">
              					<h6>Активность за сутки</h6>
-             					<div class="mT-30">
-             						<ul class="test-alx d-flex justify-content-center">
+             					<div class="row pT-20 ">
+									 <div class="col-4 col-sm-2 d-flex flex-column center">
+									 <a><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
+                						<a>0</a>
+                						<a>Клики</a>
+									 </div>
+									 <div class="col-4 col-sm-2 d-flex flex-column center">
+									 <a><i class="c-pink-500 fas fa-users"></i></a>
+                						<a>0</a>
+                						<a>Заявки</a>
+									 </div>
+									 <div class="col-4 col-sm-2 d-flex flex-column center">
+									 <a><i class="c-light-blue-500 fas fa-check"></i></a>
+                						<a>0 ₽</a>
+                						<a>Принято</a>
+									 </div>
+									 <div class="col-4 col-sm-2 d-flex flex-column center">
+									 <a><i class="c-deep-orange-500 fas fa-lock"></i></a>
+                						<a>0 ₽</a>
+                						<a>Холд</a>
+									 </div>
+									 <div class="col-4 col-sm-2 d-flex flex-column center">
+									 <a><i class="c-deep-purple-500  far fa-clock"></i></a>
+                						<a>0 ₽</a>
+                						<a>Ожидает</a>
+									 </div>
+									 <div class="col-4 col-sm-2 d-flex flex-column center">
+									 <a><i class="c-pink-500 far fa-times-circle"></i></a>
+                						<a>0 $</a>
+                						<a>Отклонено</a>
+									 </div>
+             						<!-- <ul class="test-alx d-flex justify-content-center">
                 					<li>
                 						<a><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
                 						<a>0</a>
@@ -49,73 +79,116 @@
                 						<a>0 $</a>
                 						<a>Отклонено</a>
                 					</li>
-                				</ul>
+                				</ul> -->
              					</div>
              				</div>
              			</div>
-             			<div class="col-4">
+             			<!-- <div class="col-sm-6">
              				<div class="bgc-white p-20 bd">
              					<h6>График</h6>
-             					<canvas id="myChart" width="400" height="400"></canvas>
+             					<div class="row pT-20 ">
+                                     <div class="col-4 col-sm-2 d-flex flex-column center">
+                                     <a><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
+                                        <a>0</a>
+                                        <a>Клики</a>
+                                     </div>
+                                    </div>
              				</div>
-             			</div>
+             			</div> -->
+
+
+                         <div class="col-12 mt-5  bgc-white bd">
+                           <div class="row justify-content-center">
+                             <div class="col-12 col-xl-8 col-lg-10 col-md-12 p-20">
+                                  <h6>Ваша статистика</h6>
+                                  <canvas id="myLineChart"></canvas>
+                               </div>
+                               </div>
+                          </div>
+
+
              		</div>
-
              	</div>
-              <div class="container-fluid p-20">
-              	<div class="bgc-white p-20 bd">
-              		<h6>Ваша статистика</h6>
-              		<!-- График --><div id="chart">
-					  <script>
-var ctx = document.getElementById('myChart').getContext('2d');
-
-});
-</script>
-
-<script>
 
 
- $(document).ready(function () {
 
-
- $("#chart").shieldChart({
- theme: "bootstrap",
- primaryHeader: {
- text: "График"
- },
- seriesSettings: {
- area: {
- pointMark: {
- enabled: true
- }
- }
- },
- axisX: {
- categoricalValues: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
- },
- dataSeries: [{
- seriesType: "area",
- collectionAlias: "Активные",
- data: [48, 50, 55, 64, 73, 79, 82, 83, 80, 70, 61, 53]
- }, {
- seriesType: "area",
- collectionAlias: "Заблоченые",
- data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.819, 3.894, 8.287, 9.552, 6.855, 2.865, 1.341]
- }],
- events: {
- legendSeriesClick: function (e) {
- // остановить событие щелчка элемента серии, так что
- // пользователь нажимает не переключить видимость серии
- e.preventDefault();
- }
- }
- });
- });
- </script><!-- /.График -->
-              	</div>
-              </div>
             </main>
         </div>
     </div>
+    <script>
+    var ctx = document.getElementById('myLineChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+       labels: ["January", "February", "March", "April", "May", "June", "July"],
+       datasets: [
+           {
+               label: "My First dataset",
+               borderColor: "rgba(255,152,0,1)",
+               backgroundColor: "rgba(255,255,255,0)",
+
+               data: [60, 40, 65, 55, 0, 65, 50]
+           },
+           {
+               label: "My Second dataset",
+               borderColor: "rgba(244,67,54,1)",
+
+               backgroundColor: "rgba(255,255,255,0)",
+               data: [40, 20, 45, 35, 30, 45, 30]
+           }
+       ]
+    },
+
+   options: {
+
+       ///Boolean - Whether grid lines are shown across the chart
+       scaleShowGridLines : true,
+
+       //String - Colour of the grid lines
+       scaleGridLineColor : "rgba(0,0,0,.05)",
+
+       //Number - Width of the grid lines
+       scaleGridLineWidth : 1,
+
+       //Boolean - Whether to show horizontal lines (except X axis)
+       scaleShowHorizontalLines: true,
+
+       //Boolean - Whether to show vertical lines (except Y axis)
+       scaleShowVerticalLines: true,
+
+       //Boolean - Whether the line is curved between points
+       bezierCurve : true,
+
+       //Number - Tension of the bezier curve between points
+       bezierCurveTension : 0.4,
+
+       //Boolean - Whether to show a dot for each point
+       pointDot : true,
+
+       //Number - Radius of each point dot in pixels
+       pointDotRadius : 4,
+
+       //Number - Pixel width of point dot stroke
+       pointDotStrokeWidth : 1,
+
+       //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
+       pointHitDetectionRadius : 20,
+
+       //Boolean - Whether to show a stroke for datasets
+       datasetStroke : true,
+
+       //Number - Pixel width of dataset stroke
+       datasetStrokeWidth : 2,
+
+       //Boolean - Whether to fill the dataset with a colour
+       datasetFill : true,
+
+       //String - A legend template
+       legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+
+   }
+});
+
+    </script>
 </body>
 </html>

@@ -29,9 +29,11 @@
   href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
 
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/style-tickets.css">
 
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 
   <!-- link rel="stylesheet" href="icon/demo-files/demo.css"> -->
