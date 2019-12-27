@@ -37,6 +37,13 @@ a:focus {
     transition: all 0.3s;
 }
 
+table a,
+table a:hover,
+table a:focus {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
 .header {
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, .0625);
@@ -359,22 +366,6 @@ li a {
     margin-bottom: 20px!important;
 }
 
-.test-alx li {
-    text-align: center;
-    list-style: none;
-    padding-left: 20px;
-    float: left;
-}
-
-.test-alx li a {
-    color: #72777a;
-    display: block;
-    padding: 0 15px;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
 .btn-sidebar {
     color: #72777a;
     background-color: #f8f9fa;
@@ -416,6 +407,21 @@ li a {
     padding: 5px;
 }
 
+.users img {
+    width: 40px;
+    margin-top: -30px;
+    margin-right: 5px;
+    font-size: 40px;
+}
+
+.dropdown button {
+    color: rgba(22, 20, 20, 0.5);
+}
+
+.exit i {
+    font-size: 20px;
+}
+
 @media (max-width: 550px) {
     .sidebar {
         display: none;
@@ -450,9 +456,6 @@ li a {
     .is-collapsed .header {
         width: 100%;
     }
-    .test-alx li {
-        float: none;
-    }
     .mT-30 .d-flex {
         display: inline!important;
     }
@@ -477,9 +480,6 @@ li a {
         margin-left: 60px;
         z-index: 99999;
         cursor: pointer;
-    }
-    .users {
-        margin-left: 100px;
     }
     .btn-sidebar {
         font-size: 2rem;

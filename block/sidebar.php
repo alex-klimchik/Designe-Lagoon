@@ -51,7 +51,7 @@
 
                 </li>
                  <li>
-                    <a class="sidebar-link" href="#">
+                    <a class="sidebar-link" href="top.php">
                       <span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span>
                       <span class="title">Топ</span></a>
 
