@@ -48,57 +48,14 @@
                 						<a>0 $</a>
                 						<a>Отклонено</a>
 									 </div>
-             						<!-- <ul class="test-alx d-flex justify-content-center">
-                					<li>
-                						<a><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
-                						<a>0</a>
-                						<a>Клики</a>
-                					</li>
-                					<li>
-                						<a><i class="c-pink-500 fas fa-users"></i></a>
-                						<a>0</a>
-                						<a>Заявки</a>
-                					</li>
-                					<li>
-                						<a><i class="c-light-blue-500 fas fa-check"></i></a>
-                						<a>0 ₽</a>
-                						<a>Принято</a>
-                					</li>
-                					<li>
-                						<a><i class="c-deep-orange-500 fas fa-lock"></i></a>
-                						<a>0 ₽</a>
-                						<a>Холд</a>
-                					</li>
-                					<li>
-                						<a><i class="c-deep-purple-500  far fa-clock"></i></a>
-                						<a>0 ₽</a>
-                						<a>Ожидает</a>
-                					</li>
-                					<li>
-                						<a><i class="c-pink-500 far fa-times-circle"></i></a>
-                						<a>0 $</a>
-                						<a>Отклонено</a>
-                					</li>
-                				</ul> -->
+             					
              					</div>
              				</div>
              			</div>
-             			<!-- <div class="col-sm-6">
-             				<div class="bgc-white p-20 bd">
-             					<h6>График</h6>
-             					<div class="row pT-20 ">
-                                     <div class="col-4 col-sm-2 d-flex flex-column center">
-                                     <a><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
-                                        <a>0</a>
-                                        <a>Клики</a>
-                                     </div>
-                                    </div>
-             				</div>
-             			</div> -->
-             		</div>
+             	
 
-             	</div>
-              <div class="container-fluid p-20 block-chart">
+
+                         <div class="container-fluid p-20 graf">
               	<div class="bgc-white p-20 bd">
               		<h6>Ваша статистика</h6>
               		<!-- График --><div id="chart">
@@ -146,8 +103,10 @@
  </script><!-- /.График -->
               	</div>
               </div>
+
             </main>
         </div>
     </div>
+  
 </body>
 </html>

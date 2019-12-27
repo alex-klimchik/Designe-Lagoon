@@ -372,26 +372,7 @@
                         </form>
                     </div><!--  -->
                 </div><!--  -->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                
             </main>
         </div><!-- /.page-container  -->
     </div><!-- /.wrapper -->

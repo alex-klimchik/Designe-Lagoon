@@ -47,7 +47,7 @@
         <main>
             <div class="row">
                 <div class="wrap-head-page">
-                    <h4 class="c-grey-900">Офферы</h4>
+                    <h4>Офферы</h4>
                 </div>
                 <div class="col-md-12">
 
@@ -131,10 +131,12 @@
                                             <tbody>
                                             <tr>
                                                 <td class="images-offers">
+                                                  <a href="page-offer-info.php">
                                                     <img src="images/product.png" alt="prod"/>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="">Name Offers</a>
+                                                    <a href="page-offer-info.php">Name Offers</a>
                                                 </td>
                                                 <td>Подтверждённая заявка</td>
                                                 <td>
