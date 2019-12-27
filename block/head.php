@@ -27,7 +27,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script> 
 
-
+   <link rel="stylesheet" type="text/css" href="css/page-offer-info.css">
   <link rel="stylesheet" href="icon/themify-icons.css">
   <!--[if lt IE 8]><!-->
   <link rel="stylesheet" href="icon/ie7/ie7.css">
@@ -35,5 +35,9 @@
     <!-- Chart.js and minified CSS  JS-->
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-
+<!--график-->
+<link type="text/css" rel="StyleSheet" href="http://bootstraptema.ru/plugins/2016/shieldui/style.css" />
+<script src="http://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
+<script src="http://bootstraptema.ru/plugins/2016/shieldui/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>

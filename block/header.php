@@ -39,11 +39,11 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-toggle="tooltip" title="Выйти"><i class="ti-arrow-right"></i></a>
+            <li class="nav-item one-exit">
+                <a href="#" class="nav-link c-brown-500" data-toggle="tooltip" title="Выйти"><i class="ti-arrow-right"></i></a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link exit" data-toggle="tooltip" title="Вернуться на админа"><i class="ti-shift-right"></i></a>
+                <a href="#" class="nav-link exit c-deep-orange-500" data-toggle="tooltip" title="Вернуться на админа"><i class="ti-shift-right"></i></a>
             </li>
         </ul>
 

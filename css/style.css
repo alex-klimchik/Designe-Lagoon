@@ -422,7 +422,25 @@ li a {
     font-size: 20px;
 }
 
+.myLineChart {
+    height: 400px!important;
+}
+
+.myLineChart {
+    max-width: 100%;
+    max-height: 400px;
+}
+
 @media (max-width: 550px) {
+    .graf {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .one-exit {
+        padding-right: 25px;
+    }
     .sidebar {
         display: none;
     }
