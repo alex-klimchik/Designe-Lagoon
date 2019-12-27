@@ -417,6 +417,10 @@ li a {
 }
 
 @media (max-width: 550px) {
+    .is-collapsed .sidebar .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+    }
     .sidebar {
         display: none;
     }
@@ -474,7 +478,7 @@ li a {
         display: block;
         padding: 15px 0;
         font-size: 26px;
-        margin-left: 60px;
+        margin-right: 10px;
         z-index: 99999;
         cursor: pointer;
     }

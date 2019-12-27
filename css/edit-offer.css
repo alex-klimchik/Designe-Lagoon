@@ -1,0 +1,47 @@
+/* ----------------------------------------------------------
+    MAIN
+---------------------------------------------------------- */
+
+.border {
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #eee!important;
+    margin: 10px 0;
+}
+
+legend {
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+
+.form-check input, .form-check label {
+    cursor: pointer;
+}
+
+/* Bootstrap-slider */
+
+.slider:hover .tooltip.in {
+    opacity: 1!important;
+}
+
+/* selectpicker */
+
+.bootstrap-select .btn {
+    border: 1px solid #ced4da!important;
+    color: #72777a!important;
+    background-color: #fff;
+}
+
+.bootstrap-select .btn:hover {
+    background-color: #e2e6ea;
+}
+
+/* ----------------------------------------------------------
+    MEDIA
+---------------------------------------------------------- */
+
+@media (max-width: 556px) {
+    main {
+        padding: 15px 10px 0px;
+    }
+}
