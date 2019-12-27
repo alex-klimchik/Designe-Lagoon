@@ -235,18 +235,140 @@
                                     </div>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group">
+                                <div class="form-group col-12">
                                     <label for="rangeAge">Возраст</label>
                                     <div class="col-12">
                                         <input id="rangeAge" type="text" class="span2" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[18,40]" />
                                     </div>
                                 </div>
-
+                                <div class="border"></div>
+                            </fieldset>
+                            <fieldset class="page">
+                                <legend>Страница</legend>
+                                <div class="form-row col-12">
+                                    <div class="col-2">Name</div>
+                                    <div class="col-5">
+                                        <span class="editing-deletion">
+                                            <i class="fa fa-pencil" title="изменить"></i>
+                                            <i class="fa fa-times" title="удалить"></i>
+                                        </span>
+                                        Url
+                                    </div>
+                                    <div class="col-1">Цена</div>
+                                    <div class="col-2">Метрика отсутствует</div>
+                                    <div class="col-2">Адаптивный</div>
+                                </div>
+                                <div class="border"></div>
+                                <div class="form-row col-12">
+                                    <div class="col-2">Лендинг Lite пример</div>
+                                    <div class="col-5">
+                                        <span class="editing-deletion">
+                                            <i class="fa fa-pencil" title="изменить"></i>
+                                            <i class="fa fa-times" title="удалить"></i>
+                                        </span>
+                                        https://official.org.ua/neurosystem7-0-ooa/
+                                    </div>
+                                    <div class="col-1"> 0 грн.</div>
+                                    <div class="col-2">Метрика отсутствует</div>
+                                    <div class="col-2">Адаптивный</div>
+                                </div>
+                                <div class="border"></div>
+                                <div class="form-group col-12 page-new">
+                                    <button type="button" class="btn btn-secondary">
+                                        <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
+                                        Новая страница
+                                    </button>
+                                </div>
+                                <div class="border"></div>
+                            </fieldset>
+                            <fieldset class="page">
+                                <legend>Приватные страницы</legend>
+                                <div class="form-group col-12 page-new">
+                                    <button type="button" class="btn btn-secondary">
+                                        <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
+                                        Новая страница
+                                    </button>
+                                </div>
+                                <div class="border"></div>
+                            </fieldset>
+                            <fieldset class="page">
+                                <legend>Приватные страницы</legend>
+                                <div class="form-row col-12">
+                                    <div class="col-2">Елена Шульженко Тест</div>
+                                    <div class="col-5">
+                                        <span class="editing-deletion">
+                                            <i class="fa fa-pencil" title="изменить"></i>
+                                            <i class="fa fa-times" title="удалить"></i>
+                                        </span>
+                                        https://novosti-o-vazhnom.com/elena-shulzhenko-neurosystem0-inn/тест
+                                    </div>
+                                    <div class="col-2">Метрика отсутствует</div>
+                                    <div class="col-2">Похудение</div>
+                                    <div class="col-1">Адаптивный</div>
+                                </div>
+                                <div class="border"></div>
+                                <div class="form-group col-12 page-new">
+                                    <button type="button" class="btn btn-secondary">
+                                        <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
+                                        Новая страница
+                                    </button>
+                                </div>
+                                <div class="border"></div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Цель</legend>
+                                <div class="form-group col-4">
+                                    <select class="selectpicker form-control">
+                                        <option value="" selected>Подтверждённая заявка</option>
+                                        <option value="">Оплаченный заказ</option>
+                                        <option value="">Установка приложения</option>
+                                        <option value="">Подписка</option>
+                                    </select>
+                                </div>
+                                <div class="border"></div>
+                            </fieldset>
+                            <fieldset class="pay">
+                                <legend>Выплаты</legend>
+                                <div class="form-row col-12">
+                                    <div class="form-group col-3">
+                                        <label for="advertiser">Рекламодатель</label>
+                                        <select class="selectpicker form-control" id="advertiser">
+                                            <option value="" selected>Виталий Попета</option>
+                                            <option value="">Алексей Климчук</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-1 offset-md-1 geo">
+                                        <label>Гео</label>
+                                        <div>Украина</div>
+                                    </div>
+                                    <div class="form-group col-2 offset-md-1 payment">
+                                        <label>Опллата рек.</label>
+                                        <div class="form-row ">
+                                            <input type="text" class="form-control col-5" value="0">
+                                            <select class="selectpicker form-control col-5">
+                                                <option value="" selected disabled>руб</option>
+                                                <option value="" disabled>грн</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-2 offset-md-1 payment">
+                                        <label>Опллата рек.</label>
+                                        <div class="form-row ">
+                                            <input type="text" class="form-control col-5" value="0">
+                                            <select class="selectpicker form-control col-5">
+                                                <option value="" selected disabled>руб</option>
+                                                <option value="" disabled>грн</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border"></div>
                             </fieldset>
 
-                            <!-- <div class="form-group col-lg-4 col-md-6 center-block-md">
-                                <button id="sendUserData" type="submit" class="btn btn-primary">Сохранить</button>
-                            </div> -->
+
+                            <div class="form-group col-lg-4 col-md-6">
+                                <button type="button" class="btn btn-primary">Сохранить</button>
+                            </div>
                         </form>
                     </div><!--  -->
                 </div><!--  -->
@@ -285,7 +407,7 @@
 
     <!-- Global Script -->
     <script type="text/javascript" src="js/script.js"></script>
-    
+
     <script>
         $('#rangeAge').slider();
     </script>

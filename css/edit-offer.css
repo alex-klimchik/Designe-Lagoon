@@ -12,10 +12,55 @@
 legend {
     border-bottom: 1px solid #e5e5e5;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .form-check input, .form-check label {
     cursor: pointer;
+}
+
+/* PAY*/
+
+.pay .geo {
+    text-align: center;
+}
+
+.pay .geo div {
+    padding-top: 8px;
+}
+
+.pay .payment .form-row .bootstrap-select {
+    /* padding-left: 10px; */
+    margin-left: 5px;
+}
+
+/* PAGE */
+
+.page .border {
+    margin: 15px 0;
+}
+
+.page .form-row div:first-child {
+    text-align: center;
+}
+
+.page .page-new button {
+    display: block;
+    margin-top: 25px;
+}
+
+.editing-deletion {
+    padding: 0 5px;
+    color: #10adf4c4;
+    cursor: pointer;
+}
+
+.editing-deletion i {
+    padding: 0 2px;
+}
+
+.editing-deletion i:hover {
+    color: #10adf4;
 }
 
 /* Bootstrap-slider */
