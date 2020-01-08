@@ -1,14 +1,12 @@
   <!-- Sidebar  -->
   <nav class="sidebar">
-
     <div class="sidebar-header">
       <a class="sidebar-link" href="index.php">
-        <span class="icon-holder"><img src="icon/lagoon.png" alt=""> </span>
+        <span class="icon-holder"><img class="logo-img" src="icon/lagoon.png" alt=""> </span>
         <span class="logo">Lagoon</span></a>
       <a href="javascript:void(0)" class="closebtn"><i class="ti-arrow-circle-left"></i></a>
     </div>
     <div class="clearfix"></div>
-
     <ul class="list-unstyled components">
 
       <li>
@@ -41,7 +39,7 @@
 
       </li>
       <li>
-        <a class="sidebar-link" href="#">
+        <a class="sidebar-link" href="page-tickets.php">
           <span class="icon-holder"><i class="c-indigo-500 ti-bar-chart"></i> </span>
           <span class="title">Тикеты</span></a>
 
@@ -53,7 +51,7 @@
 
       </li>
       <li>
-        <a class="sidebar-link" href="#">
+        <a class="sidebar-link" href="top.php">
           <span class="icon-holder"><i class="c-pink-500 ti-palette"></i> </span>
           <span class="title">Топ</span></a>
 
