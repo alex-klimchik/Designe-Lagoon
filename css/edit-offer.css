@@ -40,9 +40,7 @@ legend {
     margin: 15px 0;
 }
 
-.page .form-row div:first-child {
-    text-align: center;
-}
+
 
 .page .page-new button {
     display: block;
@@ -53,6 +51,7 @@ legend {
     padding: 0 5px;
     color: #10adf4c4;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .editing-deletion i {
@@ -85,6 +84,17 @@ legend {
     MEDIA
 ---------------------------------------------------------- */
 
+@media (max-width: 767px) {
+    .page .form-row div:first-child {
+        text-align: left;
+        /* color: #656565; */
+        font-weight: bold;
+    }
+    .page .form-row {
+        /* background-color: blue; */
+        flex-direction: column;
+    }
+}
 @media (max-width: 556px) {
     main {
         padding: 15px 10px 0px;
