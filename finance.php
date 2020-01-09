@@ -43,9 +43,8 @@
 
             <?php require_once('block/header.php'); ?>
             <main class="main-content bgc-grey-100">
-
+                <h4 class="c-grey-900 mB-20">Выплаты, заказанные вебмастерами</h4>
                 <div class="gap-20 bd w-100 bgc-white p-20">
-                    <h4 class="c-grey-900 mB-20">Выплаты, заказанные вебмастерами</h4>
                     <table id="dataTable" class="mainTable table table-bordered table-hover">
                         <thead>
                             <tr>

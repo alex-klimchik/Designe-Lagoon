@@ -27,11 +27,19 @@ legend {
 
 .pay .geo div {
     padding-top: 8px;
+    font-weight: bold;
+}
+
+.pay .payment .form-row {
+    margin-left: 5px;
+}
+
+.pay .payment .form-row input {
+    margin-left: -10px;
 }
 
 .pay .payment .form-row .bootstrap-select {
-    /* padding-left: 10px; */
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /* PAGE */
@@ -39,8 +47,6 @@ legend {
 .page .border {
     margin: 15px 0;
 }
-
-
 
 .page .page-new button {
     display: block;
@@ -67,7 +73,9 @@ legend {
 .slider:hover .tooltip.in {
     opacity: 1!important;
 }
-
+.slider:active .tooltip.in {
+    opacity: 1!important;
+}
 /* selectpicker */
 
 .bootstrap-select .btn {
@@ -84,19 +92,43 @@ legend {
     MEDIA
 ---------------------------------------------------------- */
 
+@media (min-width: 992px) {
+    .pay .payment, .pay .geo {
+        margin-left: 4.5%;
+    }
+}
+
+@media (max-width: 991px) {
+    main {
+        padding: 15px 10px;
+    }
+}
+
 @media (max-width: 767px) {
     .page .form-row div:first-child {
         text-align: left;
-        /* color: #656565; */
         font-weight: bold;
     }
     .page .form-row {
-        /* background-color: blue; */
         flex-direction: column;
     }
 }
-@media (max-width: 556px) {
-    main {
-        padding: 15px 10px 0px;
+
+@media (max-width: 575px) {
+    .pay .geo {
+        text-align: left;
+    }
+    .pay .geo div {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 374px) {
+    #trafficsources, #geography {
+        font-size: 13px;
+    }
+    .dropdown-menu.show{
+        font-size: 14px;
     }
 }

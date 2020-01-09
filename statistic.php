@@ -85,8 +85,8 @@
                                     <input id="stream" type="text" class="form-control">
                                 </div>
                                 <div class="form-group form-grid-md col-12">
-                                    <label for="landing">Лендинг</label>
-                                    <input id="landing" type="text" class="form-control">
+                                    <label for="land">Лендинг</label>
+                                    <input id="land" type="text" class="form-control">
                                 </div>
                                 <div class="form-group form-grid-md col-12">
                                     <label for="prelanding">Прелендинг</label>

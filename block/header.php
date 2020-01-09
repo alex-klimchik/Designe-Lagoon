@@ -18,19 +18,22 @@
             </li>
 
         </ul>
-        <ul class="staticks nav navbar-nav">
-            <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Баланс: 8 500 ₽</a></li>
-            <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Холд: 220 ₽</a></li>
-            <li class="nav-item"><a class="nav-link"><i class="ti-alarm-clock"></i> В ожидании: 15230 ₽</a></li>
+        <ul class="staticks nav navbar-nav main-info">
+            <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Баланс: 8 500 000 ₽</a></li>
+            <li class="nav-item"><a class="nav-link"><i class="ti-money"></i> Холд: 220 000 ₽</a></li>
+            <li class="nav-item"><a class="nav-link"><i class="ti-alarm-clock"></i> В ожидании: 1 523 000 ₽</a></li>
         </ul>
 
 
         <ul class="nav navbar-nav">
             <li class="nav-item">
                 <div class="dropdown">
-                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                        <img src="icon/operator.png" style="width: 40px;"> Ваш менеджер <span class="c-light-blue-500">
-                            Виталий</span>
+                    <button type="button" class="btn dropdown-toggle manager" data-toggle="dropdown">
+                        <img src="icon/operator.png">
+                        <div>
+                            <span>Ваш менеджер</span>
+                            <span class="c-light-blue-500">Виталий</span>
+                        </div>
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item c-light-blue-500" href="#"><i class="c-light-blue-500 ti-skype"></i>
@@ -39,11 +42,11 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item one-exit">
+            <li class="nav-item exit">
                 <a href="#" class="nav-link c-brown-500" data-toggle="tooltip" title="Выйти"><i class="ti-arrow-right"></i></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link exit c-deep-orange-500" data-toggle="tooltip" title="Вернуться на админа"><i class="ti-shift-right"></i></a>
+            <li class="nav-item exit">
+                <a href="#" class="nav-link c-deep-orange-500" data-toggle="tooltip" title="Вернуться на админа"><i class="ti-shift-right" style="font-size: 20px"></i></a>
             </li>
         </ul>
 
