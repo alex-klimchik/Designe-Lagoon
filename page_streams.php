@@ -50,7 +50,7 @@
                         <div class="wrap-head-page">
                             <h4>Мои потоки</h4>
                             <div>
-                                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
+                                <button type="button" class="btn btn-sours btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
                                     <i class="fa fa-cogs set-fa" aria-hidden="true"></i>  Управление ресурсами</button>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true"><div class="modal-dialog" role="document">
                                     <div class="modal-content">

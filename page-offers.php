@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="icon/ie7/ie7.css">
 </head>
 <body>
-<?php require_once('block/spinner.php'); ?> 
+<?php require_once('block/spinner.php'); ?>
 <div class="wrapper">
     <!-- Sidebar  -->
     <?php require_once('block/sidebar.php'); ?> 
@@ -49,25 +49,26 @@
                 <div class="wrap-head-page">
                     <h4>Офферы</h4>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-12">
 
                     <ul id="tabs" class="nav nav-tabs">
                         <li class="nav-item">
                             <a href="" data-target="#all-offers" data-toggle="tab"
-                               class="nav-link small text-uppercase active">Все офферы
+                               class="nav-link small tab-mini text-uppercase active">Все офферы
                                 <div class="peer2"><span class="badge badge-pill bgc-deep-purple-50 c-deep-purple-700">+99</span></div></a>
                         </li>
                         <li class="nav-item"><a href="" data-target="#my-offers" data-toggle="tab"
-                                                class="nav-link small text-uppercase">Мои офферы
+                                                class="nav-link small tab-mini text-uppercase">Мои офферы
                             <div class="peer2"><span class="badge badge-pill bgc-amber-50 c-amber-700">5</span></div>
                         </a></li>
                         <li class="nav-item"><a href="" data-target="#new-offers" data-toggle="tab"
-                                                class="nav-link small text-uppercase">Новые офферы
+                                                class="nav-link small tab-mini text-uppercase">Новые офферы
                             <div class="peer2"><span class="badge badge-pill bgc-green-50 c-green-700">12</span></div>
                         </a></li>
                     </ul>
-                    <br>
-                    <div id="tabsContent" class="tab-content">
+
+
+                    <div id="tabsContent" class="tab-content pt-3">
 
                         <!--   Tab - все офферы-->
 
@@ -179,6 +180,8 @@
                                 </div>
                             </div>
                         </div>
+
+
 
                         <!--   Tab - мои офферы-->
 
@@ -399,7 +402,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                         </div>
 
                     </div>
                 </div>

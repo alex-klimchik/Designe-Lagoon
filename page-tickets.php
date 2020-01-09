@@ -54,14 +54,14 @@
       <main>
         <div class="container-fluid py-4">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 p-0">
 
               <ul id="tabs" class="ticket-tab nav nav-tabs">
                 <li class="nav-item">
                   <a href="" data-target="#open-tickets" data-toggle="tab"
-                  class="nav-link small text-uppercase active">Открытые</a></li>
+                  class="nav-link tick-tab small text-uppercase active">Открытые</a></li>
                   <li class="nav-item">
-                    <a href="" data-target="#exit-tickets" data-toggle="tab" class="nav-link small text-uppercase">Закрытые</a>
+                    <a href="" data-target="#exit-tickets" data-toggle="tab" class=" tick-tab nav-link small text-uppercase">Закрытые</a>
                   </li>
                   <button type="button" class="btn-new-ticket btn" data-toggle="modal" data-target="#exampleModalTickets">
                    <i class="fa fa-plus tic-fa" aria-hidden="true"></i>Создать тикет</button>
@@ -79,8 +79,8 @@
 
                     <div class="body-open-tickets">
                       <div class="bd">
-                       <div class="table-responsive">
-                        <table class="table-tickets">
+                       <div class="table-tickets-wrap">
+                        <table class="table-tickets" >
                          <thead>
                           <tr>
                            <th>
@@ -96,7 +96,7 @@
                        <tbody>
                          <tr>
                            <td>21.12.2019</td>
-                           <td><span> Aliquam sem et tortor consequat id porta nibh venenatis</span></td>
+                           <td><span> Aliquam sem et tortor consequat id porta nibh venenatis porta nibh venenatis</span></td>
                            <td>
                              <span class="message-info">Message  Aliquam sem et tortor consequat id porta nibh venenatis cras. In hac habitasse platea dictumst</span>
                              <button type="button" class="btn-details btn" data-toggle="modal" data-target="#exampleModalTicketInfo">Подробнее</button>
