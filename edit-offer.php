@@ -3,40 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lagoon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Latest compiled and minified Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
-
-    <!-- Latest compiled Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Latest compiled Bootstrap-Slider CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
-
-    <!-- Font-Awesom -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Themify Icons -->
-    <link rel="stylesheet" href="icon/themify-icons.css">
-    <!--[if lt IE 8]><!-->
-    <link rel="stylesheet" href="icon/ie7/ie7.css">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Редактирование оффера</title>
+    <?php require_once('block/head.php'); ?>
     <!-- Main CSS for this Page -->
     <link rel="stylesheet" href="css/edit-offer.css">
 
@@ -378,8 +346,7 @@
         </div><!-- /.page-container  -->
     </div><!-- /.wrapper -->
 
-    <!-- Js-Cookie -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
@@ -387,8 +354,7 @@
     <!-- Latest compiled Bootstrap-Slider JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
 
-    <!-- Global Script -->
-    <script type="text/javascript" src="js/script.js"></script>
+   
 
     <script>
         $('#rangeAge').slider();

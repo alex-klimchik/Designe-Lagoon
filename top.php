@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<title>Топ</title>
 <?php require_once('block/head.php'); ?> 
 <body>
 <?php require_once('block/spinner.php'); ?> 

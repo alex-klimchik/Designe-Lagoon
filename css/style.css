@@ -54,7 +54,7 @@ table a:focus {
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-    width: calc(100% - 250px);
+    width: calc(100% - 240px);
     z-index: 800;
 }
 
@@ -93,8 +93,8 @@ table a:focus {
 .sidebar {
     height: 100%;
     position: fixed;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 240px;
+    max-width: 240px;
     background: #ffffff;
     color: #292828;
     transition: all 0.3s;
@@ -185,7 +185,7 @@ a.article:hover {
 .page-container {
     width: 100%;
     min-height: 100vh;
-    padding-left: 250px;
+    padding-left: 240px;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
