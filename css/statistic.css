@@ -208,11 +208,19 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
         box-sizing: content-box!important;
     }
 }
+@media (max-width: 991px) {
+    main {
+        padding: 15px 10px;
+    }
+}
+
 @media (max-width: 768px) {
-    div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
         justify-content: center;
     }
 }
+
+
 @media (max-width: 576px) {
     main {
         font-size: 14px;

@@ -1,45 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Lagoon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Latest compiled and minified Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
-
-    <!-- Latest compiled Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Latest compiled Bootstrap-Slider CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
-
-    <!-- Font-Awesom -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Themify Icons -->
-    <link rel="stylesheet" href="icon/themify-icons.css">
-    <!--[if lt IE 8]><!-->
-    <link rel="stylesheet" href="icon/ie7/ie7.css">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Редактирование оффера</title>
+    <?php require_once('block/head.php'); ?>
     <!-- Main CSS for this Page -->
     <link rel="stylesheet" href="css/edit-offer.css">
-
 </head>
 
 <body>
@@ -64,11 +30,11 @@
                             <fieldset class="description">
                                 <legend>Описание</legend>
 
-                                <div class="form-group col-lg-4 col-md-6">
+                                <div class="form-group col-xl-4 col-lg-5 col-md-6">
                                     <label for="title">Название</label>
                                     <input type="text" id="title" class="form-control" name="title" placeholder="Название" required="">
                                 </div>
-                                <div class="form-group product col-lg-4 col-md-6">
+                                <div class="form-group product col-xl-4 col-lg-5 col-md-6">
                                     <label for="product">Продукт</label>
                                     <select class="selectpicker form-control" id="product" data-live-search="true">
                                         <option selected>Кому принадлежит оффер?</option>
@@ -79,10 +45,10 @@
                                 <div class="border"></div>
                                 <div class="form-row col-12 price">
                                     <div class="form-group col-4 col-md-2">
-                                        <label for="price">Цена (<span style="color: #000">руб</span>)</label>
+                                        <label for="price">Цена&nbsp;(<span style="color: #000">руб</span>)</label>
                                         <input type="text" id="price" class="form-control" name="price">
                                     </div>
-                                    <div class="form-group col-6 col-md-4">
+                                    <div class="form-group col-6 col-md-4 col-lg-3">
                                         <label for="country">Страна</label>
                                         <select class="selectpicker form-control" id="country" data-live-search="true">
                                             <option selected>Россия</option>
@@ -90,7 +56,7 @@
                                             <option>Беларусь</option>
                                         </select>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group col-2 col-md-3">
                                         <label style="opacity: 0">.</label>
                                         <button style="display: block" type="button" class="btn btn-danger">
                                             <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-times"></i></span>
@@ -133,7 +99,7 @@
                                     </div>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                                     <label for="sale">Sale?</label>
                                     <select class="selectpicker form-control" id="sale" data-live-search="true">
                                         <option>0</option>
@@ -142,7 +108,7 @@
                                     </select>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                                     <label for="category">Категория</label>
                                     <select class="selectpicker form-control" id="category" data-live-search="true">
                                         <option>Товары почтой</option>
@@ -151,7 +117,7 @@
                                     </select>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                                     <label for="category-product">Категория товара</label>
                                     <select class="selectpicker form-control" id="category-product" data-live-search="true">
                                         <option>Без категории</option>
@@ -159,17 +125,17 @@
                                     </select>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-6 col-md-8 col-sm-10 col-12">
+                                <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
                                     <label for="shorDescribe">Краткое описание</label>
                                     <textarea class="form-control" id="shorDescribe" name="shorDescribe" rows="4"></textarea>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-6 col-md-8 col-sm-10 col-12">
+                                <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
                                     <label for="describe">Описание</label>
                                     <textarea class="form-control" id="describe" name="describe" rows="4"></textarea>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-6 col-md-8 col-sm-10 col-12">
+                                <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
                                     <label for="offerRules">Правила оффера</label>
                                     <textarea class="form-control" id="offerRules" name="offerRules" rows="4"></textarea>
                                 </div>
@@ -177,7 +143,7 @@
                             </fieldset>
                             <fieldset>
                                 <legend>Условия</legend>
-                                <div class="form-group col-lg-4 col-md-6 col-sm-10 col-12">
+                                <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12">
                                     <label for="geography">География</label>
                                     <select class="form-control" id="geography" name="geography" multiple="multiple" size="10">
                                         <option>Россия</option>
@@ -193,7 +159,7 @@
                                     </select>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-4 col-md-6 col-sm-10 col-12">
+                                <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12">
                                     <label for="trafficsources">Источники трафика</label>
                                     <select class="form-control" id="trafficsources" name="trafficsources" multiple="multiple" size="10">
                                         <option>Веб-сайты</option>
@@ -209,7 +175,7 @@
                                     </select>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                                     <label for="postclick">Постклик</label>
                                     <input type="text" id="postclick" class="form-control" name="postclick">
                                 </div>
@@ -296,7 +262,7 @@
                                 <legend>Приватные страницы</legend>
                                 <div class="form-row col-12">
                                     <div class="col-md-2">Елена Шульженко Тест</div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-4">
                                         https://novosti-o-vazhnom.com/elena-shulzhenko-neurosystem0-inn/тест
                                         <span class="editing-deletion">
                                             <i class="fa fa-pencil" title="изменить"></i>
@@ -305,7 +271,7 @@
                                     </div>
                                     <div class="col-md-2">Метрика отсутствует</div>
                                     <div class="col-md-2">Похудение</div>
-                                    <div class="col-md-1">Адаптивный</div>
+                                    <div class="col-md-2 ">Адаптивный</div>
                                 </div>
                                 <div class="border"></div>
                                 <div class="form-group col-12 page-new">
@@ -318,7 +284,7 @@
                             </fieldset>
                             <fieldset>
                                 <legend>Цель</legend>
-                                <div class="form-group col-4">
+                                <div class="form-group col-xl-4 col-lg-5 col-md-5 col-sm-6 col-12">
                                     <select class="selectpicker form-control">
                                         <option value="" selected>Подтверждённая заявка</option>
                                         <option value="">Оплаченный заказ</option>
@@ -331,32 +297,32 @@
                             <fieldset class="pay">
                                 <legend>Выплаты</legend>
                                 <div class="form-row col-12">
-                                    <div class="form-group col-3">
+                                    <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3">
                                         <label for="advertiser">Рекламодатель</label>
                                         <select class="selectpicker form-control" id="advertiser">
                                             <option value="" selected>Виталий Попета</option>
                                             <option value="">Алексей Климчук</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-1 offset-md-1 geo">
+                                    <div class="form-group col-12 col-sm-6 col-md-2 col-lg-1 geo">
                                         <label>Гео</label>
                                         <div>Украина</div>
                                     </div>
-                                    <div class="form-group col-2 offset-md-1 payment">
+                                    <div class="form-group col-12 col-sm-6 col-md-3 col-lg-3 payment">
                                         <label>Опллата рек.</label>
-                                        <div class="form-row ">
-                                            <input type="text" class="form-control col-5" value="0">
-                                            <select class="selectpicker form-control col-5">
+                                        <div class="form-row col-12">
+                                            <input type="text" class="form-control col-6" value="0">
+                                            <select class="selectpicker form-control col-6">
                                                 <option value="" selected disabled>руб</option>
                                                 <option value="" disabled>грн</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group col-2 offset-md-1 payment">
-                                        <label>Опллата рек.</label>
-                                        <div class="form-row ">
-                                            <input type="text" class="form-control col-5" value="0">
-                                            <select class="selectpicker form-control col-5">
+                                    <div class="form-group col-12 col-sm-6 col-md-3 col-lg-3 payment">
+                                        <label>Опллата веб.</label>
+                                        <div class="form-row col-12">
+                                            <input type="text" class="form-control col-6" value="0">
+                                            <select class="selectpicker form-control col-6">
                                                 <option value="" selected disabled>руб</option>
                                                 <option value="" disabled>грн</option>
                                             </select>
@@ -373,13 +339,11 @@
                         </form>
                     </div><!--  -->
                 </div><!--  -->
-                
             </main>
         </div><!-- /.page-container  -->
     </div><!-- /.wrapper -->
 
-    <!-- Js-Cookie -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
@@ -387,8 +351,7 @@
     <!-- Latest compiled Bootstrap-Slider JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
 
-    <!-- Global Script -->
-    <script type="text/javascript" src="js/script.js"></script>
+   
 
     <script>
         $('#rangeAge').slider();
