@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Редактирование оффера</title>
     <?php require_once('block/head.php'); ?>
     <!-- Main CSS for this Page -->
     <link rel="stylesheet" href="css/edit-offer.css">
-
 </head>
 
 <body>
