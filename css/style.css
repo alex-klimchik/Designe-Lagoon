@@ -34,39 +34,6 @@ table a, table a:hover, table a:focus {
     text-decoration: underline;
 }
 
-.header {
-    background-color: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, .0625);
-    display: block;
-    margin-bottom: 0;
-    padding: 0;
-    position: fixed;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
-    width: calc(100% - 250px);
-    z-index: 800;
-}
-
-.header>.container-fluid>ul {
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.navbar {
-    padding: 4px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
 .line {
     width: 100%;
     height: 1px;
@@ -182,6 +149,100 @@ a.article, a.article:hover {
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
+}
+
+/* ---------------------------------------------------
+Header
+------------------------------------------------------ */
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .0625);
+    display: block;
+    margin-bottom: 0;
+    padding: 0;
+    position: fixed;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: calc(100% - 250px);
+    z-index: 800;
+}
+
+.header .container-fluid>ul {
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header .container-fluid {
+    padding-right: 70px!important;
+}
+
+.navbar {
+    padding: 4px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.btns-exit {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    align-items: center;
+}
+
+.header .manager {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .manager>img {
+    width: 40px;
+    padding-right: 5px;
+}
+
+/* ---------------------------------------------------
+    header button
+----------------------------------------------------- */
+
+.circle {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 59px;
+    left: calc( 50% - 10px);
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
+    z-index: 801;
+}
+
+.circle i {
+    padding-top: 6px;
+}
+
+.circle:hover i {
+    font-weight: 600;
+}
+
+.circle:hover {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.46);
 }
 
 /* ---------------------------------------------------
@@ -367,17 +428,6 @@ li a {
     max-height: 400px;
 }
 
-.header .manager {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header .manager>img {
-    width: 40px;
-    padding-right: 5px;
-}
-
 @media (min-width:1176px) and (max-width:1350px) {
     .sidebar {
         min-width: 230px;
@@ -459,11 +509,81 @@ li a {
 }
 
 @media (max-width: 991px) {
+    .header {
+        position: relative;
+        width: 100%;
+        align-items: start;
+        height: 70px;
+        flex-flow: wrap;
+    }
+    .header .main-info {
+        display: none;
+        transition: all .5s;
+        padding: .35rem 0;
+        opacity: 0;
+        order: 2;
+        max-width: 70%;
+    }
+    .header .manager-wrapper {
+        display: none;
+        transition: all .5s;
+        opacity: 0;
+        order: 1;
+        max-width: 30%;
+    }
+    .header .manager-wrapper .dropdown-menu {
+        position: absolute!important;
+    }
+    .header.openHeader {
+        height: 135px;
+    }
+    .header.overflow-initial {
+        overflow: initial;
+    }
+    .btns-exit {
+        top: 13px;
+    }
+    .btns-exit .exit i {
+        font-size: 20px;
+    }
+    .btns-exit .exit:last-child i {
+        font-size: 25px!important;
+    }
+    .header .manager>img {
+        width: 35px;
+    }
+    .header .manager>div {
+        font-size: 14px;
+    }
+    .header.openHeader .container-fluid {
+        padding-right: 0!important;
+    }
+    .header.openHeader .container-fluid>ul:first-child {
+        width: 100%;
+        border-bottom: 1px solid #00000012;
+    }
+    .circle.openHeader {
+        top: 124px;
+    }
+    .circle {
+        display: flex;
+    }
     .graf {
         display: none;
     }
-    .dropdown {
-        display: none;
+    .header.openHeader .manager-wrapper {
+        display: block;
+    }
+    .header.openHeader .main-info {
+        display: flex;
+        align-items: flex-start;
+    }
+    .header.visibl-info .main-info, .header.visibl-info .manager-wrapper {
+        opacity: 1;
+        margin-top: 10px;
+    }
+    .header.openHeader .main-info a.nav-link {
+        padding: .4rem;
     }
     .header .exit {
         padding-right: 10px;
@@ -475,17 +595,13 @@ li a {
         display: none;
     }
     .navbar-nav {
-        flex-direction: inherit;
+        flex-direction: initial;
     }
     .ml-auto, .mx-auto {
         margin-left: initial!important;
     }
     main {
         padding: 15px 0px 0px;
-    }
-    .header {
-        position: relative;
-        width: 100%;
     }
     .sidebar .sidebar-header {
         display: flex;
@@ -520,10 +636,32 @@ li a {
     .btn-sidebar {
         font-size: 2rem;
     }
-    .staticks {
-        display: none;
-    }
     .block-chart {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header.openHeader .container-fluid {
+        flex-direction: column!important;
+        padding-right: 0!important;
+    }
+    .header.openHeader .main-info {
+        flex-direction: column;
+    }
+    .header.openHeader .main-info a.nav-link {
+        padding: 0;
+    }
+    .header.visibl-info .main-info, .header.visibl-info .manager-wrapper {
+        margin-top: 0;
+    }
+    .header.openHeader {
+        height: 200px;
+    }
+    .circle.openHeader {
+        top: 189px;
+    }
+    .header .main-info, .header .manager-wrapper {
+        max-width: 100%;
     }
 }
