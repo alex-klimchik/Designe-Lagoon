@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<title>Просмотр</title>
 <?php require_once('block/head.php'); ?> 
+<!-- Main CSS for this Page -->
+<link rel="stylesheet" type="text/css" href="css/page-offer-info.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+</head>
 <body>
 <?php require_once('block/spinner.php'); ?>
 <div class="wrapper">

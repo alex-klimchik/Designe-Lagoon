@@ -2,33 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Lagoon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Финансы</title>
+    <?php require_once('block/head.php'); ?>
+    <!--Datatabels-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/fh-3.1.6/datatables.min.css" />
-
-
-    <link rel="stylesheet" href="icon/themify-icons.css">
-    <!--[if lt IE 8]><!-->
-    <link rel="stylesheet" href="icon/ie7/ie7.css">
-
-    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/fh-3.1.6/datatables.min.js"></script>
+    <!-- Main CSS for this Page -->
     <link rel="stylesheet" href="css/finance.css">
+    <!--JS Page-->
+    <script type="text/javascript" src="js/finance.js"></script>
+
 </head>
 
 <body>
@@ -75,15 +59,14 @@
                             </tr>
                         </tbody>
                     </table>
-                </div><!-- /.gap-20.bd.w-100.bgc-white.p-20 -->
+                </div>
+                <!-- /.gap-20.bd.w-100.bgc-white.p-20 -->
             </main>
-        </div><!-- /.page-container  -->
-    </div><!-- /.wrapper -->
+        </div>
+        <!-- /.page-container  -->
+    </div>
+    <!-- /.wrapper -->
 
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/fh-3.1.6/datatables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/finance.js"></script>
 
 </body>
 
