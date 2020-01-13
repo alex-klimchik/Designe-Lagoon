@@ -6,11 +6,10 @@
 <?php require_once('block/head.php'); ?>
 <!--график-->
 <link type="text/css" rel="StyleSheet" href="//bootstraptema.ru/plugins/2016/shieldui/style.css" />
-<script src="//bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
 <script src="//bootstraptema.ru/plugins/2016/shieldui/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
-
+ 
 
 <body>
     <?php require_once('block/spinner.php'); ?>
@@ -25,36 +24,36 @@
             <main>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-md-8 col-lg-6 col-sm-12 ">
                             <div class="bgc-white p-20 bd">
                                 <h6>Активность за сутки</h6>
                                 <div class="row pT-20 ">
-                                    <div class="col-4 col-sm-2 d-flex flex-column center">
+                                    <div class="col-4 col-md-2 col-sm-2 d-flex flex-column center">
                                         <a><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
                                         <a>0</a>
                                         <a>Клики</a>
                                     </div>
-                                    <div class="col-4 col-sm-2 d-flex flex-column center">
+                                    <div class="col-4 col-md-2 col-sm-2 d-flex flex-column center">
                                         <a><i class="c-pink-500 fas fa-users"></i></a>
                                         <a>0</a>
                                         <a>Заявки</a>
                                     </div>
-                                    <div class="col-4 col-sm-2 d-flex flex-column center">
+                                    <div class="col-4 col-md-2 col-sm-2 d-flex flex-column center">
                                         <a><i class="c-light-blue-500 fas fa-check"></i></a>
                                         <a>0 ₽</a>
                                         <a>Принято</a>
                                     </div>
-                                    <div class="col-4 col-sm-2 d-flex flex-column center">
+                                    <div class="col-4 col-md-2 col-sm-2 d-flex flex-column center">
                                         <a><i class="c-deep-orange-500 fas fa-lock"></i></a>
                                         <a>0 ₽</a>
                                         <a>Холд</a>
                                     </div>
-                                    <div class="col-4 col-sm-2 d-flex flex-column center">
+                                    <div class="col-4 col-md-2 col-sm-2 d-flex flex-column center">
                                         <a><i class="c-deep-purple-500  far fa-clock"></i></a>
                                         <a>0 ₽</a>
                                         <a>Ожидает</a>
                                     </div>
-                                    <div class="col-4 col-sm-2 d-flex flex-column center">
+                                    <div class="col-4 col-md-2 col-sm-2 d-flex flex-column center">
                                         <a><i class="c-pink-500 far fa-times-circle"></i></a>
                                         <a>0 $</a>
                                         <a>Отклонено</a>

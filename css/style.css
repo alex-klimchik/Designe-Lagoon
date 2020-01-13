@@ -184,11 +184,6 @@ a.article:hover {
     color: #72777a;
 }
 
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
 .page-container {
     width: 100%;
     min-height: 100vh;
@@ -198,13 +193,8 @@ a.article:hover {
     transition: all .2s ease;
 }
 
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
 main {
-    padding: 85px 20px 20px;
+    padding: 75px 10px 10px;
 }
 
 .sidebar-link {
@@ -406,6 +396,11 @@ li a {
     padding-right: 5px;
 }
 
+
+/* ---------------------------------------------------
+    MEDIA
+----------------------------------------------------- */
+
 @media (min-width:1176px) and (max-width:1350px) {
     .sidebar {
         min-width: 230px;
@@ -433,6 +428,9 @@ li a {
 }
 
 @media (min-width:992px) and (max-width:1175px) {
+    .center {
+        font-size: 13px;
+    }
     .header .manager {
         padding: 0 .75rem;
     }
