@@ -175,7 +175,7 @@ Header
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    width: calc(100% - 250px);
+    width: calc(100% - 240px);
     z-index: 800;
 }
 
@@ -262,7 +262,7 @@ Header
 ----------------------------------------------------- */
 
 main {
-    padding: 75px 10px 10px;
+    padding: 75px 15px 15px;
 }
 
 .sidebar-link {
