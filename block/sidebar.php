@@ -33,6 +33,12 @@
 
       </li>
       <li>
+        <a class="sidebar-link" href="source.php">
+          <span class="icon-holder"><i class="c-light-blue-500 ti-layout-tab"></i> </span>
+          <span class="title">Источники</span></a>
+
+      </li>
+      <li>
         <a class="sidebar-link" href="finance.php">
           <span class="icon-holder"><i class="c-deep-purple-500 ti-stats-up"></i> </span>
           <span class="title">Финансы</span></a>

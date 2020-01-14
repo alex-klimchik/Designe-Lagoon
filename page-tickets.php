@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Тикеты</title>
-    <?php require_once('block/head.php'); ?>
-    <!-- Bootstrap DATAPICKER -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" />
-    <!-- Main CSS for this Page -->
-    <link rel="stylesheet" type="text/css" href="css/style-tickets.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
 
+  <?php require_once('block/head.php'); ?>
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/style-tickets.css">
+
+</head>
 <body>
   <?php require_once('block/spinner.php'); ?>
   <div class="wrapper">
@@ -149,18 +153,61 @@
                 <button type="button" class="btn btn-purple" data-dismiss="modal">Закрыть</button>
               </div>
             </div>
+          </div>
         </div>
+      </div>           <!-- ===== THE END Modal tiket Add ===== -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
-        <script>
-            $(function() {
-                $('.dateselect').datepicker({
-                    format: 'mm/dd/yyyy',
-                    // startDate: '-3d'
-                });
-            });
-        </script>
+      <!-- ====== Modal - TICKET-INFO  ======= -->
+
+      <div class="modal fade" id="exampleModalTicketInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true"><div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Новый тикет</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <div class="content-new-ticket">
+                <form>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Тема</label>
+                    <div class=""><span> Aliquam sem et tortor consequat id porta nibh venenatis</span></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Сообщение</label>
+                    <div class="">
+                     <span>
+                      Aliquam sem et tortor consequat id porta nibh venenatis cras. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. A arcu cursus vitae congue. Id nibh tortor id aliquet lectus proin nibh. Aenean pharetra magna ac placerat. Dui vivamus arcu felis bibendum ut. Iaculis nunc sed augue lacus viverra vitae congue eu. Curabitur vitae nunc sed velit dignissim sodales. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Duis tristique sollicitudin nibh sit amet. Massa enim nec dui nunc. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Tellus at urna condimentum mattis pellentesque id. Tincidunt ornare massa eget egestas purus. Fringilla est ullamcorper eget nulla facilisi etiam. Risus nullam eget felis eget nunc.
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-purple" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== THE END Modal - TICKET-INFO  ======= -->
+
+    </div>
+  </div>
+</div>
+</main>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+<script>
+  $(function() {
+    $('.dateselect').datepicker({
+     format: 'mm/dd/yyyy',
+     // startDate: '-3d'
+   });
+  });
+</script>
 
 </body>
-
 </html>
