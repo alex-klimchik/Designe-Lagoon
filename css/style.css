@@ -185,7 +185,7 @@ Header
 }
 
 .header .container-fluid {
-    padding-right: 70px!important;
+    padding-right: 60px!important;
 }
 
 .navbar {
@@ -433,9 +433,15 @@ li a {
     padding: 5px;
 }
 
+.users {
+    display: flex;
+    justify-content: center;
+}
+
 .users img {
     width: 40px;
-    margin-top: -30px;
+    height: 40px;
+    /* margin-top: -30px; */
     margin-right: 5px;
     font-size: 40px;
 }
@@ -446,6 +452,12 @@ li a {
 
 .chart-container{
     height: 50vh!important;
+}
+
+.wrap-head-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
 }
 
 @media (min-width:1176px) and (max-width:1350px) {
@@ -473,8 +485,17 @@ li a {
         font-size: 14px;
     }
 }
+@media (min-width:1191px) and (max-width:1250px) {
+    .header .manager {
+        padding: 0 .75rem;
+    }
+    .header .manager>div {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-@media (min-width:992px) and (max-width:1175px) {
+@media (min-width:992px) and (max-width:1190px) {
     .center {
         font-size: 13px;
     }

@@ -13,24 +13,25 @@
         <?php require_once('block/header.php'); ?> 
         
              <main>
-             <div class="gap-20 bd w-100 bgc-white p-20">
-                    <h4 class="c-grey-900 mB-20">Топ</h4>
-                   <!-- Nav tabs -->
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#home">Оффера</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#menu1">Лендинги</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#menu2">Проклы</a>
-  </li>
-</ul>
+             <h4 class="c-grey-900 mB-20">Топ</h4>
+             <div class="gap-20 bd w-100 bgc-white">
+                   
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home">Оффера</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu1">Лендинги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu2">Проклы</a>
+            </li>
+          </ul>
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane container-fluid active" id="home">
+  <div class="tab-pane  active" id="home">
    <div class="table-responsive">
   <table class="table center table-hover">
   <thead class="thead-light">
@@ -60,7 +61,7 @@
   </table>
 </div> 
 </div>
-  <div class="tab-pane container-fluid fade" id="menu1">
+  <div class="tab-pane fade" id="menu1">
     <div class="table-responsive">
   <table class="table center table-hover">
   <thead class="thead-light"> 
@@ -102,7 +103,7 @@
   </table>
 </div> 
 </div>
-  <div class="tab-pane container-fluid fade" id="menu2"> 
+  <div class="tab-pane fade" id="menu2"> 
   <div class="table-responsive">
   <table class="table center table-hover">
     <thead class="thead-light">

@@ -1,8 +1,45 @@
 // Переменные-----------------------------------------------------------
 let stateSidebar = !!Cookies.get('sidebar');
 
+let mySingleton = (function () {
+    let instance;
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = ($('body').on('click', '.sidebar .sidebar-link', collapseSidebar));
+            }
+            // return instance
+        },
+        deleteInstance: function () {
+            if (instance) {
+                instance = ($('body').off('click', '.sidebar .sidebar-link', collapseSidebar));
+            }
+        }
+    }
+})();
+
+function collapseSidebar() {
+    Cookies.set('sidebar', true);    
+}
+
+function closeSidebar() {
+    if (window.innerWidth < 992) {
+        // on
+        mySingleton.getInstance();
+    } else {
+        // off
+        mySingleton.deleteInstance();
+
+    }
+}
+
 // Document Ready ------------------------------------------------------
 $(document).ready(function () {
+
+    closeSidebar();
+    $(window).resize(function () {
+        closeSidebar();
+    })
 
     //Состояние sidebar
     if (stateSidebar) {
