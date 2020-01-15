@@ -445,7 +445,7 @@ li a {
 }
 
 .chart-container{
-    height: 475px!important;
+    height: 50vh!important;
 }
 
 @media (min-width:1176px) and (max-width:1350px) {
@@ -472,9 +472,6 @@ li a {
     .header .manager {
         font-size: 14px;
     }
-    .chart-container{
-        height: 450px!important;
-    }
 }
 
 @media (min-width:992px) and (max-width:1175px) {
@@ -496,9 +493,7 @@ li a {
     .header .main-info a {
         padding: 0 .5rem;
     }
-    .chart-container{
-        height: 410px!important;
-    }
+
 }
 
 @media (min-width:992px) {
@@ -668,9 +663,7 @@ li a {
     .block-chart {
         display: none;
     }
-    .chart-container{
-        height: 410px!important;
-    }
+
 }
 
 @media (max-width: 768px) {
@@ -698,7 +691,5 @@ li a {
     .header .manager-wrapper {
         max-width: 100%;
     }
-    .chart-container{
-        height: 320px!important;
-    }
+
 }
