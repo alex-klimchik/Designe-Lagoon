@@ -459,6 +459,12 @@ li a {
     max-height: 400px;
 }
 
+.wrap-head-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
 @media (min-width:1176px) and (max-width:1350px) {
     .sidebar {
         min-width: 230px;

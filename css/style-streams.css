@@ -1,40 +1,45 @@
-
 /*Page STREAMS*/
-.wrap-head-page{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0 10px 0;
-}
+
 .bd {
-    border: 1px solid rgba(0,0,0,.0625)!important;
+    border: 1px solid rgba(0, 0, 0, .0625)!important;
 }
-.table-streams{
+
+.table-streams {
     border-collapse: collapse;
     width: 100%;
 }
-.table-streams tr th{
+
+.table-streams tr th {
     text-align: center;
     padding: .75rem;
 }
-.table-streams tr td{
+
+.table-streams tr td {
     text-align: center;
     padding: .75rem;
-    border-top: 1px solid rgba(0,0,0,.0625);
+    border-top: 1px solid rgba(0, 0, 0, .0625);
     background-color: #f2f2f2;
 }
-.input-offers{
+
+.input-offers {
     min-width: 150px;
     width: 245px;
 }
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
     outline: none;
 }
-.btn-sours{
+
+.btn-sours {
     padding: .275rem .55rem;
     font-size: 0.85rem;
     line-height: 1.5;
 }
-.btn-links{
+
+.btn-links {
     color: #6c757d;
     border: 1px solid #ced4da;
     background: #f2f2f2;
@@ -43,39 +48,49 @@
     font-size: 14px;
     padding: 0 8px;
 }
-.btn-links:hover{
+
+.btn-links:hover {
     color: #ffffff;
     border: 1px solid#6c757d;
     background: #6c757d;
 }
-button:focus{
+
+button:focus {
     outline: none;
 }
+
 .modal-body {
     text-align: center;
 }
-.images-offers img{
+
+.images-offers img {
     width: 60px;
 }
-.set-fa{
+
+.set-fa {
     padding-right: 10px;
 }
-.setting-offers{
+
+.setting-offers {
     min-width: 135px;
 }
-.setting-offers button{
+
+.setting-offers button {
     margin: 0 2px;
 }
+
 .form-control:focus {
     color: #495057;
     background-color: #fff;
     border-color: #ced4da !important;
     outline: none !important;
-    -webkit-box-shadow: 0 0 0 0.1rem rgba(33,150,243,.25) !important;
-    box-shadow: 0 0 0 0.1rem rgba(33,150,243,.25) !important;
+    -webkit-box-shadow: 0 0 0 0.1rem rgba(33, 150, 243, .25) !important;
+    box-shadow: 0 0 0 0.1rem rgba(33, 150, 243, .25) !important;
 }
 
+
 /*для кнопок в таблице*/
+
 .btn-mini {
     display: inline-block;
     font-weight: 400;
@@ -91,15 +106,17 @@ button:focus{
     font-size: .875rem;
     line-height: 1.5;
     border-radius: .25rem;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
-.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 
 /* THE END Page STREAMS*/
