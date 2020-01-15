@@ -1,8 +1,9 @@
 /* Page OFFERS*/
+
 .wrap-head-page{
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 25px 15px;
+    margin: 10px 0 10px 15px;
 }
 .nav-tabs .nav-item{
     position: relative;
@@ -26,11 +27,32 @@
 }
 .tab-content {
     display: block;
-    width: 100%;
+    background-color: #ffffff;
     overflow-x: auto;
 }
+.tab-content::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e1984d;
+}
+.tab-content::-webkit-scrollbar-button {
+    width: 10px;
+    height: 10px
+}
+.tab-content::-webkit-scrollbar-thumb:hover {
+    background-color: #ffc107;
+}
+.tab-content::-webkit-resizer {
+    width: 2px;
+    height: 3px
+}
+.tab-content::-webkit-scrollbar {
+    width: 2px;
+    height: 6px;
+    padding: 10px 0;
+}
 .body-tab-offers{
-    min-width: 1085px;
+    min-width: 992px;
     max-width: 100%;
 }
 .c-deep-purple-700, .cH-deep-purple-700:hover {
@@ -73,8 +95,8 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 .form-inline{
-    max-width: 350px;
-    min-width: 300px;
+    max-width: 300px;
+    min-width: 250px;
     align-items: start;
 }
 .active-cyan-2 input[type=text]:focus:not([readonly]) {
@@ -107,7 +129,7 @@
     margin: 0 10px;
 }
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-    width: 175px;
+    width: 165px;
 }
 .bootstrap-select>.dropdown-toggle {
     width: 100%;
@@ -200,9 +222,7 @@ button:focus{
 .set-fa{
     padding-right: 10px;
 }
-.setting-offers{
-    min-width: 135px;
-}
+
 .setting-offers button{
     margin: 0 2px;
 }
@@ -234,3 +254,9 @@ button:focus{
 }
 
 /* THE END Page OFFERS*/
+
+@media screen and (max-width:380px) {
+    .tab-mini{
+        padding: 0.5rem 0.4rem;
+    }
+}

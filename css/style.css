@@ -9,7 +9,13 @@ body {
     background: #fafafa;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Arial, sans-serif;
     line-height: 1.5;
     color: #72777a;
@@ -23,13 +29,17 @@ p {
     color: #999;
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
 }
 
-table a, table a:hover, table a:focus {
+table a,
+table a:hover,
+table a:focus {
     color: #0056b3;
     text-decoration: underline;
 }
@@ -40,6 +50,7 @@ table a, table a:hover, table a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
+
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -54,11 +65,11 @@ table a, table a:hover, table a:focus {
 .sidebar {
     height: 100%;
     position: fixed;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 240px;
+    max-width: 240px;
     background: #ffffff;
     color: #292828;
-    z-index: 9999;
+    z-index: 999;
     overflow: hidden;
     transition: all .3s;
     border-right: 1px solid rgba(0, 0, 0, .0625);
@@ -87,7 +98,8 @@ table a, table a:hover, table a:focus {
     background: #efefef;
 }
 
-.sidebar ul li.active>a, a[aria-expanded="true"] {
+.sidebar ul li.active>a,
+a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
 }
@@ -127,7 +139,8 @@ a.download {
     color: #7386D5;
 }
 
-a.article, a.article:hover {
+a.article,
+a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
@@ -138,18 +151,15 @@ a.article, a.article:hover {
     color: #72777a;
 }
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
 .page-container {
     width: 100%;
     min-height: 100vh;
-    padding-left: 250px;
+    padding-left: 240px;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
 }
+
 
 /* ---------------------------------------------------
 Header
@@ -165,7 +175,7 @@ Header
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    width: calc(100% - 250px);
+    width: calc(100% - 240px);
     z-index: 800;
 }
 
@@ -210,6 +220,7 @@ Header
     padding-right: 5px;
 }
 
+
 /* ---------------------------------------------------
     header button
 ----------------------------------------------------- */
@@ -245,12 +256,13 @@ Header
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.46);
 }
 
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
 main {
-    padding: 85px 20px 20px;
+    padding: 75px 15px 15px;
 }
 
 .sidebar-link {
@@ -283,6 +295,8 @@ main {
 }
 
 li>a .icon-holder {
+    padding-left: 9px;
+    padding-right: 8px;
     border-radius: 6px;
     display: inline-block;
     font-size: 18px;
@@ -314,37 +328,46 @@ li a {
     transition: all .3s ease;
 }
 
+
 /*colors*/
 
-.c-deep-purple-500, .cH-deep-purple-500:hover {
+.c-deep-purple-500,
+.cH-deep-purple-500:hover {
     color: #673ab7!important;
 }
 
-.c-blue-500, .cH-blue-500:hover {
+.c-blue-500,
+.cH-blue-500:hover {
     color: #2196f3!important;
 }
 
-.c-brown-500, .cH-brown-500:hover {
+.c-brown-500,
+.cH-brown-500:hover {
     color: #795548!important;
 }
 
-.c-deep-orange-500, .cH-deep-orange-500:hover {
+.c-deep-orange-500,
+.cH-deep-orange-500:hover {
     color: #ff5722!important;
 }
 
-.c-indigo-500, .cH-indigo-500:hover {
+.c-indigo-500,
+.cH-indigo-500:hover {
     color: #3f51b5!important;
 }
 
-.c-pink-500, .cH-pink-500:hover {
+.c-pink-500,
+.cH-pink-500:hover {
     color: #e91e63!important;
 }
 
-.c-light-blue-500, .cH-light-blue-500:hover {
+.c-light-blue-500,
+.cH-light-blue-500:hover {
     color: #03a9f4!important;
 }
 
-.bgc-white, .bgcH-white:hover {
+.bgc-white,
+.bgcH-white:hover {
     background-color: #fff!important;
 }
 
@@ -356,7 +379,8 @@ li a {
     padding: 20px!important;
 }
 
-.c-grey-900, .cH-grey-900:hover {
+.c-grey-900,
+.cH-grey-900:hover {
     color: #313435!important;
 }
 
@@ -390,7 +414,8 @@ li a {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.btn-sidebar:focus, .btn-sidebar.focus {
+.btn-sidebar:focus,
+.btn-sidebar.focus {
     outline: 0;
 }
 
@@ -455,6 +480,9 @@ li a {
 }
 
 @media (min-width:992px) and (max-width:1175px) {
+    .center {
+        font-size: 13px;
+    }
     .header .manager {
         padding: 0 .75rem;
     }
@@ -477,7 +505,8 @@ li a {
         min-width: 250px;
         max-width: 250px;
     }
-    .sidebar .sidebar-header, .is-collapsed .sidebar:hover .sidebar-header {
+    .sidebar .sidebar-header,
+    .is-collapsed .sidebar:hover .sidebar-header {
         border-bottom: 1px solid rgba(0, 0, 0, .0625);
         width: 100%;
     }
@@ -578,7 +607,8 @@ li a {
         display: flex;
         align-items: flex-start;
     }
-    .header.visibl-info .main-info, .header.visibl-info .manager-wrapper {
+    .header.visibl-info .main-info,
+    .header.visibl-info .manager-wrapper {
         opacity: 1;
         margin-top: 10px;
     }
@@ -597,11 +627,12 @@ li a {
     .navbar-nav {
         flex-direction: initial;
     }
-    .ml-auto, .mx-auto {
+    .ml-auto,
+    .mx-auto {
         margin-left: initial!important;
     }
     main {
-        padding: 15px 0px 0px;
+        padding: 15px 15px 0;
     }
     .sidebar .sidebar-header {
         display: flex;
@@ -652,7 +683,8 @@ li a {
     .header.openHeader .main-info a.nav-link {
         padding: 0;
     }
-    .header.visibl-info .main-info, .header.visibl-info .manager-wrapper {
+    .header.visibl-info .main-info,
+    .header.visibl-info .manager-wrapper {
         margin-top: 0;
     }
     .header.openHeader {
@@ -661,7 +693,8 @@ li a {
     .circle.openHeader {
         top: 189px;
     }
-    .header .main-info, .header .manager-wrapper {
+    .header .main-info,
+    .header .manager-wrapper {
         max-width: 100%;
     }
 }

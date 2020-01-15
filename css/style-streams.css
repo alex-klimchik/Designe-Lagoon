@@ -3,7 +3,7 @@
 .wrap-head-page{
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 25px 0;
+    margin: 10px 0 10px 0;
 }
 .bd {
     border: 1px solid rgba(0,0,0,.0625)!important;
@@ -28,6 +28,11 @@
 }
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     outline: none;
+}
+.btn-sours{
+    padding: .275rem .55rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 .btn-links{
     color: #6c757d;
