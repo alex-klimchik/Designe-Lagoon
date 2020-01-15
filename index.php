@@ -65,58 +65,117 @@
 
 
 
-                        <div class="container-fluid p-20 graf">
+                        <div class="col-12 p-20 graf">
                             <div class="bgc-white p-20 bd">
                                 <h6>Ваша статистика</h6>
-                                <!-- График -->
-                                <div id="chart">
-
-
-                                    <script>
-                                        $(document).ready(function() {
-
-
-                                            $("#chart").shieldChart({
-                                                theme: "bootstrap",
-                                                primaryHeader: {
-                                                    text: "График"
-                                                },
-                                                seriesSettings: {
-                                                    area: {
-                                                        pointMark: {
-                                                            enabled: true
-                                                        }
-                                                    }
-                                                },
-                                                axisX: {
-                                                    categoricalValues: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
-                                                },
-                                                dataSeries: [{
-                                                    seriesType: "area",
-                                                    collectionAlias: "Активные",
-                                                    data: [48, 50, 55, 64, 73, 79, 82, 83, 80, 70, 61, 53]
-                                                }, {
-                                                    seriesType: "area",
-                                                    collectionAlias: "Заблоченые",
-                                                    data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.819, 3.894, 8.287, 9.552, 6.855, 2.865, 1.341]
-                                                }],
-                                                events: {
-                                                    legendSeriesClick: function(e) {
-                                                        // остановить событие щелчка элемента серии, так что
-                                                        // пользователь нажимает не переключить видимость серии
-                                                        e.preventDefault();
-                                                    }
-                                                }
-                                            });
-                                        });
-                                    </script>
-                                    <!-- /.График -->
+                                <div class="chart-container">
+                                  <canvas id="myLineChart"></canvas>
                                 </div>
                             </div>
 
              </main>
             </div>
             </div>
+
+
+
+    <script>
+
+        var ctx = document.getElementById('myLineChart').getContext('2d');
+
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+                datasets: [
+                    {
+                        label: "Активные",
+                        borderColor: "rgba(255,152,0,1)",
+                        backgroundColor: "rgba(255,152,0, .2)",
+                        data: [38, 40, 45, 54, 63, 69, 72, 73, 70, 60, 51, 43]
+                    },
+                    {
+                        label: "Заблоченые",
+                        borderColor: "rgba(244,67,54,1)",
+                        backgroundColor: "rgba(244,67,54, .2)",
+                        data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.819, 3.894, 8.287, 9.552, 6.855, 2.865, 1.341]
+                    }
+                ]
+            },
+
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            lineWidth: 0
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            min: 0,
+                            max: 90,
+                            stepSize: 10
+                        }
+                    }]
+
+                }
+
+                // ///Boolean - Whether grid lines are shown across the chart
+                // scaleShowGridLines : true,
+                //
+                // //String - Colour of the grid lines
+                // scaleGridLineColor : "rgba(0,0,0,.05)",
+                //
+                // //Number - Width of the grid lines
+                // scaleGridLineWidth : 1,
+                //
+                // //Boolean - Whether to show horizontal lines (except X axis)
+                // scaleShowHorizontalLines: true,
+                //
+                // //Boolean - Whether to show vertical lines (except Y axis)
+                // scaleShowVerticalLines: false,
+                //
+                // //Boolean - Whether the line is curved between points
+                // bezierCurve : true,
+                //
+                // //Number - Tension of the bezier curve between points
+                // bezierCurveTension : 0.4,
+                //
+                // //Boolean - Whether to show a dot for each point
+                // pointDot : true,
+                //
+                // //Number - Radius of each point dot in pixels
+                // pointDotRadius : 4,
+                //
+                // //Number - Pixel width of point dot stroke
+                // pointDotStrokeWidth : 1,
+                //
+                // //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
+                // pointHitDetectionRadius : 20,
+                //
+                // //Boolean - Whether to show a stroke for datasets
+                // datasetStroke : true,
+                //
+                // //Number - Pixel width of dataset stroke
+                // datasetStrokeWidth : 2,
+                //
+                // //Boolean - Whether to fill the dataset with a colour
+                // datasetFill : true,
+                //
+                // //String - A legend template
+                // legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+
+            }
+        });
+
+    </script>
+
+
+
+
+
 
 </body>
 
