@@ -35,8 +35,8 @@
     line-height: 1.5;
 }
 .btn-links{
-    color: #6c757d;
-    border: 1px solid #ced4da;
+    color: #117a8b;
+    border: 1px solid #117a8b;
     background: #f2f2f2;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -69,7 +69,7 @@ button:focus{
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #ced4da !important;
+    border-color: #17a2b8 !important;
     outline: none !important;
     -webkit-box-shadow: 0 0 0 0.1rem rgba(33,150,243,.25) !important;
     box-shadow: 0 0 0 0.1rem rgba(33,150,243,.25) !important;
@@ -100,6 +100,79 @@ button:focus{
 .input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle){
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+}
+.btn-outline-edit{
+    color: #fe602e;
+    border-color: #fe602e;
+}
+.btn-outline-edit:hover{
+    color: #fff;
+    background-color: #fe602e;
+}
+.btn-outline-add{
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+.btn-outline-add:hover{
+    color: #fff;
+    background-color: #17a2b8;
+}
+.btn-outline-delete{
+    color: #dc3545;
+    border-color: #dc3545;
+}
+.btn-outline-delete:hover{
+    color: #fff;
+    background-color: #dc3545;
+}
+
+
+
+
+
+.form-group{
+    width: 175px;
+    margin: 0 10px;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 165px;
+}
+.bootstrap-select>.dropdown-toggle {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem .375rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #72777a;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-clip: padding-box;
+    border-bottom: 1px solid #17a2b8;
+}
+.btn:focus, .btn:active {
+    box-shadow: none !important;
+}
+input:focus, input:active {
+    box-shadow: none !important;
+}
+.bootstrap-select .dropdown-toggle:focus, .dropdown-toggle:active,.bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline: none !important;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    color: #54595c;
+    background-color: #fafafa;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #17a2b8;
+}
+.form-control {
+    border: 1px solid #117a8b;
 }
 
 /* THE END Page STREAMS*/

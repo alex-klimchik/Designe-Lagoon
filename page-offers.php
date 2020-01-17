@@ -51,7 +51,7 @@
                         <div id="all-offers" class="tab-pane fade active show">
                             <div class="head-tab-info">
                                 <div class="form-group">
-                                    <select class="selectpicker" id="allOffersCategory" data-live-search="true" >
+                                    <select class="form-style selectpicker" id="allOffersCategory" data-live-search="true" >
                                         <option>Категория</option>
                                         <option>2</option>
                                         <option>3</option>

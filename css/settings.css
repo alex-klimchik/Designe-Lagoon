@@ -12,6 +12,14 @@
     display: flex;
     justify-content: center;
 }
+.profile-set-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-set-wrap label{
+    width: 220px;
+}
 
 @media (max-width: 768px) {
     .center-block-md {
@@ -22,5 +30,8 @@
         padding-right: 10px;
         padding-left: 10px;
         padding-bottom: 10px;
+    }
+    .profile-set-wrap{
+        flex-wrap: wrap;
     }
 }

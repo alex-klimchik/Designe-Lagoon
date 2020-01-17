@@ -69,9 +69,15 @@
                        <tbody>
                          <tr>
                            <td>21.12.2019</td>
-                           <td><span> Aliquam sem et tortor consequat id porta nibh venenatis porta nibh venenatis</span></td>
                            <td>
-                             <span class="message-info">Message  Aliquam sem et tortor consequat id porta nibh venenatis cras. In hac habitasse platea dictumst</span>
+                               <div class="test-my">
+                                 <span> Aliquam sem et tortor consequat id porta nibh venenatis porta nibh venenatis</span>
+                               </div>
+                           </td>
+                           <td>
+                               <div class="test-my">
+                                  <span class="message-info">Message  Aliquam sem et tortor consequat id porta nibh venenatis cras. In hac habitasse platea dictumst</span>
+                               </div>
                              <button type="button" class="btn-details btn" data-toggle="modal" data-target="#exampleModalTicketInfo">Подробнее</button>
                            </td>
                          </tr>
@@ -106,9 +112,15 @@
                  <tbody>
                    <tr>
                      <td>21.12.2019</td>
-                     <td><span> Aliquam sem et tortor consequat id porta nibh venenatis</span></td>
                      <td>
-                       <span class="message-info">Message  Aliquam sem et tortor consequat id porta nibh venenatis cras. In hac habitasse platea dictumst</span>
+                         <div class="test-my">
+                             <span> Aliquam sem et tortor consequat id porta nibh venenatis</span>
+                         </div>
+                     </td>
+                     <td>
+                         <div class="test-my">
+                            <span class="message-info">Message  Aliquam sem et tortor consequat id porta nibh venenatis cras. In hac habitasse platea dictumst. Message  Aliquam sem et tortor consequat id porta nibh venenatis cras. In hac habitasse platea dictumst</span>
+                         </div>
                        <button type="button" class="btn-details btn" data-toggle="modal" data-target="#exampleModalTicketInfo">Подробнее</button>
                      </td>
                    </tr>

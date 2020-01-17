@@ -39,4 +39,10 @@ $(document).ready(function () {
         }, 300);
     });
 
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
 });
+
+

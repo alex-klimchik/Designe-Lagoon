@@ -56,14 +56,16 @@
                                         <th>Название</th>
                                         <th></th>
                                         <th>
-                                            <div class="dropdown">
-                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="position: relative; padding-right: 35px;">Офферы</button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 35px, 0px);">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
+
+                                            <div class="form-group">
+                                                <select class="form-style selectpicker" id="allOffersCategory" data-live-search="true" >
+                                                    <option>Офферы</option>
+                                                    <option>Action</option>
+                                                    <option>Another action</option>
+                                                    <option>Something else here</option>
+                                                </select>
                                             </div>
+
                                         </th>
                                         <th>Страница</th>
                                         <th>Действия</th>
@@ -121,9 +123,121 @@
                                             <a href="">Pages</a>
                                         </td>
                                         <td class="setting-offers">
-                                            <button type="button" class="btn-mini btn-outline-secondary"><i class="fa fa-link" aria-hidden="true"></i></button>
-                                            <button type="button" class="btn-mini btn-outline-secondary"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                                            <button type="button" class="btn-mini btn-outline-secondary"><i class="fa fa-trash-alt" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-mini btn-outline-edit" data-toggle="tooltip" data-placement="bottom" title="Редактировать"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-mini btn-outline-add" data-toggle="tooltip" data-placement="bottom" title="Добавить"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-mini btn-outline-delete" data-toggle="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-trash-alt" aria-hidden="true"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td  class="input-offers">
+                                            <div class="input-group mb-1">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class=" btn-links" type="button" data-toggle="modal" data-target="#exampleModalLink"><i class="fa fa-link" aria-hidden="true"></i> </button>
+
+
+                                                    <div class="modal fade" id="exampleModalLink" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true"><div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLinkLabel">Генерация ссылки</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">×</span></button>
+                                                                </div>
+                                                                <div class="modal-body text-left">
+                                                                    <div class="form-group">
+                                                                        <label for="exampleFormControlSelect1">Ресурс:</label>
+                                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                                            <option>Выберите нужный ресурс...</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="exampleFormControlTextarea1">Ссылка:</label>
+                                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>Test</td>
+                                        <td class="images-offers">
+                                            <img src="images/product.png" alt="prod" />
+                                        </td>
+                                        <td>
+                                            <a href="">Name Offers</a>
+                                        </td>
+                                        <td>
+                                            <a href="">Pages</a>
+                                        </td>
+                                        <td class="setting-offers">
+                                            <button type="button" class="btn-mini btn-outline-edit" data-toggle="tooltip" data-placement="bottom" title="Редактировать"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-mini btn-outline-add" data-toggle="tooltip" data-placement="bottom" title="Добавить"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-mini btn-outline-delete" data-toggle="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-trash-alt" aria-hidden="true"></i></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td  class="input-offers">
+                                            <div class="input-group mb-1">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class=" btn-links" type="button" data-toggle="modal" data-target="#exampleModalLink"><i class="fa fa-link" aria-hidden="true"></i> </button>
+
+
+                                                    <div class="modal fade" id="exampleModalLink" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true"><div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLinkLabel">Генерация ссылки</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">×</span></button>
+                                                                </div>
+                                                                <div class="modal-body text-left">
+                                                                    <div class="form-group">
+                                                                        <label for="exampleFormControlSelect1">Ресурс:</label>
+                                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                                            <option>Выберите нужный ресурс...</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="exampleFormControlTextarea1">Ссылка:</label>
+                                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>Test</td>
+                                        <td class="images-offers">
+                                            <img src="images/product.png" alt="prod" />
+                                        </td>
+                                        <td>
+                                            <a href="">Name Offers</a>
+                                        </td>
+                                        <td>
+                                            <a href="">Pages</a>
+                                        </td>
+                                        <td class="setting-offers">
+                                            <button type="button" class="btn-mini btn-outline-edit" data-toggle="tooltip" data-placement="bottom" title="Редактировать"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-mini btn-outline-add" data-toggle="tooltip" data-placement="bottom" title="Добавить"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn-mini btn-outline-delete" data-toggle="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-trash-alt" aria-hidden="true"></i></button>
                                         </td>
                                     </tr>
                                     </tbody>

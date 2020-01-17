@@ -51,9 +51,9 @@
                                 <td>Нет</td>
                                 <td>
                                     <div class="set-button">
-                                        <button type="button" class="btn btn-info">Тикет</button>
-                                        <button type="button" class="btn btn-success">Оплатить</button>
-                                        <button type="button" class="btn btn-danger">Отменить</button>
+                                        <button type="button" class="btn btn-outline-info">Тикет</button>
+                                        <button type="button" class="btn btn-outline-success">Оплатить</button>
+                                        <button type="button" class="btn btn-outline-danger">Отменить</button>
                                     </div>
                                 </td>
                             </tr>

@@ -31,10 +31,24 @@
                     </div>
                     <div class="head-body-info">
                         <h3>Are-Sex</h3>
-                        <a href="#">https://official.org.ua/are-sex-0-ooa </a>
-                        <a href="edit-offer.php" class="btn btn-outline-orange btn-sm">
-                            <i class="fa fa-edit" aria-hidden="true"></i>
-                        </a>
+
+                        <div class="c-blue-500">
+                           <a href="#">https://official.org.ua/are-sex-0-ooa </a>
+                        </div>
+                        <div class="head-btn">
+                           <a href="edit-offer.php" class="btn btn-outline-orange btn-sm" data-toggle="tooltip" data-placement="bottom" title="Редактировать">
+                              <i class="fa fa-edit" aria-hidden="true"></i>
+                           </a>
+                            <a href="#" class="btn btn-outline-new btn-sm" data-toggle="tooltip" data-placement="bottom" title="Создать поток">
+                                <i class="fa fa-random" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-info btn-sm" data-toggle="tooltip" data-placement="bottom" title="Промо-материалы">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" data-placement="bottom" title="Убрать">
+                                <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 

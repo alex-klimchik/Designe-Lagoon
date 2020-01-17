@@ -67,6 +67,7 @@
     margin-top: 15px;
 }
 .table-tickets{
+    table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
     min-width: 992px;
@@ -77,7 +78,7 @@
     padding: .75rem;
 }
 .table-tickets tr td:first-child{
-    min-width: 280px;
+    min-width: 225px;
 }
 .table-tickets tr td{
     /*width: 100%;*/
@@ -87,26 +88,27 @@
     background-color: #f2f2f2;
 }
 .table-tickets tr th:first-child{
-    width: 350px;
-}
-.table-tickets tr th:last-child{
-   text-align: center;
+    width: 225px;
 }
 
 .table-tickets tr td:last-child{
     display: flex ;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
-
-.table-tickets tr td > span{
-    max-width: 300px;
+.test-my{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.table-tickets tr td div > span{
+    /*max-width: 300px;*/
     display: flex;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
 }
-.table-tickets tr td span::after {
+.table-tickets tr td div span::after {
     content: '';
     position: absolute;
     right: 0;
@@ -161,8 +163,10 @@ button.btn-details.btn{
     border-radius: 0;
     float: right;
     margin-left: 20px;
+    transition: none;
 }
 button.btn-details.btn:hover{
+    border: 1px solid #7b5bcc;
     border-right: #7b5bcc;
     color: #f2f2f2;
     background-color: #7b5bcc;
