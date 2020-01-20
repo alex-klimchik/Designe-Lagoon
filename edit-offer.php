@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Редактирование оффера</title>
     <?php require_once('block/head.php'); ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Main CSS for this Page -->
     <link rel="stylesheet" href="css/edit-offer.css">
 </head>
@@ -25,55 +28,63 @@
                 <div class="bd p-20 bgc-white">
 
                     <div class="bgc-white">
-                        <!-- <h5 class="col-12 c-grey-900 bd">Личные данные</h5> -->
                         <form method="" action="#">
                             <fieldset class="description">
                                 <legend>Описание</legend>
 
-                                <div class="form-group col-xl-4 col-lg-5 col-md-6">
+                                <div class="form-group nameOffer">
                                     <label for="title">Название</label>
                                     <input type="text" id="title" class="form-control" name="title" placeholder="Название" required="">
-                                </div>
-                                <div class="form-group product col-xl-4 col-lg-5 col-md-6">
+                                </div><!-- /.nameOffer -->
+
+                                <div class="form-group product">
                                     <label for="product">Продукт</label>
-                                    <select class="selectpicker form-control" id="product" data-live-search="true">
+                                    <select class="selectpicker form-control product-select" id="product" data-live-search="true">
                                         <option selected>Кому принадлежит оффер?</option>
                                         <option>Нейросистема</option>
                                         <option>Ремакслим</option>
                                     </select>
-                                </div>
+                                </div><!-- /.product -->
                                 <div class="border"></div>
-                                <div class="form-row col-12 price">
-                                    <div class="form-group col-4 col-md-2">
-                                        <label for="price">Цена&nbsp;(<span style="color: #000">руб</span>)</label>
-                                        <input type="text" id="price" class="form-control" name="price">
-                                    </div>
-                                    <div class="form-group col-6 col-md-4 col-lg-3">
-                                        <label for="country">Страна</label>
-                                        <select class="selectpicker form-control" id="country" data-live-search="true">
-                                            <option selected>Россия</option>
-                                            <option>Украина</option>
-                                            <option>Беларусь</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-2 col-md-3">
-                                        <label style="opacity: 0">.</label>
-                                        <button style="display: block" type="button" class="btn btn-danger">
-                                            <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-times"></i></span>
-                                            <span class="d-none d-md-inline">Удалить<span>
-                                        </button>
-                                    </div>
-                                    <div class="form-group col-12 col-md-12">
-                                        <button style="display: block" type="button" class="btn btn-secondary">
-                                            <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
-                                            Добавить
-                                        </button>
-                                    </div>
-                                </div>
+
+                                <div class="form-group price">
+                                    <label>Цена</label>
+                                    <div class="price-main">
+                                        <div class="price-row">
+                                            <input type="text" class="form-control" placeholder="0" name="price"><span class="price-currency">руб</span>
+                                            <select class="selectpicker form-control price-select" id="country" data-live-search="true">
+                                                <option selected>Россия</option>
+                                                <option>Украина</option>
+                                                <option>Беларусь</option>
+                                            </select>
+                                            <button type="button" class="btn btn-danger">
+                                                <span class="btn-label"><i class="fa fa-times"></i></span>
+                                            </button>
+                                        </div><!-- /.price-row -->
+                                        <!-- <div class="price-row">
+                                            <input type="text" class="form-control" placeholder="0" name="price"><span class="price-currency">руб</span>
+                                            <select class="selectpicker form-control price-select" id="country" data-live-search="true">
+                                                <option selected>Россия</option>
+                                                <option>Украина</option>
+                                                <option>Беларусь</option>
+                                            </select>
+                                            <button type="button" class="btn btn-danger">
+                                                <span class="btn-label"><i class="fa fa-times"></i></span>
+                                            </button>
+                                        </div> -->
+                                    </div><!-- /.price -->
+
+
+                                    <button type="button" class="btn btn-secondary">
+                                        <span class="btn-label"><i class="fa fa-plus-circle"></i></span>
+                                        Добавить
+                                    </button>
+                                </div><!-- /.price -->
                                 <div class="border"></div>
-                                <div class="col-12">
-                                    <div>Приватный?</div>
-                                    <div>
+
+                                <div class=" makeChoice">
+                                    <label>Приватный?</label>
+                                    <div class="makeChoice-radio">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="private" id="inlineRadioYes" value="on">
                                             <label class="form-check-label" for="inlineRadioYes">Да</label>
@@ -83,11 +94,12 @@
                                             <label class="form-check-label" for="inlineRadioNo">Нет</label>
                                         </div>
                                     </div>
-                                </div>
+                                </div><!-- /.makeChoice -->
                                 <div class="border"></div>
-                                <div class="col-12">
-                                    <div>Adult?</div>
-                                    <div>
+
+                                <div class="makeChoice">
+                                    <label>Adult?</label>
+                                    <div class="makeChoice-radio">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="adult" id="AdultRadioYes" value="on">
                                             <label class="form-check-label" for="AdultRadioYes">Да</label>
@@ -97,53 +109,60 @@
                                             <label class="form-check-label" for="AdultRadioNo">Нет</label>
                                         </div>
                                     </div>
-                                </div>
+                                </div><!-- /.makeChoice -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+
+                                <div class="sale">
                                     <label for="sale">Sale?</label>
-                                    <select class="selectpicker form-control" id="sale" data-live-search="true">
+                                    <select class="selectpicker form-control sale-select" id="sale" data-live-search="true">
                                         <option>0</option>
                                         <option>1</option>
                                         <option>9</option>
                                     </select>
-                                </div>
+                                </div><!-- /.sale -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+
+                                <div class="category">
                                     <label for="category">Категория</label>
                                     <select class="selectpicker form-control" id="category" data-live-search="true">
                                         <option>Товары почтой</option>
                                         <option>Онлайн-игры</option>
                                         <option value="">Электроника и бытовая техника</option>
                                     </select>
-                                </div>
+                                </div><!-- /.category -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label for="category-product">Категория товара</label>
-                                    <select class="selectpicker form-control" id="category-product" data-live-search="true">
+
+                                <div class="category-product">
+                                    <label for="ctg">Категория товара</label>
+                                    <select class="selectpicker form-control" id="ctg" data-live-search="true">
                                         <option>Без категории</option>
                                         <option>Похудение</option>
                                     </select>
-                                </div>
+                                </div><!-- /.category-product -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
-                                    <label for="shorDescribe">Краткое описание</label>
-                                    <textarea class="form-control" id="shorDescribe" name="shorDescribe" rows="4"></textarea>
-                                </div>
+
+                                <div class="description-main_textarea">
+                                    <label for="sDescription">Краткое описание</label>
+                                    <textarea class="form-control" id="sDescription" name="shorDescribe" rows="4" required></textarea>
+                                </div><!-- /.description-main_textarea -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
+
+                                <div class="description-main_textarea">
                                     <label for="describe">Описание</label>
                                     <textarea class="form-control" id="describe" name="describe" rows="4"></textarea>
-                                </div>
+                                </div><!-- /.description-main_textarea -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
+
+                                <div class="description-main_textarea">
                                     <label for="offerRules">Правила оффера</label>
                                     <textarea class="form-control" id="offerRules" name="offerRules" rows="4"></textarea>
-                                </div>
+                                </div><!-- /.description-main_textarea -->
                                 <div class="border"></div>
-                            </fieldset>
+                            </fieldset><!-- /.description -->
                             <fieldset>
                                 <legend>Условия</legend>
-                                <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12">
+
+                                <div class="description-main_select">
                                     <label for="geography">География</label>
                                     <select class="form-control" id="geography" name="geography" multiple="multiple" size="10">
                                         <option>Россия</option>
@@ -157,9 +176,10 @@
                                         <option>Казахстан</option>
                                         <option>Молдова</option>
                                     </select>
-                                </div>
+                                </div><!-- /.description-main_select -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-10 col-12">
+
+                                <div class="description-main_select">
                                     <label for="trafficsources">Источники трафика</label>
                                     <select class="form-control" id="trafficsources" name="trafficsources" multiple="multiple" size="10">
                                         <option>Веб-сайты</option>
@@ -173,18 +193,19 @@
                                         <option>Казахстан</option>
                                         <option>Молдова</option>
                                     </select>
-                                </div>
+                                </div><!-- /.description-main_select -->
                                 <div class="border"></div>
-                                <div class="form-group col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label for="postclick">Постклик</label>
-                                    <input type="text" id="postclick" class="form-control" name="postclick">
-                                </div>
+
+                                <div class="postclick">
+                                    <label for="pstclick">Постклик</label>
+                                    <input type="text" id="pstclick" class="form-control" name="postclick">
+                                </div><!-- /.postclick -->
                                 <div class="border"></div>
                             </fieldset>
                             <fieldset>
                                 <legend>Целевая аудитория</legend>
-                                <div class="col-12">
-                                    <div>Пол</div>
+                                <div class="gender">
+                                    <label>Пол</label>
                                     <div>
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="sex" id="men">
@@ -201,11 +222,10 @@
                                     </div>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-12">
+
+                                <div class="age">
                                     <label for="rangeAge">Возраст</label>
-                                    <div class="col-12">
-                                        <input id="rangeAge" type="text" class="span2" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[18,40]" />
-                                    </div>
+                                    <input id="rangeAge" type="text" class="span2" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[18,40]" />
                                 </div>
                                 <div class="border"></div>
                             </fieldset>
@@ -239,25 +259,25 @@
                                     <div class="col-md-2">Адаптивный</div>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-12 page-new">
+                                <div class="form-group page-new">
                                     <button type="button" class="btn btn-secondary">
                                         <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
                                         Новая страница
                                     </button>
                                 </div>
                                 <div class="border"></div>
-                            </fieldset>
+                            </fieldset><!-- /.page -->
                             <fieldset class="page">
                                 <legend>Приватные страницы</legend>
                                 <!-- сюда добавлять новые страницы -->
-                                <div class="form-group col-12 page-new">
+                                <div class="form-group page-new">
                                     <button type="button" class="btn btn-secondary">
                                         <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
                                         Новая страница
                                     </button>
                                 </div>
                                 <div class="border"></div>
-                            </fieldset>
+                            </fieldset><!-- /.page -->
                             <fieldset class="page">
                                 <legend>Приватные страницы</legend>
                                 <div class="form-row col-12">
@@ -274,17 +294,17 @@
                                     <div class="col-md-2 ">Адаптивный</div>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-group col-12 page-new">
+                                <div class="form-group page-new">
                                     <button type="button" class="btn btn-secondary">
                                         <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
                                         Новая страница
                                     </button>
                                 </div>
                                 <div class="border"></div>
-                            </fieldset>
+                            </fieldset><!-- /.page -->
                             <fieldset>
                                 <legend>Цель</legend>
-                                <div class="form-group col-xl-4 col-lg-5 col-md-5 col-sm-6 col-12">
+                                <div class="goal">
                                     <select class="selectpicker form-control">
                                         <option value="" selected>Подтверждённая заявка</option>
                                         <option value="">Оплаченный заказ</option>
@@ -293,13 +313,13 @@
                                     </select>
                                 </div>
                                 <div class="border"></div>
-                            </fieldset>
+                            </fieldset> 
                             <fieldset class="pay">
                                 <legend>Выплаты</legend>
-                                <div class="form-row col-12">
-                                    <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3">
-                                        <label for="advertiser">Рекламодатель</label>
-                                        <select class="selectpicker form-control" id="advertiser">
+                                <div class="form-row">
+                                    <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 advertis">
+                                        <label for="advertis-select">Рекламодатель</label>
+                                        <select class="selectpicker form-control" id="advertis-select">
                                             <option value="" selected>Виталий Попета</option>
                                             <option value="">Алексей Климчук</option>
                                         </select>
@@ -334,14 +354,14 @@
 
 
                             <div class="form-group col-lg-4 col-md-6">
-                                <button type="button" class="btn btn-primary">Сохранить</button>
+                                <button type="submit" class="btn btn-primary">Сохранить</button>
                             </div>
                         </form>
                     </div><!--  -->
                 </div><!--  -->
             </main>
         </div><!-- /.page-container  -->
-    </div><!-- /.wrapper -->
+    </div><!-- /.wrapperper -->
 
 
 
@@ -351,7 +371,7 @@
     <!-- Latest compiled Bootstrap-Slider JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
 
-   
+
 
     <script>
         $('#rangeAge').slider();

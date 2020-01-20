@@ -73,9 +73,11 @@ legend {
 .slider:hover .tooltip.in {
     opacity: 1!important;
 }
+
 .slider:active .tooltip.in {
     opacity: 1!important;
 }
+
 /* selectpicker */
 
 .bootstrap-select .btn {
@@ -128,7 +130,95 @@ legend {
     #trafficsources, #geography {
         font-size: 13px;
     }
-    .dropdown-menu.show{
+    .dropdown-menu.show {
         font-size: 14px;
     }
+}
+
+.nameOffer label, .product label, .price label, .makeChoice>label, .sale label, .category label, .category-product label, .postclick label, .gender>label, .age label, .advertis label{
+    margin-right: 20px;
+    width: 180px
+}
+
+.description-main_textarea label, .description-main_select label {
+    margin-right: 23px;
+    width: 180px
+}
+
+.nameOffer input, .makeChoice-radio, .description-main_textarea textarea, .description-main_select select, .gender>div, .age input, .age .slider {
+    width: 360px!important;
+    display: inline-flex;
+}
+
+.postclick input {
+    width: 130px!important;
+    display: inline-flex;
+}
+
+.price-main {
+    display: inline-flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.price-row {
+    position: relative;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.price-row input {
+    width: 130px;
+    display: inline-block;
+    padding-right: 50px;
+    margin-right: 4px;
+}
+
+.price-row button span {
+    padding-right: 5px;
+}
+
+.price>button {
+    display: block;
+    width: 130px;
+    margin-left: 203px;
+    margin-top: 10px
+}
+
+.page-new>button {
+    width: 180px;
+    margin-left: 203px;
+}
+
+.price>button span {
+    padding-right: 5px;
+}
+
+.price-currency {
+    position: absolute;
+    top: 7px;
+    left: 90px;
+}
+
+.price-row .bootstrap-select.price-select {
+    width: 220px!important;
+    margin-right: 4px;
+}
+
+.sale .bootstrap-select.sale-select {
+    width: 130px!important;
+}
+
+.product-select, .sale-select, .category .bootstrap-select, .category-product .bootstrap-select {
+    width: 360px!important;
+}
+
+.goal .bootstrap-select {
+    width: 360px!important;
+    margin-left: 203px;
+}
+
+.description-main_textarea, .description-main_select {
+    display: flex;
+    align-items: center;
 }
