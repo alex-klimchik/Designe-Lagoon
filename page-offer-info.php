@@ -35,6 +35,9 @@
                         <a href="edit-offer.php" class="btn btn-outline-orange btn-sm">
                             <i class="fa fa-edit" aria-hidden="true"></i>
                         </a>
+                        <a href="edit-streams.php" class="btn btn-outline-orange btn-sm">
+                        <i class="fas fa-plus"></i>
+                        </a>
                     </div>
                 </div>
 

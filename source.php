@@ -65,7 +65,7 @@
                         <div class="col-4 titleName ">
                             <p>Название :</p>
                         </div>
-                        <div class="col-8"><input class="titleInput " type="text" placeholder="введите название"> </div>
+                        <div class="col-8"><input class="titleInput form-control" type="text" placeholder="введите название"> </div>
 
 
                     </div>
@@ -96,7 +96,7 @@
                         <div class="col-4 titleName ">
                             <p>Название :</p>
                         </div>
-                        <div class="col-8"><input class="titleInput" type="text" placeholder="введите название"> </div>
+                        <div class="col-8"><input class="titleInput form-control" type="text" placeholder="введите название"> </div>
 
 
                     </div>
