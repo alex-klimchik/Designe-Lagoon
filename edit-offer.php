@@ -57,7 +57,7 @@
                                                 <option>Украина</option>
                                                 <option>Беларусь</option>
                                             </select>
-                                            <button type="button" class="btn btn-danger">
+                                            <button type="button" class="btn btn-danger" title="Удалить">
                                                 <span class="btn-label"><i class="fa fa-times"></i></span>
                                             </button>
                                         </div><!-- /.price-row -->
@@ -68,11 +68,11 @@
                                                 <option>Украина</option>
                                                 <option>Беларусь</option>
                                             </select>
-                                            <button type="button" class="btn btn-danger">
+                                            <button type="button" class="btn btn-danger" title="Удалить">
                                                 <span class="btn-label"><i class="fa fa-times"></i></span>
                                             </button>
                                         </div> -->
-                                    </div><!-- /.price -->
+                                    </div><!-- /.price-main -->
 
 
                                     <button type="button" class="btn btn-secondary">
@@ -138,6 +138,15 @@
                                         <option>Без категории</option>
                                         <option>Похудение</option>
                                     </select>
+                                </div><!-- /.category-product -->
+                                <div class="border"></div>
+
+                                <div class="addLogo">
+                                    <label>Логотип <span>(макс. 1000х1000px, до 1мб)</span></label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Выберите файл</label>
+                                    </div>
                                 </div><!-- /.category-product -->
                                 <div class="border"></div>
 
@@ -231,32 +240,36 @@
                             </fieldset>
                             <fieldset class="page">
                                 <legend>Страница</legend>
-                                <div class="form-row col-12">
-                                    <div class="col-md-2">Name</div>
-                                    <div class="col-md-5">
-                                        Url
-                                        <span class="editing-deletion">
-                                            <i class="fa fa-pencil" title="изменить"></i>
-                                            <i class="fa fa-times" title="удалить"></i>
-                                        </span>
+                                <div class="form-group page-group">
+                                    <label>Name</label>
+                                    <div class="page_wrap-group">
+                                        <div class="page-url">
+                                            Url
+                                            <span class="editing-deletion">
+                                                <i class="fa fa-pencil" title="изменить"></i>
+                                                <i class="fa fa-times" title="удалить"></i>
+                                            </span>
+                                        </div>
+                                        <div class="page-info">Цена</div>
+                                        <div class="page-info">Метрика отсутствует</div>
+                                        <div class="page-info">Адаптивный</div>
                                     </div>
-                                    <div class="col-md-1">Цена</div>
-                                    <div class="col-md-2">Метрика отсутствует</div>
-                                    <div class="col-md-2">Адаптивный</div>
                                 </div>
                                 <div class="border"></div>
-                                <div class="form-row col-12">
-                                    <div class="col-md-2">Лендинг Lite пример</div>
-                                    <div class="col-md-5">
-                                        https://official.org.ua/neurosystem7-0-ooa/
-                                        <span class="editing-deletion">
-                                            <i class="fa fa-pencil" title="изменить"></i>
-                                            <i class="fa fa-times" title="удалить"></i>
-                                        </span>
+                                <div class="form-group page-group">
+                                    <label>Лендинг Lite пример</label>
+                                    <div class="page_wrap-group">
+                                        <div class="page-url">
+                                            https://official.org.ua/neurosystem7-0-ooa/
+                                            <span class="editing-deletion">
+                                                <i class="fa fa-pencil" title="изменить"></i>
+                                                <i class="fa fa-times" title="удалить"></i>
+                                            </span>
+                                        </div>
+                                        <div class="page-info">0 грн.</div>
+                                        <div class="page-info">Метрика отсутствует</div>
+                                        <div class="page-info">Адаптивный</div>
                                     </div>
-                                    <div class="col-md-1"> 0 грн.</div>
-                                    <div class="col-md-2">Метрика отсутствует</div>
-                                    <div class="col-md-2">Адаптивный</div>
                                 </div>
                                 <div class="border"></div>
                                 <div class="form-group page-new">
@@ -279,25 +292,28 @@
                                 <div class="border"></div>
                             </fieldset><!-- /.page -->
                             <fieldset class="page">
-                                <legend>Приватные страницы</legend>
-                                <div class="form-row col-12">
-                                    <div class="col-md-2">Елена Шульженко Тест</div>
-                                    <div class="col-md-4">
-                                        https://novosti-o-vazhnom.com/elena-shulzhenko-neurosystem0-inn/тест
-                                        <span class="editing-deletion">
-                                            <i class="fa fa-pencil" title="изменить"></i>
-                                            <i class="fa fa-times" title="удалить"></i>
-                                        </span>
+                                <legend>Прокладки</legend>
+                                <div class="form-group page-group">
+                                    <label>Елена Шульженко Тест</label>
+                                    <div class="page_wrap-group">
+                                        <div class="page-url">
+                                            https://novosti-o-vazhnom.com/elena-shulzhenko-neurosystem0-inn/тест
+                                            <span class="editing-deletion">
+                                                <i class="fa fa-pencil" title="изменить"></i>
+                                                <i class="fa fa-times" title="удалить"></i>
+                                            </span>
+                                        </div>
+                                        <div class="page-info">Метрика отсутствует</div>
+                                        <div class="page-info">Похудение</div>
+                                        <div class="page-info">Адаптивный</div>
                                     </div>
-                                    <div class="col-md-2">Метрика отсутствует</div>
-                                    <div class="col-md-2">Похудение</div>
-                                    <div class="col-md-2 ">Адаптивный</div>
                                 </div>
+
                                 <div class="border"></div>
                                 <div class="form-group page-new">
                                     <button type="button" class="btn btn-secondary">
                                         <span class="btn-label" style="padding-right: 5px;"><i class="fa fa-plus-circle"></i></span>
-                                        Новая страница
+                                        Новая прокладка
                                     </button>
                                 </div>
                                 <div class="border"></div>
@@ -313,36 +329,40 @@
                                     </select>
                                 </div>
                                 <div class="border"></div>
-                            </fieldset> 
+                            </fieldset>
                             <fieldset class="pay">
                                 <legend>Выплаты</legend>
-                                <div class="form-row">
-                                    <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 advertis">
-                                        <label for="advertis-select">Рекламодатель</label>
-                                        <select class="selectpicker form-control" id="advertis-select">
-                                            <option value="" selected>Виталий Попета</option>
-                                            <option value="">Алексей Климчук</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-12 col-sm-6 col-md-2 col-lg-1 geo">
-                                        <label>Гео</label>
-                                        <div>Украина</div>
-                                    </div>
-                                    <div class="form-group col-12 col-sm-6 col-md-3 col-lg-3 payment">
-                                        <label>Опллата рек.</label>
-                                        <div class="form-row col-12">
-                                            <input type="text" class="form-control col-6" value="0">
-                                            <select class="selectpicker form-control col-6">
+                                <!-- <div class="form-row"> -->
+                                <div class="form-group advertis">
+                                    <label for="advertis-select">Рекламодатель</label>
+                                    <select class="selectpicker form-control" id="advertis-select">
+                                        <option value="" selected>Виталий Попета</option>
+                                        <option value="">Алексей Климчук</option>
+                                    </select>
+                                </div>
+                                <div class="border"></div>
+                                <div class="form-group  geo">
+                                    <label>Гео</label>
+                                    <div>Украина</div>
+                                </div>
+                                <div class="border"></div>
+                                <div class="form-group payment">
+                                    <label>Опллата</label>
+                                    <div class="payment-row">
+                                        <div class="payment-group">
+                                            <label>рекламодателю</label>
+                                            <span>Оплата рек.</span>
+                                            <input type="text" class="form-control" value="0">
+                                            <select class="selectpicker form-control ">
                                                 <option value="" selected disabled>руб</option>
                                                 <option value="" disabled>грн</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="form-group col-12 col-sm-6 col-md-3 col-lg-3 payment">
-                                        <label>Опллата веб.</label>
-                                        <div class="form-row col-12">
-                                            <input type="text" class="form-control col-6" value="0">
-                                            <select class="selectpicker form-control col-6">
+                                        <div class="payment-group">
+                                            <label> вебмастеру</label>
+                                            <span>Оплата веб.</span>
+                                            <input type="text" class="form-control" value="0">
+                                            <select class="selectpicker form-control">
                                                 <option value="" selected disabled>руб</option>
                                                 <option value="" disabled>грн</option>
                                             </select>
@@ -353,7 +373,7 @@
                             </fieldset>
 
 
-                            <div class="form-group col-lg-4 col-md-6">
+                            <div class="form-group btn-save">
                                 <button type="submit" class="btn btn-primary">Сохранить</button>
                             </div>
                         </form>
