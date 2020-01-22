@@ -1,0 +1,190 @@
+.bootstrap-select .btn {
+    border: 1px solid #ced4da!important;
+    color: #72777a!important;
+    background-color: #fff;
+}
+
+.tabel-streams {
+    font-size: 12px;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 21px;
+    font-size: 16px;
+    line-height: inherit;
+    color: #3a3f51;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #eee!important;
+    margin: 10px 0;
+}
+
+.table-style-domen td {
+    padding: 5px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: center;
+}
+
+.slide_descr {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.slide_descr table td {
+    padding: 1px;
+}
+
+#postback_inform {
+    color: chocolate;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 600;
+    width: 800px;
+}
+
+.hide {
+    display: none;
+}
+
+.link-script-a2:hover>iframe,
+.link-script-a3:hover>iframe,
+.link-script-a4:hover>iframe {
+    display: block;
+}
+
+.link-script-a1:hover,
+.link-script-a2:hover,
+.link-script-a3:hover,
+.link-script-a4:hover,
+.link-script-a5:hover {
+    font-weight: 700;
+    color: #47c0f7;
+}
+
+.link-frame-a2 {
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -20%;
+    width: 80%;
+    height: 110%;
+    border: 0;
+    display: none;
+}
+
+.link-frame-a3 {
+    display: none;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: -16%;
+    width: 80%;
+    height: 110%;
+    border: 0;
+}
+
+.link-frame-a4 {
+    display: none;
+    position: absolute;
+    margin-left: 54%;
+    margin-top: -13%;
+    width: 100%;
+    height: 102%;
+    border: 0;
+}
+
+.name-firstBlock-b>label {
+    width: 200px;
+}
+
+.name-firstBlock-b>input {
+    width: 500px;
+    display: inline-block;
+}
+
+.name-twoBlock-b>label {
+    width: 200px;
+}
+
+.name-twoBlock-b>.bootstrap-select {
+    width: 500px!important;
+    display: inline-block!important;
+}
+
+.change-domen {
+    width: 700px;
+}
+
+.tabel-lending {
+    width: 700px;
+}
+
+.domen-block-tabel {
+    width: 300px;
+}
+
+.link-page-thenk label {
+    width: 200px;
+}
+
+.link-page-thenk input {
+    width: 500px;
+    display: inline-block!important;
+}
+
+.tracking-and-counters label,
+.settings-blocks label {
+    width: 200px;
+}
+
+.tracking-and-counters input,
+.settings-blocks input {
+    width: 500px;
+    display: inline-block!important;
+}
+
+.inf-bottom {
+    width: 700px;
+}
+
+.list-domens {
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    .link-frame-a4 {
+        margin-left: 0%;
+        margin-top: -71%;
+        width: 90%;
+        height: 102%;
+    }
+    .link-frame-a3 {
+        margin-left: 3%;
+        margin-top: -66%;
+        width: 80%;
+        height: 110%;
+    }
+    .link-frame-a2 {
+        margin-left: 2%;
+        margin-top: -63%;
+        width: 91%;
+        height: 110%;
+    }
+}
+
+
+}
