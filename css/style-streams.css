@@ -126,12 +126,7 @@ button:focus{
     background-color: #dc3545;
 }
 
-
-
-
-
 .form-group{
-    width: 175px;
     margin: 0 10px;
 }
 .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
