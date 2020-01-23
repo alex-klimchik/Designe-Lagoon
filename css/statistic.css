@@ -170,6 +170,32 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     border-color: #efefef #efefef #fff;
 }
 
+.dataTables_wrapper>div.row:nth-child(2)>div {
+    overflow: auto!important;
+    position: relative!important;
+    max-height: calc( 100vh - 235px);
+}
+
+#dataTable {
+    position: relative!important;
+}
+
+#dataTable thead tr:nth-child(1) th {
+    position: -webkit-sticky;
+    /* for Safari */
+    position: sticky!important;
+    top: 0!important;
+    background: #FFF;
+}
+
+#dataTable thead tr:nth-child(2) th {
+    position: -webkit-sticky;
+    /* for Safari */
+    position: sticky!important;
+    top: 39px!important;
+    background: #FFF;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -198,16 +224,17 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
         padding-left: 15px;
         max-width: 33.3333333%;
     }
-    .dop-inputs {
-        /* margin: 0; */
-    }
 }
 
 @media (max-width: 992px) {
     .form-inputs {
         box-sizing: content-box!important;
     }
+    .dataTables_wrapper>div.row:nth-child(2)>div {
+        max-height: calc( 100vh - 120px);
+    }
 }
+
 @media (max-width: 991px) {
     main {
         padding: 15px 10px;
@@ -220,7 +247,6 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     }
 }
 
-
 @media (max-width: 576px) {
     main {
         font-size: 14px;
@@ -231,7 +257,7 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
         margin-left: 0;
     }
     div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
     }
     .dataTables_filter label, .dataTables_length label {
@@ -240,5 +266,8 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     }
     .dataTables_filter label input {
         margin-left: 0!important;
+    }
+    .dataTables_wrapper>div.row:nth-child(2)>div {
+        max-height: calc( 100vh - 110px);
     }
 }
