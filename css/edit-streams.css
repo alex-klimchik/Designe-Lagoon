@@ -6,6 +6,14 @@
 
 .tabel-streams {
     font-size: 12px;
+    color: #72777a!important;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0px 30px;
+    margin: 0;
+    border: 0;
 }
 
 legend {
@@ -120,7 +128,8 @@ legend {
     width: 200px;
 }
 
-.name-twoBlock-b>.bootstrap-select {
+.name-twoBlock-b>.bootstrap-select,
+.seleckt-source>.bootstrap-select {
     width: 500px!important;
     display: inline-block!important;
 }
@@ -147,11 +156,16 @@ legend {
 }
 
 .tracking-and-counters label,
-.settings-blocks label {
+.settings-blocks label,
+.seleckt-source label {
     width: 200px;
 }
 
-.tracking-and-counters input,
+.tracking-and-counters input {
+    width: 250px;
+    display: inline-block!important;
+}
+
 .settings-blocks input {
     width: 500px;
     display: inline-block!important;
@@ -163,6 +177,15 @@ legend {
 
 .list-domens {
     width: 500px;
+}
+
+.block-audio {
+    display: none;
+    margin: 20px 50px;
+}
+
+.block-audio i {
+    font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -184,7 +207,18 @@ legend {
         width: 91%;
         height: 110%;
     }
-}
-
-
+    .name-firstBlock-b>input,
+    .settings-blocks input,
+    .list-domens,
+    .inf-bottom,
+    .link-page-thenk input,
+    .tabel-lending,
+    .change-domen,
+    .name-twoBlock-b>.bootstrap-select,
+    .seleckt-source>.bootstrap-select,
+    .name-firstBlock-b>input,
+    #postback_inform {
+        width: 100%!important;
+        ;
+    }
 }

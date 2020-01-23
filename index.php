@@ -31,42 +31,42 @@
                                 <div class="col-4 col-md-2 col-sm-2 userActive">
                                        <a class="iconActive"><i class="c-deep-purple-500 fas fa-hand-point-up"></i></a>
                                         <div class="numberActive">
-                                            <span class="c-light-blue-500"> 0</span><br>
+                                            <span class="c-light-blue-500"> 23045</span><br>
                                             <span>Клики</span>
                                         </div>  
                                      </div>
                                      <div class="col-4 col-md-2 col-sm-2 userActive">
                                        <a class="iconActive"><i class="c-pink-500 fas fa-users"></i></a>
                                         <div class="numberActive">
-                                            <span class="c-light-blue-500"> 0</span><br>
+                                            <span class="c-light-blue-500"> 1534320</span><br>
                                             <span>Заявки</span>
                                         </div>  
                                      </div>
                                      <div class="col-4 col-md-2 col-sm-2 userActive">
                                        <a class="iconActive"><i class="c-light-blue-500 fas fa-check"></i></a>
                                         <div class="numberActive">
-                                            <span class="c-light-blue-500"> 0 ₽</span><br>
+                                            <span class="c-light-blue-500"> 908876 ₽</span><br>
                                             <span>Принято</span>
                                         </div>  
                                      </div>
                                      <div class="col-4 col-md-2 col-sm-2 userActive">
                                        <a class="iconActive"><i class="c-deep-orange-500 fas fa-lock"></i></a>
                                         <div class="numberActive">
-                                            <span class="c-light-blue-500"> 0 ₽</span><br>
+                                            <span class="c-light-blue-500"> 100000 ₽</span><br>
                                             <span>Холд</span>
                                         </div>  
                                      </div>
                                      <div class="col-4 col-md-2 col-sm-2 userActive">
                                        <a class="iconActive"><i class="c-deep-purple-500  far fa-clock"></i></a>
                                         <div class="numberActive">
-                                            <span class="c-light-blue-500"> 0 ₽</span><br>
+                                            <span class="c-light-blue-500"> 4053322 ₽</span><br>
                                             <span>Ожидает</span>
                                         </div>  
                                      </div>
                                      <div class="col-4 col-md-2 col-sm-2 userActive">
                                        <a class="iconActive"><i class="c-pink-500 far fa-times-circle"></i></a>
                                         <div class="numberActive">
-                                            <span class="c-light-blue-500"> 0 ₽</span><br>
+                                            <span class="c-light-blue-500"> 2350775 ₽</span><br>
                                             <span>Отклонено</span>
                                         </div>  
                                      </div>

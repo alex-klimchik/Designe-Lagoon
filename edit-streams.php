@@ -55,7 +55,7 @@
                                 <option>test2</option>
                             </select></div>
                                 <div class="tabel-lending table-responsive">
-                                    <table class="tabel-streams table center table-bordered">
+                                    <table class="tabel-streams table center">
                                         <thead>
 
                                             <tr>
@@ -90,7 +90,7 @@
                             <div class="form-group ">
 
                                 <div class="tabel-lending  table-responsive">
-                                    <table class="tabel-streams  center table table-bordered">
+                                    <table class="tabel-streams  center table ">
                                         <thead>
                                             <tr>
                                                 <th></th>
@@ -130,46 +130,40 @@
                         <div class="form-group domen-block row">
                             <div class="list-domens col-sm-5 offset-sm-2">
 
-                                <div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheckDom1" name="exampleDom1">
-                                        <label class="custom-control-label" for="customCheckDom1"><a href="http://officialdoc.com.ua/">http://officialdoc.com.ua/</a></label>
-                                    </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDom1" name="exampleDom1">
+                                    <label class="custom-control-label" for="customCheckDom1"><a href="http://officialdoc.com.ua/">http://officialdoc.com.ua/</a></label>
                                 </div>
-                                <div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheckDom11" name="exampleDom11">
-                                        <label class="custom-control-label" for="customCheckDom11"><a href="http://officialgroup.com.ua/">http://officialgroup.com.ua/</a></label>
-                                    </div>
-                                </div>
-                                <div>
 
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheckDom2" name="exampleDom2">
-                                        <label class="custom-control-label" for="customCheckDom2"><a href="http://sex-story.top/">http://sex-story.top/</a></label>
-                                    </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDom11" name="exampleDom11">
+                                    <label class="custom-control-label" for="customCheckDom11"><a href="http://officialgroup.com.ua/">http://officialgroup.com.ua/</a></label>
                                 </div>
-                                <div>
 
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheckDom3" name="exampleDom3">
-                                        <label class="custom-control-label" for="customCheckDom3"><a href="http://sex-is.work/">http://sex-is.work/</a></label>
-                                    </div>
-                                </div>
-                                <div>
 
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheckDom4" name="exampleDom4">
-                                        <label class="custom-control-label" for="customCheckDom4"><a href="http://official.org.ua/">http://official.org.ua/</a></label>
-                                    </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDom2" name="exampleDom2">
+                                    <label class="custom-control-label" for="customCheckDom2"><a href="http://sex-story.top/">http://sex-story.top/</a></label>
                                 </div>
-                                <div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheckDom5" name="exampleDom5">
-                                        <label class="custom-control-label" for="customCheckDom5"><a href="http://sex-story.top/">http://sex-story.top/</a></label>
-                                    </div>
 
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDom3" name="exampleDom3">
+                                    <label class="custom-control-label" for="customCheckDom3"><a href="http://sex-is.work/">http://sex-is.work/</a></label>
                                 </div>
+
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDom4" name="exampleDom4">
+                                    <label class="custom-control-label" for="customCheckDom4"><a href="http://official.org.ua/">http://official.org.ua/</a></label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckDom5" name="exampleDom5">
+                                    <label class="custom-control-label" for="customCheckDom5"><a href="http://sex-story.top/">http://sex-story.top/</a></label>
+                                </div>
+
+
                             </div>
 
                         </div>
@@ -187,14 +181,207 @@
                             <input type="text" placeholder="ссылка" class="form-control">
                         </div>
                         <div class="border"></div>
+                        <div class="form-group seleckt-source">
+
+                            <label>Источники</label>
+
+                            <select class="selectpicker form-control" data-live-search="true">
+                                <option selected>источник не выбран</option>
+                                <option>test1</option>
+                                <option>test2</option>
+                            </select>
+                        </div>
+                        <div class="border"></div>
                         <div class="form-group row">
 
                             <div class="col-lg-6 col-sm-8 offset-sm-2">
                                 <div class="link-script-a1">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
-                                        <label class="custom-control-label" for="customCheck1">Включить ComeBacker для транзитных страниц</label>
+                                        <input type="checkbox" class="custom-control-input" id="audio-check-block" name="example1">
+                                        <label class="custom-control-label" for="audio-check-block">Включить ComeBacker для транзитных страниц</label>
                                     </div>
+                                </div>
+                                <div class="block-audio">
+                                    <table id="comebacker_table">
+                                        <audio id="audio" src="" controls style="display: none"></audio>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio1" name="audio1">
+                                                        <label class="custom-control-label" for="audio1">audio1</label>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <i data-audio="1" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="1" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio2" name="audio2">
+                                                        <label class="custom-control-label" for="audio2">audio2</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="2" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="2" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio3" name="audio3">
+                                                        <label class="custom-control-label" for="audio3">audio3</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="3" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="3" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio4" name="audio4">
+                                                        <label class="custom-control-label" for="audio4">audio4</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="4" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="4" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio5" name="audio5">
+                                                        <label class="custom-control-label" for="audio5">audio5</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="5" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="5" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio6" name="audio6">
+                                                        <label class="custom-control-label" for="audio6">audio6</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="6" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="6" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="audio7">
+                                                        <label class="custom-control-label" for="audio7">audio7</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="7" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="7" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio8" name="audio8">
+                                                        <label class="custom-control-label" for="audio8">audio8</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="8" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="8" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio9" name="audio9">
+                                                        <label class="custom-control-label" for="audio9">audio9</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="9" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="9" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio10" name="comebacker[]" value="10">
+                                                        <label class="custom-control-label" for="audio10">audio10</label>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <i data-audio="10" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px;vertical-align: middle"></i><i data-audio="10" class="fa fa-stop-circle fa-2x button_stop" aria-hidden="true"
+                                                        style="display: none;width: 10px;vertical-align: middle"></i>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio11" name="audio11">
+                                                        <label class="custom-control-label" for="audio11">audio11</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="11" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="11" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio12" name="audio12">
+                                                        <label class="custom-control-label" for="audio12">audio12</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="12" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="12" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio13" name="audio13">
+                                                        <label class="custom-control-label" for="audio13">audio13</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="13" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="13" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="audio14" name="audio14">
+                                                        <label class="custom-control-label" for="audio14">audio14</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <i data-audio="14" class="fa fa-play-circle fa-2x button_play" aria-hidden="true" style="width: 10px; vertical-align: middle; display: inline;"></i><i data-audio="14" class="fa fa-stop-circle fa-2x button_stop"
+                                                        aria-hidden="true" style="width: 10px; vertical-align: middle; display: none;"></i>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="link-script-a2">
                                     <iframe src="http://official.org.ua/www/float/freeze.html" class="link-frame-a2" id="freeze_frame"></iframe>
@@ -222,7 +409,6 @@
                                         <input type="checkbox" class="custom-control-input" id="customCheck5" name="example5">
                                         <label class="custom-control-label" for="customCheck5">Открывать лендинги в новой вкладке</label>
                                     </div>
-                                    </divclass="link-script-a1">
                                 </div>
                             </div>
                     </fieldset>
@@ -385,6 +571,41 @@
         $(document).ready(function() {
             $("#postback_inform").click(function() {
                 $(".inf-bottom ").toggleClass("hide");
+            });
+
+
+            $('.button_play').click(function() {
+                $('.button_play').css({
+                    'display': 'inline'
+                });
+                $('.button_stop').css({
+                    'display': 'none'
+                });
+                $(this).css({
+                    'display': 'none'
+                });
+                $('.button_stop[data-audio="' + $(this).data('audio') + '"]').css({
+                    'display': 'inline'
+                });
+                $('#audio').attr('src', 'audio/audio' + $(this).data("audio") + '.mp3');
+                $('#audio').trigger('play');
+            });
+            $('.button_stop').click(function() {
+                $('.button_stop').css({
+                    'display': 'none'
+                });
+                $('.button_play').css({
+                    'display': 'inline'
+                });
+                $('#audio').trigger('pause');
+            });
+            $('#audio-check-block').click(function() {
+                if ($(this).is(':checked')) {
+                    $(".block-audio").show()
+
+                } else {
+                    $(".block-audio").hide()
+                }
             });
         });
     </script>
