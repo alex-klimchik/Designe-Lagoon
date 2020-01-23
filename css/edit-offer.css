@@ -21,25 +21,9 @@ legend {
 
 /* PAY*/
 
-.pay .geo {
-    text-align: center;
-}
-
 .pay .geo div {
     padding-top: 8px;
     font-weight: bold;
-}
-
-.pay .payment .form-row {
-    margin-left: 5px;
-}
-
-.pay .payment .form-row input {
-    margin-left: -10px;
-}
-
-.pay .payment .form-row .bootstrap-select {
-    margin-left: 10px;
 }
 
 /* PAGE */
@@ -73,9 +57,11 @@ legend {
 .slider:hover .tooltip.in {
     opacity: 1!important;
 }
+
 .slider:active .tooltip.in {
     opacity: 1!important;
 }
+
 /* selectpicker */
 
 .bootstrap-select .btn {
@@ -88,13 +74,185 @@ legend {
     background-color: #e2e6ea;
 }
 
+.nameOffer label, .product label, .price label, .makeChoice>label, .sale label, .category label, .category-product label, .postclick label, .gender>label, .age label, .advertis label, .geo label, .addLogo>label {
+    margin-right: 20px;
+    width: 180px
+}
+
+.description-main_textarea label, .description-main_select label {
+    margin-right: 23px;
+    width: 180px
+}
+
+.nameOffer input, .makeChoice-radio, .description-main_textarea textarea, .description-main_select select, .gender>div, .age input, .age .slider, .geo>div, .payment>div {
+    width: 360px!important;
+    display: inline-flex;
+}
+
+.postclick input {
+    width: 130px!important;
+    display: inline-flex;
+}
+
+.price-main {
+    display: inline-flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.price-row {
+    position: relative;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.price-row input {
+    width: 130px;
+    display: inline-block;
+    padding-right: 50px;
+    margin-right: 4px;
+}
+
+.price-row button span {
+    padding-right: 5px;
+}
+
+.price>button {
+    display: block;
+    width: 130px;
+    margin-left: 203px;
+    margin-top: 10px
+}
+
+.page .page-group, .page .page_wrap-group {
+    display: flex;
+}
+
+.page .page-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 23px;
+    margin-bottom: 0;
+    width: 180px
+}
+
+.page .page-group .page-url {
+    width: 360px;
+}
+
+.page .page-group .page-info {
+    width: 140px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.page .page-group .page_wrap-group .page-info:last-child {
+    margin-right: 0;
+}
+
+.page-new>button {
+    width: 185px;
+    margin-left: 203px;
+}
+
+.price>button span {
+    padding-right: 5px;
+}
+
+.price-currency {
+    position: absolute;
+    top: 7px;
+    left: 90px;
+}
+
+.price-row .bootstrap-select.price-select {
+    width: 220px!important;
+    margin-right: 4px;
+}
+
+.sale .bootstrap-select.sale-select {
+    width: 130px!important;
+}
+
+.product-select, .sale-select, .category .bootstrap-select, .category-product .bootstrap-select, .advertis .bootstrap-select {
+    width: 360px!important;
+}
+
+.goal .bootstrap-select {
+    width: 360px!important;
+    margin-left: 203px;
+}
+
+.description-main_textarea, .description-main_select {
+    display: flex;
+    align-items: center;
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+}
+
+.payment>label {
+    margin-right: 23px;
+    width: 180px
+}
+
+.payment .payment-row .payment-group:nth-child(1) {
+    margin-right: 10px;
+}
+
+.payment .payment-row .payment-group label {
+    display: block;
+}
+
+.payment .payment-row .payment-group input {
+    margin-right: 5px;
+    float: left;
+    width: 85px;
+}
+
+.payment .payment-row .payment-group .bootstrap-select {
+    float: right;
+    width: 85px;
+}
+
+.addLogo .custom-file {
+    width: 360px!important;
+    display: inline-flex;
+}
+
+.addLogo .custom-file input {
+    cursor: pointer!important;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: 'макс. 1000х1000px, до 1мб';
+}
+
+.addLogo>label span {
+    display: none;
+}
+
+.btn-save button {
+    width: 130px;
+    margin-left: 203px;
+}
+
 /* ----------------------------------------------------------
     MEDIA
 ---------------------------------------------------------- */
 
-@media (min-width: 992px) {
-    .pay .payment, .pay .geo {
-        margin-left: 4.5%;
+@media (max-width: 1175px) {
+    .page .page_wrap-group {
+        flex-direction: column;
+    }
+    .page .page-group {
+        align-items: center;
+    }
+    .page .page_wrap-group>div {
+        text-align: left!important;
+        margin-bottom: 10px;
     }
 }
 
@@ -104,13 +262,92 @@ legend {
     }
 }
 
-@media (max-width: 767px) {
-    .page .form-row div:first-child {
-        text-align: left;
-        font-weight: bold;
+@media (max-width: 650px) {
+    .nameOffer input, .makeChoice-radio, .description-main_textarea textarea, .description-main_select select, .gender>div, .age input, .age .slider, .geo>div, .payment>div {
+        width: 100%!important;
+        display: block;
     }
-    .page .form-row {
+    .nameOffer label, .product label, .price label, .makeChoice>label, .sale label, .category label, .category-product label, .postclick label, .gender>label, .age label, .advertis label, .geo label, .addLogo>label {
+        margin-right: 0;
+        width: 100%;
+        display: inline;
+    }
+    .product-select, .sale-select, .category .bootstrap-select, .category-product .bootstrap-select, .advertis .bootstrap-select, .goal .bootstrap-select {
+        width: 100%!important;
+        margin-left: 0;
+    }
+    .price-main {
+        width: 100%;
+    }
+    .price>button {
+        margin-left: 0;
+    }
+    .price-row>button {
+        width: 44px;
+    }
+    .price-row .bootstrap-select.price-select {
+        width: calc(100% - 182px)!important;
+    }
+    .sale .bootstrap-select, .postclick input {
+        display: block;
+    }
+    .description-main_textarea, .description-main_select {
+        display: block;
+    }
+    .page-new>button {
+        margin-left: 0;
+    }
+    .payment>label, .payment .payment-group>label {
+        display: none!important;
+    }
+    .payment .payment-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .payment .payment-row .payment-group {
+        width: 47%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .payment .payment-row .payment-group input {
+        display: inline-block;
+        margin-right: 0;
+        float: none;
+        width: calc( 100% - 85px);
+        vertical-align: middle;
+    }
+    .payment .payment-row .payment-group .bootstrap-select {
+        float: none;
+        width: 80px;
+        display: inline-block;
+    }
+    .payment .payment-row .payment-group:nth-child(1) {
+        margin-right: 0;
+    }
+    .payment .payment-group>span, .addLogo .custom-file {
+        display: block;
+        width: 100%!important;
+    }
+    .btn-save button {
+        margin-left: 0;
+    }
+    .page .page-group label {
+        font-weight: bold!important;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .page .page-group {
         flex-direction: column;
+        align-items: flex-start;
+    }
+    .page .page-group .page-url {
+        width: 100%;
+    }
+    .page .page-group .page-info {
+        width: 100%;
+        margin-right: 0;
     }
 }
 
@@ -124,11 +361,76 @@ legend {
     }
 }
 
+@media (max-width: 400px) {
+    .payment .payment-row {
+        flex-direction: column;
+    }
+    .payment .payment-row .payment-group {
+        width: 100%;
+    }
+    .custom-file-input:lang(en)~.custom-file-label::after {
+        display: none;
+    }
+    .addLogo>label span {
+        display: inline;
+    }
+}
+
 @media (max-width: 374px) {
     #trafficsources, #geography {
         font-size: 13px;
     }
-    .dropdown-menu.show{
+    .dropdown-menu.show {
         font-size: 14px;
+    }
+    .price-row input {
+        width: 95px;
+        padding: 0 37px 0 7px;
+    }
+    .price-row .bootstrap-select.price-select {
+        width: calc(100% - 147px)!important;
+    }
+    .price-currency {
+        left: 60px;
+    }
+}
+
+@media (min-width: 651px) {
+    .payment .payment-group>span {
+        display: none!important;
+    }
+}
+
+@media (min-width: 1176px) and (max-width: 1230px) {
+    .page .page-group .page-info {
+        margin-right: 5px;
+    }
+    .page .page-group .page-url {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1176px) and (max-width: 1350px) {
+    .page .page_wrap-group {
+        align-items: center;
+    }
+    .page_wrap-group {
+        width: calc( 100% - 186px);
+    }
+    .page .page-group .page-info {
+        width: calc( 33% - 117px);
+        margin-right: 8px;
+    }
+    .nameOffer label, .product label, .payment>label, .price label, .makeChoice>label, .sale label, .category label, .category-product label, .postclick label, .gender>label, .age label, .advertis label, .geo label, .addLogo>label {
+        width: 165px;
+    }
+    .price>button, .page-new>button, .btn-save button {
+        margin-left: 188px;
+    }
+    .goal .bootstrap-select {
+        margin-left: 188px;
+    }
+    .description-main_textarea label, .description-main_select label, .page .page-group label {
+        width: 165px;
     }
 }
