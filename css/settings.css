@@ -2,6 +2,18 @@
     PROFILE
 /* -------------------------------------------------------- */
 
+legend {
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 0;
+    padding: 1rem 0;
+    border-bottom: 1px dashed #eee!important;
+}
+
 .profile-main {
     padding-top: 20px;
     border: 1px solid rgb(222, 226, 230);
@@ -12,15 +24,28 @@
     display: flex;
     justify-content: center;
 }
-.profile-set-wrap{
+
+.profile-set-wrap {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-.profile-set-wrap label{
-    width: 220px;
+    max-width: 600px;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 
+.profile-set-wrap label {
+    width: 180px;
+}
+
+.profile-set-wrap input, .profile-set-wrap p {
+    width: calc( 100% - 180px);
+}
+.text-help{
+    margin-left: 180px;
+}
+.btn-save{
+    margin-left: 200px;
+}
 @media (max-width: 768px) {
     .center-block-md {
         display: flex;
@@ -31,7 +56,23 @@
         padding-left: 10px;
         padding-bottom: 10px;
     }
-    .profile-set-wrap{
+    .profile-set-wrap {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .profile-set-wrap {
+        margin-left: 0;
+    }
+    .profile-set-wrap input, .profile-set-wrap p {
+        width: 100%;
+    }
+    .text-help{
+        margin-left: 0;
+    }
+    .btn-save{
+        margin: 0 auto;
+        width: 145px;
     }
 }
