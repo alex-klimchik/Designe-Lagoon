@@ -2,99 +2,52 @@
     TABLE
 ----------------------------------------------------- */
 
+.table-wrap {
+    width: 100%!important;
+    overflow-x: auto!important;
+}
+
 .mainTable {
-    /* width: 100%!important; */
     color: #72777a!important;
     text-align: center;
-    overflow: auto!important;
+    border-collapse: collapse;
 }
 
-.mainTable thead tr {
-    cursor: pointer;
+fieldset>div {
+    margin-bottom: 0;
+    padding: 1rem 0;
+    border-bottom: 1px dashed #eee!important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.mainTable td .btn {
-    margin-bottom: 5px;
-    padding: 4px 8px;
+fieldset>div label {
+    width: 180px;
 }
 
-.mainTable .set-button {
-    min-width: 300px;
-    margin: 0 auto;
+.text-help p, .btn-order {
+    margin-left: 180px;
 }
 
-/* Перебивание стилей TABLE*/
-
-table.mainTable tbody th, table.mainTable tbody td {
-    padding: 8px 5px;
-    padding-right: 25px!important;
+fieldset>div div {
+    width: 100%;
 }
 
-table.mainTable thead th, table.mainTable thead td {
-    padding: 8px 5px;
-    padding-right: 25px!important;
+fieldset>div input, .text-help p {
+    width: 480px!important;
 }
-
-table.mainTable thead .sorting, table.mainTable thead .sorting_asc, table.mainTable thead .sorting_desc {
-    background: none;
-}
-
-table.mainTable thead .sorting:after, table.mainTable thead .sorting_asc:after, table.mainTable thead .sorting_desc:after, table.mainTable thead .sorting_asc_disabled:after, table.mainTable thead .sorting_desc_disabled:after {
-    /* content: none; */
-    top: 7px;
-}
-
-table.mainTable thead .sorting:before, table.mainTable thead .sorting_asc:before, table.mainTable thead .sorting_desc:before, table.mainTable thead .sorting_asc_disabled:before, table.mainTable thead .sorting_desc_disabled:before {
-    /* content: none; */
-    top: 7px;
-}
-
-table.mainTable thead>tr>th.sorting_asc, table.mainTable thead>tr>th.sorting_desc, table.mainTable thead>tr>th.sorting, table.mainTable thead>tr>td.sorting_asc, table.mainTable thead>tr>td.sorting_desc, table.mainTable thead>tr>td.sorting {
-    padding-right: 5px;
-}
-
-.page-item.active .page-link {
-    background: #7774e7;
-    border-color: #7774e7;
-    border-radius: 2px;
-}
-
-.page-link {
-    margin: 0 2px;
-    border: none;
-}
-
-.fixedHeader-floating {
-    table-layout: auto!important;
-}
-
-.table td, .table th {
-    vertical-align: middle;
-}
-
-.dataTables_wrapper {
-    overflow: auto!important;
-}
-
-.dataTables_wrapper>.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.dataTables_wrapper>.row>* {
-    padding: 0;
-}
-
-/* End Перебивание стилей TABLE*/
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+
 @media (max-width: 991px) {
     main {
         padding: 15px 10px;
     }
 }
+
 @media (max-width: 768px) {
     h4 {
         text-align: center;
@@ -105,33 +58,14 @@ table.mainTable thead>tr>th.sorting_asc, table.mainTable thead>tr>th.sorting_des
     main {
         font-size: 14px;
     }
-    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-        justify-content: center;
+    fieldset>div input, .text-help p {
+        width: 100%!important;
     }
-    table.mainTable thead .sorting:after, table.mainTable thead .sorting_asc:after, table.mainTable thead .sorting_desc:after, table.mainTable thead .sorting_asc_disabled:after, table.mainTable thead .sorting_desc_disabled:after {
-        content: none;
+    .text-help p, .btn-order {
+        margin-left: 0;
     }
-    table.mainTable thead .sorting:before, table.mainTable thead .sorting_asc:before, table.mainTable thead .sorting_desc:before, table.mainTable thead .sorting_asc_disabled:before, table.mainTable thead .sorting_desc_disabled:before {
-        content: none;
-    }
-    table.mainTable tbody th, table.mainTable tbody td {
-        padding-right: 5px!important;
-    }
-    table.mainTable thead th, table.mainTable thead td {
-        padding-right: 5px!important;
-    }
-}
-
-@media (max-width: 425px) {
-    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
-        flex-direction: column;
-        align-items: center;
-    }
-    .dataTables_filter label, .dataTables_length label {
-        display: flex;
-        flex-direction: column;
-    }
-    .dataTables_filter label input {
-        margin-left: 0!important;
+    .btn-order button {
+        margin: 0 auto;
+        display: block;
     }
 }
