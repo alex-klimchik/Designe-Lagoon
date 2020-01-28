@@ -170,12 +170,12 @@
                                     <th>Дата</th>
                                     <th>Клики</th>
                                     <th>Уники</th>
-                                    <th>Пробитие</th>
-                                    <th>Ratio</th>
-                                    <th>CR</th>
+                                    <th data-toggle="tooltip" data-placement="bottom" title="Процент перехода с транзитных страниц на лендинг">Пробитие</th>
+                                    <th data-toggle="tooltip" data-placement="bottom" title="Количество уникальных кликов на 1 заказ">Ratio</th>
+                                    <th data-toggle="tooltip" data-placement="bottom" title="Коэффициент конверсии">CR</th>
                                     <th>CPC</th>
-                                    <th>EPC</th>
-                                    <th>Approve</th>
+                                    <th data-toggle="tooltip" data-placement="bottom" title="Заработок с 1 уникального перехода">EPC</th>
+                                    <th data-toggle="tooltip" data-placement="bottom" title="Процент подтверждённых лидов">Approve</th>
                                     <th>CPL</th>
                                     <th>CPS</th>
                                     <th>Выкуп %</th>

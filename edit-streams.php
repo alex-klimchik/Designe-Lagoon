@@ -128,7 +128,7 @@
                     <fieldset>
                         <legend>Домены</legend>
                         <div class="form-group domen-block row">
-                            <div class="list-domens col-sm-5 offset-sm-2">
+                            <div class="list-domens">
 
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="customCheckDom1" name="exampleDom1">
@@ -194,7 +194,7 @@
                         <div class="border"></div>
                         <div class="form-group row">
 
-                            <div class="col-lg-6 col-sm-8 offset-sm-2">
+                            <div class="link-modal-page">
                                 <div class="link-script-a1">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="audio-check-block" name="example1">
