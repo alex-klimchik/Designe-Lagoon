@@ -25,15 +25,24 @@
     color: #e00000;
 }
 
-.mainTable tbody tr td:nth-child(14), .mainTable tbody tr td:nth-child(19), .mainTable thead tr th:nth-child(14), .mainTable thead tr th:nth-child(19) {
+.mainTable tbody tr td:nth-child(14),
+.mainTable tbody tr td:nth-child(19),
+.mainTable thead tr th:nth-child(14),
+.mainTable thead tr th:nth-child(19) {
     color: #05c703;
 }
 
-.mainTable tbody tr td:nth-child(15), .mainTable tbody tr td:nth-child(20), .mainTable thead tr th:nth-child(15), .mainTable thead tr th:nth-child(20) {
+.mainTable tbody tr td:nth-child(15),
+.mainTable tbody tr td:nth-child(20),
+.mainTable thead tr th:nth-child(15),
+.mainTable thead tr th:nth-child(20) {
     color: #00a0ff;
 }
 
-.mainTable tbody tr td:nth-child(16), .mainTable tbody tr td:nth-child(21), .mainTable thead tr th:nth-child(16), .mainTable thead tr th:nth-child(21) {
+.mainTable tbody tr td:nth-child(16),
+.mainTable tbody tr td:nth-child(21),
+.mainTable thead tr th:nth-child(16),
+.mainTable thead tr th:nth-child(21) {
     color: #e00000;
 }
 
@@ -41,29 +50,47 @@
     border-top: 3px solid #dee2e6!important;
 }
 
+
 /* Перебивание стилей TABLE */
 
-table#dataTable.dataTable tbody th, table#dataTable.dataTable tbody td {
+table#dataTable.dataTable tbody th,
+table#dataTable.dataTable tbody td {
     padding: 8px 5px;
 }
 
-table#dataTable.dataTable thead th, table#dataTable.dataTable thead td {
+table#dataTable.dataTable thead th,
+table#dataTable.dataTable thead td {
     padding: 8px 5px;
 }
 
-table#datatable#dataTable.dataTable thead .sorting, table#datatable#dataTable.dataTable thead .sorting_asc, table#datatable#dataTable.dataTable thead .sorting_desc {
+table#datatable#dataTable.dataTable thead .sorting,
+table#datatable#dataTable.dataTable thead .sorting_asc,
+table#datatable#dataTable.dataTable thead .sorting_desc {
     background: none;
 }
 
-table#dataTable.dataTable thead .sorting:after, table#dataTable.dataTable thead .sorting_asc:after, table#dataTable.dataTable thead .sorting_desc:after, table#dataTable.dataTable thead .sorting_asc_disabled:after, table#dataTable.dataTable thead .sorting_desc_disabled:after {
+table#dataTable.dataTable thead .sorting:after,
+table#dataTable.dataTable thead .sorting_asc:after,
+table#dataTable.dataTable thead .sorting_desc:after,
+table#dataTable.dataTable thead .sorting_asc_disabled:after,
+table#dataTable.dataTable thead .sorting_desc_disabled:after {
     content: none;
 }
 
-table#dataTable.dataTable thead .sorting:before, table#dataTable.dataTable thead .sorting_asc:before, table#dataTable.dataTable thead .sorting_desc:before, table#dataTable.dataTable thead .sorting_asc_disabled:before, table#dataTable.dataTable thead .sorting_desc_disabled:before {
+table#dataTable.dataTable thead .sorting:before,
+table#dataTable.dataTable thead .sorting_asc:before,
+table#dataTable.dataTable thead .sorting_desc:before,
+table#dataTable.dataTable thead .sorting_asc_disabled:before,
+table#dataTable.dataTable thead .sorting_desc_disabled:before {
     content: none;
 }
 
-table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable thead>tr>th.sorting_desc, table#dataTable.dataTable thead>tr>th.sorting, table#dataTable.dataTable thead>tr>td.sorting_asc, table#dataTable.dataTable thead>tr>td.sorting_desc, table#dataTable.dataTable thead>tr>td.sorting {
+table#dataTable.dataTable thead>tr>th.sorting_asc,
+table#dataTable.dataTable thead>tr>th.sorting_desc,
+table#dataTable.dataTable thead>tr>th.sorting,
+table#dataTable.dataTable thead>tr>td.sorting_asc,
+table#dataTable.dataTable thead>tr>td.sorting_desc,
+table#dataTable.dataTable thead>tr>td.sorting {
     padding-right: 5px;
 }
 
@@ -77,6 +104,7 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     margin: 0 2px;
     border: none;
 }
+
 
 /* DATATABLE  */
 
@@ -93,7 +121,9 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     padding: 0;
 }
 
+
 /* End TABLE ---------------------------------------------------------*/
+
 
 /* Перебивание стилей при добавлении класса ACTIVE*/
 
@@ -101,11 +131,14 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     width: 85px;
 }
 
-.current-value .btn-light:not(:disabled):not(.disabled).active, .current-value .btn-light:not(:disabled):not(.disabled):active, .current-value .show>.btn-light.dropdown-toggle {
+.current-value .btn-light:not(:disabled):not(.disabled).active,
+.current-value .btn-light:not(:disabled):not(.disabled):active,
+.current-value .show>.btn-light.dropdown-toggle {
     color: #fff;
     background-color: #ff5722;
     border-color: #ff5722;
 }
+
 
 /* ---------------------------------------------------
     All
@@ -166,7 +199,8 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     border-bottom: 1px solid #efefef;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     border-color: #efefef #efefef #fff;
 }
 
@@ -196,6 +230,7 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
     background: #FFF;
 }
 
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -223,6 +258,23 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
         padding-right: 15px;
         padding-left: 15px;
         max-width: 33.3333333%;
+    }
+}
+
+.is-collapsed #nav-myTab .nav-link {
+    padding: 5px 10px!important;
+}
+
+#nav-myTab .nav-link {
+    padding: 5px 6px!important;
+}
+
+@media (max-width: 1290px) {
+    .is-collapsed #nav-myTab .nav-link {
+        padding: 5px 8px!important;
+    }
+    #nav-myTab .nav-link {
+        padding: 5px 3px!important;
     }
 }
 
@@ -260,7 +312,8 @@ table#dataTable.dataTable thead>tr>th.sorting_asc, table#dataTable.dataTable the
         /* flex-direction: column; */
         align-items: center;
     }
-    .dataTables_filter label, .dataTables_length label {
+    .dataTables_filter label,
+    .dataTables_length label {
         display: flex;
         flex-direction: column;
     }
